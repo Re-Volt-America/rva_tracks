@@ -21,4 +21,3 @@ MODELRGBPER     	100              	;RGB percent of original model gouraud
 MIRRORS			0 0.75 0 256		;Type - mix - intensity start - distance
 REDBOOK 		4 9
 DIFFICULTY		1
-SWEEPCAM		1

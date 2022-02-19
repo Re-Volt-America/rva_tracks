@@ -4,10 +4,11 @@
 
 NAME                   'SBX Alpine'                       ;The name of the level as seen in-game
 STARTPOS               70 -50 -50                              ;Start position of the car (x, y, z)
-STARTPOSREV            0 0 0                              ;Start position of the car in reverse mode
+STARTPOSREV            70 -50 790                              ;Start position of the car in reverse mode
 STARTROT               0                                  ;Start rotation of the car (0 - 1)
 STARTROTREV            0.5                                  ;Start rotation of the car in reverse mode (0 - 1)
 STARTGRID	           3
+STARTGRIDREV		3
 FARCLIP                45000                              ;Far clipping distance (draw distance)
 FOGSTART               44000                              ;Fog start (slightly less than FARCLIP)
 FOGCOLOR               255 255 255                         ;Fog and background color (RGB)
@@ -17,6 +18,7 @@ WORLDRGBPER            100                                ;RGB percent of origin
 MODELRGBPER            100                                ;RGB percent of original model (cars, etc.) gouraud
 INSTANCERGBPER         80                                 ;RGB percent of original instance (decorations, etc.) gouraud
 MIRRORS                0 0.75 0 256                       ;Type - mix - intensity start - distance
+MUSIC		'music\io\cold'
 REDBOOK 		       4 9
 SHADOWBOX              -96                                ;Changes the contrast/brightness or the shadows on the track, default -96.
 ROCK                   0 0 0 0                            ;Rocking effect like on Toytanic.

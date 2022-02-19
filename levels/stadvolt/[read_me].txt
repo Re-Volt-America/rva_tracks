@@ -99,3 +99,21 @@ UPDATED ON 01/08/2021
 + Missing shadow box behind the bus stop added
 + Small track zone hole filled in normal and reversed mode
 + Reposition issue under the wooden bridge fixed
+
+
+UPDATED ON 12/15/2021
+---------------------
+
+• World and Collision Files
+
++ Many weird/over simplified/non planar collisions fixed
++ Crates and barrels in the junkyard area rearranged to reduce invisible walls confusion
++ Junkyard's bridge legs moved away from the raceline, improving the flow and fixing the blind turn in reversed mode
++ Derelict house entrance widened to make oil slick dodging easier
+
+• In-Game Editor
+
++ Reversed mode star moved to the normal mode star location
++ Added shadowboxes around the digger
++ Fixed shadowboxes near the crashed car
++ Pick-ups placement changed to reward a bit more the players driving through the derelict house

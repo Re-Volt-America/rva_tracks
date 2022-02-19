@@ -112,10 +112,7 @@ Do not sell the content of this track anyway!
 ======================== Contact ===============================
 ================================================================
 
-You can find me on this forum > http://z3.invisionfree.com/Revolt_Live/
-Just send me a PM (Personal Message) if you need to talk with me.
-
-Or just send me an email: allanmoraes27@yahoo.com
+You can contact me via PM in Re-Volt Live.
 
 
 
