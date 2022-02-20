@@ -8,6 +8,8 @@ task default: %i[package version]
 
 task :package do
   zipfile_name = "#{RVATracks::NAME}.zip"
+  File.delete(zipfile_name) if File.exist?(zipfile_name)
+
   puts "Packaging into #{zipfile_name} ..."
 
   exclude = %w[. .. Gemfile Gemfile.lock Rakefile .git .gitignore .idea data.rb README.md]
