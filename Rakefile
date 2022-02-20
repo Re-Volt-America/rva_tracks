@@ -12,7 +12,7 @@ task :package do
 
   puts "Packaging into #{zipfile_name} ..."
 
-  exclude = %w[. .. Gemfile Gemfile.lock Rakefile .git .gitignore .idea data.rb README.md]
+  exclude = %w[. .. Gemfile Gemfile.lock Rakefile .git .gitignore .idea data.rb README.md packages.json]
   zf = ZipFileGenerator.new('.', zipfile_name, exclude)
   zf.write
 
