@@ -7,4 +7,5 @@ module RVATracks
   MONTH = 2
   DAY = 21
   VERSION = "#{YEAR}.#{MONTH < 10 ? "0#{MONTH}" : MONTH}#{DAY < 10 ? "0#{DAY}" : DAY}"
+  URL = 'https://distribute.revolt-america.com/rva/rva_tracks.zip'
 end
