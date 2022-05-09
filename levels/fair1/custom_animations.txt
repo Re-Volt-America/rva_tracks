@@ -648,74 +648,74 @@ ANIMATION {
     BoneID                  1               	          
     ModelID                 4              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 0.000 -3512.78      
+    OffsetTranslation       0.000 0.000 -1756.39      
   }
   BONE {   
     BoneID                  2               	          
     ModelID                 5              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 -1344.28 -3245.39      
+    OffsetTranslation       0.000 -672.14 -1622.695      
   }
   BONE {   
     BoneID                  3               	          
     ModelID                 6              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 -3245.39 -1344.28      
+    OffsetTranslation       0.000 -1622.695 -672.14      
   }
   BONE {   
     BoneID                  4               	          
     ModelID                 4              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 -3512.78 0.000      
+    OffsetTranslation       0.000 -1756.39 0.000      
   }
   BONE {   
     BoneID                  5               	          
     ModelID                 5              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 -3245.39 1344.28      
+    OffsetTranslation       0.000 -1622.695 672.14      
   }
   BONE {   
     BoneID                  6               	          
     ModelID                 6              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 -1344.28 3245.39      
+    OffsetTranslation       0.000 -672.14 1622.695      
   }
 
   BONE {   
     BoneID                  7               	          
     ModelID                 4              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 0.000 3512.78      
+    OffsetTranslation       0.000 0.000 1756.39      
   }
   BONE {   
     BoneID                  8               	          
     ModelID                 5              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 1344.28 3245.39      
+    OffsetTranslation       0.000 672.14 1622.695      
   }
   BONE {   
     BoneID                  9               	          
     ModelID                 6              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 3245.39 1344.28      
+    OffsetTranslation       0.000 1622.695 672.14      
   }
   BONE {   
     BoneID                  10               	          
     ModelID                 4              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 3512.78 0.000      
+    OffsetTranslation       0.000 1756.39 0.000      
   }
   BONE {   
     BoneID                  11               	          
     ModelID                 5              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 3245.39 -1344.28      
+    OffsetTranslation       0.000 1622.695 -672.14      
   }
   BONE {   
     BoneID                  12               	          
     ModelID                 6              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 1344.28 -3245.39      
+    OffsetTranslation       0.000 672.14 -1622.695      
   }
 
 
@@ -811,25 +811,25 @@ ANIMATION {
     BoneID                  1               	          
     ModelID                 7              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 -2483.91 -2483.91      
+    OffsetTranslation       0.000 -1241.955 -1241.955      
   }
   BONE {   
     BoneID                  2               	          
     ModelID                 7              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 -2483.91 2483.91      
+    OffsetTranslation       0.000 -1241.955 1241.955      
   }
   BONE {   
     BoneID                  3               	          
     ModelID                 7              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 2483.91 2483.91      
+    OffsetTranslation       0.000 1241.955 1241.955      
   }
   BONE {   
     BoneID                  4               	          
     ModelID                 7              	          
     Parent                  0                	         
-    OffsetTranslation       0.000 2483.91 -2483.91      
+    OffsetTranslation       0.000 1241.955 -1241.955      
   }
 
 

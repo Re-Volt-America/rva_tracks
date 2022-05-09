@@ -23,3 +23,16 @@
 - reworked the trackzones and triggers in reverse mode
 - small trackzone tweaks
 - added anti-abuse repo
+
+28/11/2021
+- pickup reduction
+- trackzone tweaks
+- worldcut the world for better performance
+
+15/12/2021
+- pickup reduction in reverse mode
+- minor tweaks in reverse mode
+- worldcut the world for better performance in reverse mode
+
+30/1/2022
+- trackzone tweaks

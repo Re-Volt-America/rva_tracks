@@ -1,0 +1,921 @@
+{
+MODEL   0   "elevator"
+MODEL   1   "door1_l"
+MODEL   2   "door1_r"
+MODEL   3   "door2_l"
+MODEL   4   "door2_r"
+MODEL   5   "amblight1"
+MODEL   6   "amblight2"
+MODEL   7   "amblight3"
+MODEL   8   "amblight4"
+SFX        0   "liftbell"
+SFX        1   "open"
+SFX        2   "close"
+
+
+ANIMATION {
+  Slot                      0                        
+  Name                      "Elevator"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                     
+    ModelID                 -1                     
+  }
+  BONE {
+    BoneID                  1                     
+    ModelID                 0                     
+  }
+  BONE {
+    BoneID                  2                    
+    ModelID                 1     
+   Parent                     0                
+  }
+  BONE {
+    BoneID                  3                    
+    ModelID                 2          
+   Parent                     0           
+  }
+  BONE {
+    BoneID                  4                    
+    ModelID                 3  
+   Parent                     1                   
+  }
+
+  BONE {
+    BoneID                  5                    
+    ModelID                 4       
+   Parent                     1              
+  }
+;BACK DOOR BONES
+  BONE {
+    BoneID                  6                    
+    ModelID                 1     
+   Parent                     0            
+   OffsetTranslation       1875.000 0.000 0.000
+   OffsetRotationAxis      0.000 -1.000 0.000
+   OffsetRotationAmount    180.000
+  }
+  BONE {
+    BoneID                  7                    
+    ModelID                 2          
+   Parent                     0          
+   OffsetTranslation       1875.000 0.000 0.000
+   OffsetRotationAxis      0.000 -1.000 0.000
+   OffsetRotationAmount    180.000 
+  }
+  BONE {
+    BoneID                  8                    
+    ModelID                 3  
+   Parent                     1           
+   OffsetTranslation       1875.000 0.000 0.000
+   OffsetRotationAxis      0.000 -1.000 0.000
+   OffsetRotationAmount    180.000        
+  }
+
+  BONE {
+    BoneID                  9                    
+    ModelID                 4       
+   Parent                     1             
+   OffsetTranslation       1875.000 0.000 0.000
+   OffsetRotationAxis      0.000 -1.000 0.000
+   OffsetRotationAmount    180.000 
+  }
+;BASEMENT DOOR BONES
+
+  BONE {
+    BoneID                  10                    
+    ModelID                 1     
+   Parent                     0            
+   OffsetTranslation       1875.000 1201.390 0.000
+   OffsetRotationAxis      0.000 -1.000 0.000
+   OffsetRotationAmount    180.000
+  }
+  BONE {
+    BoneID                  11                    
+    ModelID                 2          
+   Parent                     0          
+   OffsetTranslation       1875.000 1201.390 0.000
+   OffsetRotationAxis      0.000 -1.000 0.000
+   OffsetRotationAmount    180.000 
+  }
+
+;  IDLE START
+  KEYFRAME {  
+    FrameNr                 0                        
+    Time                    0                    
+    Type                    0           
+
+   }
+;DOOR OPEN 
+  KEYFRAME {  
+    FrameNr                 1                        
+    Time                    1                    
+    Type                    3       
+                 
+  BONE {
+    BoneID                  1                     
+      Translation           0.000 0.000 0.000
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             false
+      }         
+  }             
+    BONE {
+      BoneID                2                     
+      Translation           0.000 0.000 365.000             
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             false
+      }                 
+    }
+    BONE {
+      BoneID                3                     
+      Translation           0.000 0.000 -365.000             
+    }
+    BONE {
+      BoneID                4                     
+      Translation           0.000 0.000 365.000             
+    }
+    BONE {
+      BoneID                5                     
+      Translation           0.000 0.000 -365.000            
+    }
+    BONE {
+      BoneID                6                     
+      Translation           0.000 0.000 365.000         
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             false
+      }                     
+    }
+    BONE {
+      BoneID                7                     
+      Translation           0.000 0.000 -365.000             
+    }
+    BONE {
+      BoneID                8                     
+      Translation           0.000 0.000 365.000             
+    }
+    BONE {
+      BoneID                9                     
+      Translation           0.000 0.000 -365.000            
+    }
+   }
+
+;  IDLE BOTH OPEN
+  KEYFRAME {  
+    FrameNr                 2                        
+    Time                    13                    
+    Type                    0     
+    BONE {
+      BoneID                1                     
+      Visible	True            
+    }      
+
+   }
+
+;DOOR FRONT CLOSE 1
+  KEYFRAME {  
+    FrameNr                 3                        
+    Time                    0.5                    
+    Type                    4                        
+  BONE {
+    BoneID                  1                     
+      Translation           0.000 0.000 0.000
+      SFX {
+        SfxID                 2
+        Range               10
+        Looping             false
+      }                  
+  }       
+    BONE {
+      BoneID                2                     
+      Translation           0.000 0.000 -65.000             
+    }
+    BONE {
+      BoneID                3                     
+      Translation           0.000 0.000 65.000             
+    }
+    BONE {
+      BoneID                4                     
+      Translation           0.000 0.000 -65.000             
+    }
+    BONE {
+      BoneID                5                     
+      Translation           0.000 0.000 65.000            
+    }
+   }
+;DOOR FRONT CLOSE 2
+  KEYFRAME {  
+    FrameNr               4                        
+    Time                    3                    
+    Type                    1                        
+
+    BONE {
+      BoneID                2                     
+      Translation           0.000 0.000 -300.000             
+    }
+    BONE {
+      BoneID                3                     
+      Translation           0.000 0.000 300.000             
+    }
+    BONE {
+      BoneID                4                     
+      Translation           0.000 0.000 -300.000             
+    }
+    BONE {
+      BoneID                5                     
+      Translation           0.000 0.000 300.000            
+    }
+   }
+;DOOR BACK CLOSE 1
+  KEYFRAME {  
+    FrameNr                 5                        
+    Time                    0.5                    
+    Type                    4                        
+
+    BONE {
+      BoneID                6                     
+      Translation           0.000 0.000 -65.000        
+      SFX {
+        SfxID                 2
+        Range               10
+        Looping             false
+      }                           
+    }
+    BONE {
+      BoneID                7                     
+      Translation           0.000 0.000 65.000             
+    }
+    BONE {
+      BoneID                8                     
+      Translation           0.000 0.000 -65.000             
+    }
+    BONE {
+      BoneID                9                     
+      Translation           0.000 0.000 65.000            
+    }
+   }
+;DOOR BACK CLOSE 2
+  KEYFRAME {  
+    FrameNr               6                        
+    Time                    3                    
+    Type                    1                        
+
+    BONE {
+      BoneID                6                     
+      Translation           0.000 0.000 -300.000             
+    }
+    BONE {
+      BoneID                7                     
+      Translation           0.000 0.000 300.000             
+    }
+    BONE {
+      BoneID                8                     
+      Translation           0.000 0.000 -300.000             
+    }
+    BONE {
+      BoneID                9                     
+      Translation           0.000 0.000 300.000            
+    }
+   }
+
+;ELEVATOR DROP
+  KEYFRAME {  
+    FrameNr                 7                        
+    Time                    2                    
+    Type                    3                        
+
+    BONE {
+      BoneID                1                     
+      Translation           0.000 1201.390 0.000             
+    }
+   }
+;BASEMENT DOOR OPEN 
+  KEYFRAME {  
+    FrameNr                8                        
+    Time                    0.5                    
+    Type                    3       
+                 
+    BONE {
+      BoneID                1                            
+     Visible	False       
+}
+    BONE {
+      BoneID                4                            
+     Visible	False       
+}
+    BONE {
+      BoneID                5                            
+     Visible	False       
+}
+
+    BONE {
+      BoneID                8                     
+      Translation           0.000 0.000 365.000           
+     Visible	False       
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             false
+      }             
+    }
+    BONE {
+      BoneID                9                     
+      Translation           0.000 0.000 -365.000            
+     Visible	False     
+    }
+    BONE {
+      BoneID                10                     
+      Translation           0.000 0.000 365.000      
+     Visible	False            
+    }
+    BONE {
+      BoneID                11                     
+      Translation           0.000 0.000 -365.000            
+     Visible	False     
+    }
+   }
+;BASEMENT IDLE 
+  KEYFRAME {  
+    FrameNr                9                        
+    Time                    0.5                    
+    Type                    3                        
+   }
+
+;BASEMENT DOOR CLOSE 1
+  KEYFRAME {  
+    FrameNr                 10                        
+    Time                    0.5                    
+    Type                    4                        
+
+    BONE {
+      BoneID                8                     
+      Translation           0.000 0.000 -65.000     
+      SFX {
+        SfxID                 2
+        Range               10
+        Looping             false
+      }                     
+    }
+    BONE {
+      BoneID                9                     
+      Translation           0.000 0.000 65.000      
+    }
+    BONE {
+      BoneID                10                   
+      Translation           0.000 0.000 -65.000            
+    }
+    BONE {
+      BoneID                11                     
+      Translation           0.000 0.000 65.000             
+    }
+   }
+;BASEMENT DOOR CLOSE 2
+  KEYFRAME {  
+    FrameNr               11                        
+    Time                    0.5                    
+    Type                    1                        
+
+    BONE {
+      BoneID                8                     
+      Translation           0.000 0.000 -300.000             
+    }
+    BONE {
+      BoneID                9                     
+      Translation           0.000 0.000 300.000            
+    }
+    BONE {
+      BoneID                10                     
+      Translation           0.000 0.000 -300.000             
+    }
+    BONE {
+      BoneID                11                     
+      Translation           0.000 0.000 300.000            
+    }
+   }
+;ELEVATOR ASCEND
+  KEYFRAME {  
+    FrameNr                 12                        
+    Time                    1                    
+    Type                    3                        
+
+    BONE {
+      BoneID                1                     
+      Translation           0.000 -1201.390 0.000      
+      Visible	False          
+    }
+   }
+}
+
+;__________________________________________________
+
+
+
+
+ANIMATION {
+  Slot                      1                        
+  Name                      "Ambulance Light"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                     
+    ModelID                 5                     
+  }
+  BONE {
+    BoneID                  1                     
+    ModelID                 6                     
+  }
+  BONE {
+    BoneID                  2                     
+    ModelID                 7                     
+  }
+  BONE {
+    BoneID                  3                    
+    ModelID                 8  
+  }
+
+;___________SET LIGHT BONES_____________
+
+;FRONT RIGHT
+
+ BONE {
+    BoneID                  4                      
+    ModelID                 -1
+    OffsetTranslation     -35.407 -813.226 601.990
+  }
+
+;FRONT LEFT
+
+BONE {
+    BoneID                  5                      
+    ModelID                 -1
+    OffsetTranslation      -35.407 -813.226 -601.732
+  }
+
+;BACK RIGHT
+
+ BONE {
+    BoneID                  6                      
+    ModelID                 -1
+    OffsetTranslation     1064.630 -813.226 601.990
+  }
+
+;BACK LEFT
+
+BONE {
+    BoneID                  7                      
+    ModelID                 -1
+    OffsetTranslation     1064.630 -813.226 -601.732
+  }
+
+;REAR RIGHT
+
+ BONE {
+    BoneID                  8                      
+    ModelID                 -1
+    OffsetTranslation     1337.671 -826.104 327.242
+  }
+
+;REAR LEFT
+
+BONE {
+    BoneID                  9                      
+    ModelID                 -1
+    OffsetTranslation     1337.671 -826.104 -327.242
+  }
+
+;CENTER MIDDLE 
+
+BONE {
+    BoneID                  10                      
+    ModelID                 -1
+    OffsetTranslation     -190.129 -813.226 0.000
+  }
+
+;CENTER RIGHT
+
+BONE {
+    BoneID                  11                      
+    ModelID                 -1
+    OffsetTranslation     -190.129 -813.226 -158.567
+  }
+
+;CENTER LEFT
+
+BONE {
+    BoneID                  12                      
+    ModelID                 -1
+    OffsetTranslation     -190.129 -813.226 158.567
+  }
+
+;__________________ONE
+  KEYFRAME {
+    FrameNr                 0                        
+    Time                    0.25                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0      
+      Visible	TRUE               
+    }
+
+    BONE {
+      BoneID                1                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                2                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                3                     
+      Visible	FALSE
+     }
+;LIGHTS
+    BONE {
+      BoneID                4
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                5
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                6
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                7
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                8
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                9
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+;_______CENTER LIGHTS 1______
+
+    BONE {
+      BoneID                10
+	LIGHT {
+        Type                -1 
+        Color               255 255 255 
+        Reach               150
+      }                 
+    }
+    BONE {
+      BoneID                11
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+    BONE {
+      BoneID                12
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+
+   }
+;__________________TWO
+KEYFRAME {
+    FrameNr                 1                        
+    Time                    0.25                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0      
+      Visible	FALSE               
+    }
+
+    BONE {
+      BoneID                1                     
+      Visible	TRUE
+     }
+    BONE {
+      BoneID                2                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                3                     
+      Visible	FALSE
+     }
+;_______CENTER LIGHTS 2______
+
+    BONE {
+      BoneID                10
+	LIGHT {
+        Type                1 
+        Color               255 255 255 
+        Reach               150
+      }                 
+    }
+    BONE {
+      BoneID                11
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+    BONE {
+      BoneID                12
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+   }
+;__________________ONE
+  KEYFRAME {
+    FrameNr                 2                        
+    Time                    0.25                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0      
+      Visible	TRUE               
+    }
+
+    BONE {
+      BoneID                1                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                2                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                3                     
+      Visible	FALSE
+     }
+;_______CENTER LIGHTS 1______
+
+    BONE {
+      BoneID                10
+	LIGHT {
+        Type                -1 
+        Color               255 255 255 
+        Reach               150
+      }                 
+    }
+    BONE {
+      BoneID                11
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+    BONE {
+      BoneID                12
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+
+   }
+
+;__________________FOUR
+  KEYFRAME {
+    FrameNr                 3                        
+    Time                    0.25                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0      
+      Visible	FALSE               
+    }
+
+    BONE {
+      BoneID                1                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                2                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                3                     
+      Visible	TRUE
+     }
+;LIGHTS
+    BONE {
+      BoneID                4
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                5
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                6
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                7
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                8
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+    BONE {
+      BoneID                9
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               512
+      }                 
+    }
+;_______CENTER LIGHTS 2______
+
+    BONE {
+      BoneID                10
+	LIGHT {
+        Type                1 
+        Color               255 255 255 
+        Reach               150
+      }                 
+    }
+    BONE {
+      BoneID                11
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+    BONE {
+      BoneID                12
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+
+   }
+;__________________THREE
+  KEYFRAME {
+    FrameNr                 4                        
+    Time                    0.25                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0      
+      Visible	FALSE               
+    }
+
+    BONE {
+      BoneID                1                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                2                     
+      Visible	TRUE
+     }
+    BONE {
+      BoneID                3                     
+      Visible	FALSE
+     }
+;_______CENTER LIGHTS 1______
+
+    BONE {
+      BoneID                10
+	LIGHT {
+        Type                -1 
+        Color               255 255 255 
+        Reach               150
+      }                 
+    }
+    BONE {
+      BoneID                11
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+    BONE {
+      BoneID                12
+	LIGHT {
+        Type                1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+
+   }
+;__________________FOUR
+  KEYFRAME {
+    FrameNr                 5                        
+    Time                    0.25                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0      
+      Visible	FALSE               
+    }
+
+    BONE {
+      BoneID                1                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                2                     
+      Visible	FALSE
+     }
+    BONE {
+      BoneID                3                     
+      Visible	TRUE
+     }
+;_______CENTER LIGHTS 2______
+
+    BONE {
+      BoneID                10
+	LIGHT {
+        Type                1 
+        Color               255 255 255 
+        Reach               150
+      }                 
+    }
+    BONE {
+      BoneID                11
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+    BONE {
+      BoneID                12
+	LIGHT {
+        Type                -1 
+        Color               255 0 0 
+        Reach               200
+      }                 
+    }
+
+   }
+
+}

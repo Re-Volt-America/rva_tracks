@@ -1,0 +1,25 @@
+;Look at _Read Me_ for credits and more track information
+
+NAME		'Hospital 1'	        
+DIFFICULTY	3
+OBTAIN   	                1  
+CHALLENGE	0 45 000
+CHALLENGEREV	0 45 000
+STARTPOS	-25285 0 -6398
+STARTPOSREV	-25230 0 -6398      
+STARTROT	0.25		        
+STARTROTREV	0.75		      
+STARTGRID	0
+STARTGRIDREV	0	
+FARCLIP		200000		     
+FOGSTART	120000		    
+FOGCOLOR	130 130 130
+SWEEPCAM	1		    
+VERTFOGSTART	0		   
+VERTFOGEND	0		  
+WORLDRGBPER     100                   	     
+MODELRGBPER	50		      
+INSTANCERGBPER	100	
+MIRRORS			0 0.60 0 1200 	   
+MP3             'levels\hospital1\oppressive_sphere.mp3'
+REDBOOK		1 3

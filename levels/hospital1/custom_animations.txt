@@ -1,0 +1,251 @@
+{
+MODEL   0   "glass_unlit"
+MODEL   1   "glass_lit"
+MODEL   2   "mri_off"
+MODEL   3   "mri_on"
+SFX        0   "xray"
+SFX        1   "mri"
+
+
+ANIMATION {
+  Slot                      0                        
+  Name                      "Window Buzz"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                     
+    ModelID                 0                     
+  }
+  BONE {
+    BoneID                  1                      
+    ModelID                 1
+
+  }
+ BONE {
+    BoneID                  2                      
+    ModelID                 -1
+    OffsetTranslation     562.501 0.000 545.780
+
+  }
+ BONE {
+    BoneID                  3                      
+    ModelID                 -1
+    OffsetTranslation     562.501 0.000 2045.790
+
+  }
+
+  KEYFRAME {
+    FrameNr                 0                        
+    Time                    3                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0
+      Visible	true                
+    }
+  BONE {
+    BoneID                  1                 
+    Visible		false
+      SFX {
+        SfxID                 -1
+        Range               24
+        Looping             false
+      }     
+     }     
+    BONE {
+      BoneID                2
+	LIGHT {
+        Type                -1 
+        Color               133 195 223
+        Reach               863
+      }                 
+    }
+
+    BONE {
+      BoneID                3
+	LIGHT {
+        Type                -1 
+        Color               133 195 223
+        Reach               863
+      }         
+    }
+
+
+  }
+  KEYFRAME {
+    FrameNr                 1                        
+    Time                    2.7                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0
+      Visible	false                
+    }
+  BONE {
+    BoneID                  1                 
+    Visible		true
+      SFX {
+        SfxID                 0
+        Range               24
+        Looping             false
+      }     
+  }
+    BONE {
+      BoneID                2
+	LIGHT {
+        Type                1 
+        Color               133 195 223
+        Reach               863
+      }                 
+    }
+
+    BONE {
+      BoneID                3
+	LIGHT {
+        Type                1 
+        Color               133 195 223
+        Reach               863
+      }         
+    }
+
+}
+
+
+ANIMATION {
+  Slot                      1                        
+  Name                      "MRI Jump"         
+  Mode                      1    
+  NeedsTrigger          true     
+  TriggerOnce	false
+
+  BONE {
+    BoneID                  0                     
+    ModelID                 2                     
+  }
+  BONE {
+    BoneID                  1                      
+    ModelID                 3
+
+  }
+ BONE {
+    BoneID                  2                      
+    ModelID                 -1
+    OffsetTranslation     -385.114 147.296 0.000
+
+  }
+ BONE {
+    BoneID                  3                      
+    ModelID                 -1
+    OffsetTranslation     -219.000 147.296 0.000
+
+  }
+
+  KEYFRAME {
+    FrameNr                 0                        
+    Time                    0.1                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0
+      Visible	true                
+    }
+  BONE {
+    BoneID                  1                 
+    Visible		false
+     }     
+    BONE {
+      BoneID                2
+	LIGHT {
+        Type                -1 
+        Color               33 95 223     ;133 195 223
+        Reach               600
+      }          
+      SFX {
+        SfxID                 -1
+        Range               24
+        Looping             false
+      }            
+    }
+    BONE {
+      BoneID                3
+	LIGHT {
+        Type                -1 
+        Color               33 95 223     ;133 195 223
+        Reach               600
+      }                  
+    }
+
+  }
+  KEYFRAME {
+    FrameNr                 1                        
+    Time                    2.7                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0
+      Visible	false                
+    }
+  BONE {
+    BoneID                  1                 
+    Visible		true
+  }
+    BONE {
+      BoneID                2
+	LIGHT {
+        Type                1 
+        Color               33 95 223     ;133 195 223
+        Reach               600
+      }           
+      SFX {
+        SfxID                 1
+        Range               24
+        Looping             false
+      }           
+    }
+    BONE {
+      BoneID                3
+	LIGHT {
+        Type                -1 
+        Color               33 95 223     ;133 195 223
+        Reach               600
+      }                  
+    }
+
+}
+
+  KEYFRAME {
+    FrameNr                 2                        
+    Time                    0.1                    
+    Type                    0                        
+
+    BONE {
+      BoneID                0
+      Visible	true                
+    }
+  BONE {
+    BoneID                  1                 
+    Visible		false
+     }     
+    BONE {
+      BoneID                2
+	LIGHT {
+        Type                -1 
+        Color               33 95 223     ;133 195 223
+        Reach               600
+      }          
+      SFX {
+        SfxID                 -1
+        Range               24
+        Looping             false
+      }            
+    }
+    BONE {
+      BoneID                3
+	LIGHT {
+        Type                -1 
+        Color               33 95 223     ;133 195 223
+        Reach               600
+      }                  
+    }
+
+}

@@ -23,6 +23,22 @@ Created: 10/15/2020
 
 ____________________________________________________
 
+PATCH 4/10/22
+
+-Added .bmr mipmaps
+-Added missing wall at entrance of open livestock cage
+-Fixed shading errors on ferris wheel models
+-Removed black artifacts on popcorn particles
+-Added Visiboxes
+-Reduced vertices on: fanblade.m, ferris.m, legs.m, carraiges, 
+-Removed fangrill.ncp and slushi.ncp
+-Added missing instance to reversed mode (feed.prm)
+-Reduced polygon count of fair1.ncp
+-Revised collision of yellow tent
+-Adjusted farclip for lower graphic settings
+
+____________________________________________________
+
 Description:
 
 It's time to take a trip to the Volt County Fair! 
@@ -60,8 +76,8 @@ ____________________________________________________
 
 Stats:
 
-Faces: ~14,000
-NCP Faces: ~4,000
+Faces: 14,441
+NCP Faces: 3,138
 Development Time: 8 Months 
 
 This is our second track release, and first unique world and theme.

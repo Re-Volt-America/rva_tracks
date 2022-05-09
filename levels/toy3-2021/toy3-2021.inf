@@ -1,0 +1,36 @@
+NAME		'Toy World 3'
+DIFFICULTY      4 ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)
+
+CHALLENGE       0 48 000 ; Time in <min sec ms>
+CHALLENGEREV    0 48 000 ; Time in <min sec ms>
+
+STARTPOS	-100 0 -50 ;
+STARTPOSREV	100 0 50 ;
+STARTROT	0.0 ;
+STARTROTREV	0.5 ;
+STARTGRID	0 ;
+STARTGRIDREV	0 ; 
+FARCLIP		10000 ;
+FOGSTART	5500 ;
+FOGCOLOR	30 40 50 ;
+VERTFOGSTART	0 ;
+VERTFOGEND	0 ;
+WORLDRGBPER     100 ;
+MODELRGBPER	50 ;
+MIRRORS		0 0.40 0 128 ;
+SWEEPCAM  	1
+MP3		'Toys For The Boys.mp3'
+REDBOOK		4 9
+
+
+TEXTUREPROPS    0 1 1 0 ; A Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    1 1 1 0 ; B
+TEXTUREPROPS    2 1 1 0 ; C
+TEXTUREPROPS    3 1 1 0 ; D
+TEXTUREPROPS    4 1 1 0 ; E
+TEXTUREPROPS    5 1 1 0 ; F
+TEXTUREPROPS    6 1 1 0 ; G
+TEXTUREPROPS    7 1 1 1 ; H
+TEXTUREPROPS    8 1 1 0 ; I
+
+

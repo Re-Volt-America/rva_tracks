@@ -152,3 +152,41 @@ SPARK {
 
   TrailType       -1                           
 }
+
+SPARK {
+  ID              3                             
+  Name            "POPCORN"                   
+
+  CollideWorld    true  
+  CollideObject   true  
+  CollideCam      true       
+  HasTrail        false                
+  FieldAffect     true                   
+  Spins           true                       
+  Grows           false                   
+  Additive        false                  
+  Horizontal      false                     
+
+  Size            3.800000 3.800000         
+  UV              0.517921 0.751165           
+  UVSize          0.039766 0.039766           
+  TexturePage     48                          
+  Color           252 255 189             
+
+  Mass            0.300000                 
+  Resistance      0.010000                  
+  Friction        0.700000                   
+  Restitution     0.800000                   
+
+  LifeTime        10.000000                  
+  LifeTimeVar     0.000000                   
+
+  SpinRate        1.000000                   
+  SpinRateVar     10.000000                  
+
+  SizeVar         2.000000                     
+  GrowRate        0.000000                  
+  GrowRateVar     0.000000               
+
+  TrailType       -1                     
+}

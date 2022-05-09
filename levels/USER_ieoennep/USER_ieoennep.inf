@@ -1,0 +1,18 @@
+;----------------------------
+; Revolt .INF file structure
+;----------------------------
+
+NAME            'H(8)TY'
+DIFFICULTY		2
+STARTPOS        10000 -1250 8000
+STARTROT        0.75
+STARTGRID       3
+FARCLIP         10000
+FOGSTART        8000
+FOGCOLOR        0 0 0
+VERTFOGSTART    0
+VERTFOGEND      0
+WORLDRGBPER     100
+MODELRGBPER     100
+INSTANCERGBPER  100
+MUSIC			'levels\USER_ieoennep\custom\hiredguns_nfmmix.mp3'

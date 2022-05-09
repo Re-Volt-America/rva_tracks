@@ -1,0 +1,37 @@
+SPARK {
+  ID              22
+  Name            "FOUNTAIN"
+
+  CollideWorld    false
+  CollideObject   false
+  CollideCam      false
+  HasTrail        false
+  FieldAffect     true
+  Spins           true
+  Grows           true
+  Additive        true 
+  Horizontal      false
+
+  Size            3.000000 3.000000 
+  UV              0.750000 0.062500
+  UVSize          0.062500 0.062500 
+  TexturePage     47
+  Color                40 65 51
+
+  Mass            0.030000
+  Resistance      0.010000
+  Friction        0.200000
+  Restitution     0.200000
+
+  LifeTime        1.000000
+  LifeTimeVar     0.000000
+
+  SpinRate        0.000000
+  SpinRateVar     6.000000
+
+  SizeVar         0.000000
+  GrowRate        128.000000
+  GrowRateVar     64.000000
+
+  TrailType       -1
+}

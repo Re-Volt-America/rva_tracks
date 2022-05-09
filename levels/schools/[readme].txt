@@ -7,7 +7,7 @@
 		                            - 2 -
 									
                                  R E A D M E
-                     Version 1.31, from August 9th 2020
+                      Version 1.41, from April 9th 2022
 
   S U M M A R Y
 ═════════════════════════════════════════════════════════════════════════════
@@ -237,6 +237,12 @@ Proofreading: 607
 
   R E L E A S E   H I S T O R Y
 ═════════════════════════════════════════════════════════════════════════════
+Version 1.41 from April 13th 2022
+ + Bugfix release
+
+Version 1.4 from April 9th 2022
+ + Bugfix release
+
 Version 1.31 from October 17th 2020
  + Changed the name of the track to "School's Out 2"
  

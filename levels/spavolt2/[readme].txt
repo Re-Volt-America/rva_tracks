@@ -3,7 +3,7 @@
                \__ \ )___//(__)\(___)\  /  )(_)(  )(__  )(
                (___/(__) (__)(__)     \/  (_____)(____)(__)
                                 R E A D M E
-                  Version 1.21, from September 1st 2021
+                    Version 1.22, from January 28th 2022
 
   S U M M A R Y
 ════════════════════════════════════════════════════════════════════════════
@@ -186,6 +186,7 @@ me, because I was working on Spa-Volt instead. ;-)
 + Wichilie          For doing the AI-nodes for the regular version
 + Mr. Burguers      For doing the ViziBoxes and AI-nodes for R-version
 + L!lmexican        For doing the Cam-nodes
++ ZipperZbieracz	For Version 1.22 suggestions and testing
 
 Makeitgood and Blender help: Instant, Gotolei, Kipy, Marv, Mr. Burguers
 
@@ -232,6 +233,18 @@ Version 1.21 from September 1st, 2021
  	   - Adjusted some instance and object positions
 	   - Adjusted overall level brightness
 	   - Adjusted skybox brightness
+	   
+Version 1.22 from January 28th, 2022
+ + Adjustment release, updated on revoltworld.net 
+ + Changelog:
+	   - Fixed some repo bugs
+	   - Added some more instances
+ 	   - Adjusted some instance and object positions
+	   - Removed alternate path before the finish
+	   - Adjusted some pickup placements
+	   - Added some more lights
+	   - Implemented "Pickup Spawncount" feature
+
  
   D I S C L A I M E R
 ════════════════════════════════════════════════════════════════════════════

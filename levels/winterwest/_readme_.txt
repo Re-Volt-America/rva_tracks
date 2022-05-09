@@ -1,8 +1,8 @@
 
 THE GREAT SILENCE
-Version 1.3 from 25. June 2021
+Version 1.4 from April 9th, 2022
 
-Created by:		Jan Aínnír Mayen
+Created by:		Kiwi
 Created:		17. December 2020 - 02. January 2021
 
 Length:			583m / 545m (R)
@@ -45,7 +45,7 @@ ____________________________________________________
 
 Developers:
 
-Jan Aínnír Mayen:
+Kiwi:
 - Modeling/Re-modeling
 - Shading
 - Lights
@@ -119,7 +119,7 @@ Thanks:
 To whole Re-Volt Discord #tracks channel for your help.
 Special thanks to Tubers, Ashen Forest and BloodBTF.
 
-Very special thanks to Powerate for Version 1.3 suggestions
+Very special thanks to Powerate for Version 1.3 and Version 1.4 suggestions
 
 ____________________________________________________
 

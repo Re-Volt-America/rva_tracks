@@ -1,0 +1,1783 @@
+MODEL   0   "plane"
+MODEL   1   "plane2"
+MODEL   2   "train"
+MODEL   3   "train2"
+MODEL   4   "train3"
+MODEL   5   "body"
+MODEL   6   "arm_left"
+MODEL   7   "arm_right"
+MODEL   8   "head"
+MODEL   9   "legs"
+MODEL   10   "gatorBody"
+MODEL   11  "gatorHead"
+MODEL   12  "gatorJaw"
+
+
+;----------------------------
+; Toy World Plane
+;----------------------------
+
+ANIMATION {
+  Slot                      0                         ; Slot ID (0 to 255)
+  Name                      "Toy World Plane"         ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    36.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 0                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       1000.000 0.000 0.000       ; Offset to parent location
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    30.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 1                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -120.000 110.000    ; Offset to parent location
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    2.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        180.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        3600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    2.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        180.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        3600.000                  ; Rotation (in degrees)
+    }
+  }
+}
+
+ANIMATION {
+  Slot                      1                         ; Slot ID (0 to 255)
+  Name                      "Toy World Train"         ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 2                         ; Model ID (0 to 63, or -1)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 3                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       98.000 -136.000 330.000   ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 3                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       -98.000 -136.000 330.000  ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  3                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 4                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       98.000 -92.000 -204.000   ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  4                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 4                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       -98.000 -92.000 -204.000  ; Offset to parent location
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    20.000                    ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           0.000 0.000 -4000.000     ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -1500.000                 ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -1500.000                 ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -2500.000                 ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                4                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -2500.000                 ; Rotation (in degrees)
+    }
+  }
+}
+
+
+
+ANIMATION {
+  Slot                      2                         ; Slot ID (0 to 255)
+  Name                      "Train"         ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      0.000 1.000 0.000         ; Offset rotation axis
+    OffsetRotationAmount    -27.000                    ; Offset rotation (in degrees)
+  }
+BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 0                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+  }
+ BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 1                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -120.000 110.000    ; Offset to parent location
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    3.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        20.000                   ; Rotation (in degrees)
+      Translation           0.000 -300.000 2000.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        4600.000                  ; Rotation (in degrees)
+    }
+  }
+   KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           0.000 300.000 2500.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        2600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           0.000 400.000 2500.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        2600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           0.000 -400.000 2500.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        2600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        20.000                   ; Rotation (in degrees)
+      Translation           0.000 -800.000 2500.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        2600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 4                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        20.000                   ; Rotation (in degrees)
+      Translation           0.000 -1800.000 2500.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        2600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 5                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        20.000                   ; Rotation (in degrees)
+      Translation           0.000 -7000.000 2500.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        2600.000                  ; Rotation (in degrees)
+    }
+  }
+  
+
+ 
+  
+}
+
+
+
+;----------------------------
+; Robot
+;----------------------------
+
+ANIMATION {
+  Slot                      3                         ; Slot ID (0 to 255)
+  Name                      "Robot 1"                 ; Display name (currently unused)
+  Mode                      2                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 5                         ; BODY
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 6                         ; ARM LEFT
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -238.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  3                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 7                        ; ARM RIGHT
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -238.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  4                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 8                        ; HEAD
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       2.000 -256.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  5                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 9                        ; LEG
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -140.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  6                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 9                        ; LEG
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -140.000 -64.000    ; Offset to parent location
+  }
+   KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           5.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                5                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+
+  }
+  KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           5.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                5                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                6                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+    }
+
+  }
+  KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           5.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                5                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        21.000                  ; Rotation (in degrees)
+    }
+BONE {
+      BoneID                6                         ; ARM
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           5.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                5                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                6                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+    }
+
+  }
+  KEYFRAME {
+    FrameNr                 4                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           5.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                5                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        21.000                  ; Rotation (in degrees)
+    }
+BONE {
+      BoneID                6                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 5                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           5.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                5                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                6                         ; LEG
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+    }
+
+  }
+  KEYFRAME {
+    FrameNr                 6                         ; Number of the keyframe (0 to 255)
+    Time                    0.600                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                5                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -21.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                4                         ; HEAD
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        24.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        65.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+    }
+
+  }
+  KEYFRAME {
+    FrameNr                 7                         ; Number of the keyframe (0 to 255)
+    Time                    1.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                3                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        145.000                  ; Rotation (in degrees)
+    }
+
+  }
+   KEYFRAME {
+    FrameNr                 8                         ; Number of the keyframe (0 to 255)
+    Time                    1.400                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                3                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+
+  }
+
+  
+}
+
+;----------------------------
+; Robot 2
+;----------------------------
+
+ANIMATION {
+  Slot                      4                         ; Slot ID (0 to 255)
+  Name                      "Robot 2"                 ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 5                         ; BODY
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 6                         ; ARM LEFT
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -238.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  3                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 7                        ; ARM RIGHT
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -238.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  4                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 8                        ; HEAD
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       2.000 -256.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  5                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 9                        ; LEG
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -140.000 0.000    ; Offset to parent location
+  }
+  BONE {
+    BoneID                  6                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 9                        ; LEG
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -140.000 -64.000    ; Offset to parent location
+  }
+   KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        45.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                4                         ; HEAD
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        45.000                  ; Rotation (in degrees)
+    }
+    }
+    KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    1.100                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    }
+    KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2                         ; ARM LEFT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+    }
+    }
+    KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -90.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                4                         ; HEAD
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        90.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        45.000                  ; Rotation (in degrees)
+    }
+    }
+    KEYFRAME {
+    FrameNr                 4                         ; Number of the keyframe (0 to 255)
+    Time                    1.100                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    }
+    KEYFRAME {
+    FrameNr                 5                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                3                         ; ARM RIGHT
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+    }
+    }
+    KEYFRAME {
+    FrameNr                 6                         ; Number of the keyframe (0 to 255)
+    Time                    0.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        45.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                4                         ; HEAD
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+    }
+    }
+    KEYFRAME {
+    FrameNr                 7                         ; Number of the keyframe (0 to 255)
+    Time                    1.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        360.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                4                         ; HEAD
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -360.000                  ; Rotation (in degrees)
+    }
+    }
+    KEYFRAME {
+    FrameNr                 8                         ; Number of the keyframe (0 to 255)
+    Time                    0.700                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                4                         ; HEAD
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -360.000                  ; Rotation (in degrees)
+    }
+    }
+  }
+
+
+
+;----------------------------
+; GATOR 1
+;----------------------------
+
+
+  ANIMATION {
+  Slot                      5                         ; Slot ID (0 to 255)
+  Name                      "GATOR 1"                   ; Display name (currently unused)
+  Mode                      2                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 10                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 11                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 -128.900 71.900       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 12                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ;
+    OffsetTranslation       -41.000 -44.600 35.600       ; Offset to parent location
+  }
+
+  
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    1.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        21.000                  ; Rotation (in degrees)
+      
+    }
+    BONE {
+      BoneID                2;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        38.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1
+    Time                    1.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        45.000                  ; Rotation (in degrees)
+      
+    }
+    BONE {
+      BoneID                2;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+      
+    }
+  }
+}
+
+
+MODEL 13 "teddyBody"
+MODEL 14 "teddyHead"
+;----------------------------
+; TEDDY 1
+;----------------------------
+
+
+  ANIMATION {
+  Slot                      6                         ; Slot ID (0 to 255)
+  Name                      "TEDDY 1"                   ; Display name (currently unused)
+  Mode                      2                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 13                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 14                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+  }
+
+  
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    1.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -18.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1
+    Time                    1.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -36.000                  ; Rotation (in degrees)
+      
+    }
+  }
+}
+
+MODEL 15 "dozerBody"
+MODEL 16 "dozerPart1"
+MODEL 17 "dozerPart2"
+MODEL 18 "dozerPart3"
+;----------------------------
+; TEDDY 1
+;----------------------------
+
+
+  ANIMATION {
+  Slot                      7                         ; Slot ID (0 to 255)
+  Name                      "DOZER 1"                   ; Display name (currently unused)
+  Mode                      2                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 15                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 16                         ; Model ID (0 to 63, or -1)
+    Parent                  0
+    OffsetTranslation       21.300 -81.700 19.600       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 17                         ; Model ID (0 to 63, or -1)
+    Parent                  1
+    OffsetTranslation       9.400 -38.900 -37.400      ; Offset to parent location
+  }
+  BONE {
+    BoneID                  3                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 18                         ; Model ID (0 to 63, or -1)
+    Parent                  2
+    OffsetTranslation       0.000 16.200 -55.000       ; Offset to parent location
+  }
+
+  
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0;
+      Translation           0.000 0.000 25.000       ; Translation
+    }
+      
+  }
+  KEYFRAME {
+    FrameNr                 1
+    Time                    1.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        35.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        180.000                  ; Rotation (in degrees)
+      
+    }
+    BONE {
+      BoneID                1;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        25.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 2
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -55.000                  ; Rotation (in degrees)
+      
+    }
+    BONE {
+      BoneID                2;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        30.000                  ; Rotation (in degrees)
+      
+    }
+    BONE {
+      BoneID                3;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        50.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 3
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                3;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 4
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        40.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -40.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 5
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        160.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 6
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        -40.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        40.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        45.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 7
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                3;
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        45.000                  ; Rotation (in degrees)
+      
+    }
+  }
+}
+
+MODEL 19 "crane_1"
+MODEL 20 "crane_2"
+MODEL 21 "crane_3"
+MODEL 22 "crane_4"
+;----------------------------
+; TEDDY 1
+;----------------------------
+
+
+  ANIMATION {
+  Slot                      8                         ; Slot ID (0 to 255)
+  Name                      "CRANE 1"                   ; Display name (currently unused)
+  Mode                      2                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 19                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 20                         ; Model ID (0 to 63, or -1)
+    Parent                  0
+    RotationAxis          0.000 1.000 0.000         ; Rotation axis
+    RotationAmount        25.000                   ; Rotation (in degrees)
+    OffsetTranslation       88.900 0.000 45.300       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  2                        ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 21                         ; Model ID (0 to 63, or -1)
+    Parent                  1
+    OffsetTranslation       0.000 -68.300 5.300       ; Offset to parent location
+  }
+   BONE {
+    BoneID                  3                        ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 22                         ; Model ID (0 to 63, or -1)
+    Parent                  2
+    OffsetTranslation       -277.100 -102.000 -8.400       ; Offset to parent location
+  }
+KEYFRAME {
+    FrameNr                 0
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+    
+  }
+  KEYFRAME {
+    FrameNr                 1
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2;
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -30.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3;
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        30.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 2
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        125.000                  ; Rotation (in degrees)
+    }
+    
+  }
+  KEYFRAME {
+    FrameNr                 3
+    Time                    2.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2;
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        35.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3;
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -35.000                  ; Rotation (in degrees)
+    }
+  }
+}
+
+MODEL 23 "nellyBody"
+MODEL 24 "nellyHead"
+;----------------------------
+; TEDDY 1
+;----------------------------
+
+
+  ANIMATION {
+  Slot                      9                         ; Slot ID (0 to 255)
+  Name                      "NELLY 1"                   ; Display name (currently unused)
+  Mode                      2                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 23                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 24                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 10.000 0.000       ; Offset to parent location
+  }
+
+  
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    1.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -18.000                  ; Rotation (in degrees)
+      
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1
+    Time                    1.000                  
+    Type                    3                             ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1;
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -26.000                  ; Rotation (in degrees)
+      
+    }
+  }
+}
+
+;----------------------------
+; Toy World Plane 3
+;----------------------------
+
+ANIMATION {
+  Slot                      10                         ; Slot ID (0 to 255)
+  Name                      "Plane 3"         ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 0                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 1                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -120.000 110.000    ; Offset to parent location
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    2.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        3600.000                  ; Rotation (in degrees)
+    }
+  }
+}
+
+MODEL 25 "copter"
+MODEL 26 "copter2"
+MODEL 27 "copter3"
+;----------------------------
+; Copter
+;----------------------------
+
+ANIMATION {
+  Slot                      11                         ; Slot ID (0 to 255)
+  Name                      "Copter"         ; Display name (currently unused)
+  Mode                      2                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 25                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 0.000 0.000       ; Offset to parent location
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 26                        ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -328.200 62.800       ; Offset to parent location
+  }
+  BONE {
+    BoneID                  3                        ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 27                        ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       1.580 -300.100 -200.000       ; Offset to parent location
+  }
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    1.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1000.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1000.000                  ; Rotation (in degrees)
+    }
+  }
+KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    0.440                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           0.000 -20.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        500.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        500.000                  ; Rotation (in degrees)
+    }
+  }
+KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           100.000 -200.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -25.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           200.000 -100.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -45.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 4                         ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           100.000 -25.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        -15.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 5                        ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           200.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        60.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 6                        ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           50.000 100.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        30.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 7                        ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           25.000 100.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        10.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+   KEYFRAME {
+    FrameNr                 8                       ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           12.000 50.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        5.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 9                       ; Number of the keyframe (0 to 255)
+    Time                    1.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           6.000 25.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 0.000 0.000       ; Translation
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        2.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                3                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        1360.000                  ; Rotation (in degrees)
+    }
+  }
+  
+}
+
+;----------------------------
+; Plane 4
+;----------------------------
+
+ANIMATION {
+  Slot                      12                         ; Slot ID (0 to 255)
+  Name                      "Plane Tunnel"         ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    0.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 0                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       1000.000 0.000 0.000       ; Offset to parent location
+    OffsetRotationAxis      0.000 1.000 0.000         ; Offset rotation axis
+    OffsetRotationAmount    90.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 1                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -120.000 110.000    ; Offset to parent location
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    5.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           -5700.000 -200.000 -1700.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        10600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    5.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           -3700.000 800.000 -1100.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          1.000 0.000 0.000         ; Rotation axis
+      RotationAmount        25.000                   ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        10600.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    2.200                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           -2000.000 -100.000 -25.000       ; Translation
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        5000.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    6.200                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           -6000.000 -810.000 -25.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        15.000                   ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        15000.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 4                         ; Number of the keyframe (0 to 255)
+    Time                    3.000                    ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        0.000                   ; Rotation (in degrees)
+      Translation           -2000.000 1000.000 -25.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          1.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -35.000                   ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        5000.000                  ; Rotation (in degrees)
+    }
+  }
+  
+}
+
+
+;----------------------------
+; Toy Plane Simple
+;----------------------------
+
+ANIMATION {
+  Slot                      13                         ; Slot ID (0 to 255)
+  Name                      "Toy World Plane"         ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetRotationAxis      1.000 0.000 0.000         ; Offset rotation axis
+    OffsetRotationAmount    90.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 0                         ; Model ID (0 to 63, or -1)
+    Parent                  0                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       7500.000 0.000 0.000       ; Offset to parent location
+    OffsetRotationAxis      0.000 0.000 1.000         ; Offset rotation axis
+    OffsetRotationAmount    90.000                    ; Offset rotation (in degrees)
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 1                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+    OffsetTranslation       0.000 -120.000 110.000    ; Offset to parent location
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    11.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        360.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        30.000                   ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        10000.000                  ; Rotation (in degrees)
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    11.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        360.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        5.000                   ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        10000.000                  ; Rotation (in degrees)
+    }
+  }
+   KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    11.500                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 1.000 0.000         ; Rotation axis
+      RotationAmount        360.000                   ; Rotation (in degrees)
+      Translation           0.000 0.000 0.000       ; Translation
+    }
+    BONE {
+      BoneID                1                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        -260.000                   ; Rotation (in degrees)
+    }
+    BONE {
+      BoneID                2                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        10000.000                  ; Rotation (in degrees)
+    }
+  }
+}

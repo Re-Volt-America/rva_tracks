@@ -1,4 +1,8 @@
 {
+    PICKUPS {
+      SpawnCount      99 0
+    }
+	
 	MATERIAL {
 	  ID              3
 	  Name            "BUMPY INDOOR DRY"

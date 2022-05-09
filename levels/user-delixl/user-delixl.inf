@@ -1,0 +1,21 @@
+;---------------------------------------------
+; User-Deli: XL, an extended creation for RVA by BGM
+; Special thanks to Zeino for helping out with trackzones and other stuffs!!!!
+;---------------------------------------------
+
+NAME            'User-Deli: XL'
+STARTPOS        0.000000 -500.000000 12000.000000
+STARTPOSREV     0.000000 -500.000000 12000.000000
+STARTROT        0.000000
+STARTROTREV     0.500000
+STARTGRID       3
+STARTGRIDREV    3
+FARCLIP         10000
+FOGSTART        8000
+FOGCOLOR        0 0 0
+VERTFOGSTART    0
+VERTFOGEND      0
+WORLDRGBPER     100
+MODELRGBPER     100
+INSTANCERGBPER  100
+DIFFICULTY		4
