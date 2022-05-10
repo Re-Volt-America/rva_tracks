@@ -1,7 +1,10 @@
-;---------------------------------------------
-; User-Deli: XL, an extended creation for RVA by BGM
-; Special thanks to Zeino for helping out with trackzones and other stuffs!!!!
-;---------------------------------------------
+;----------------------------------------------------------------------------------
+;
+;                               User-Deli: XL v1.1
+;
+; User-Deli: XL, an extended version of User-Deli. Created for RVA by BGM
+; - Special thanks to Zeino for helping out with trackzones and other stuffs!!!!
+;----------------------------------------------------------------------------------
 
 NAME            'User-Deli: XL'
 STARTPOS        0.000000 -500.000000 12000.000000
