@@ -29,7 +29,7 @@ task version: [:package] do
     "\t\"rva_tracks\":",
     "\t{",
     "\t\t\"description\": \"#{RVATracks::DESCRIPTION}\",",
-    "\t\t\"version\": #{RVATracks::VERSION},",
+    "\t\t\"version\": \"#{RVATracks::VERSION}\",",
     "\t\t\"checksum\": \"#{checksum}\",",
     "\t\t\"url\": \"#{RVATracks::URL}\"",
     "\t}",
