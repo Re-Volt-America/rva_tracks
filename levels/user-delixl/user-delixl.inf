@@ -1,9 +1,10 @@
 ;----------------------------------------------------------------------------------
 ;
-;                               User-Deli: XL v1.1
+;                               User-Deli: XL v1.2
 ;
 ; User-Deli: XL, an extended version of User-Deli. Created for RVA by BGM
 ; - Special thanks to Zeino for helping out with trackzones and other stuffs!!!!
+; - [1.2] ZEINO THANKS FOR FIXING THE X!!!
 ;----------------------------------------------------------------------------------
 
 NAME            'User-Deli: XL'
@@ -22,3 +23,4 @@ WORLDRGBPER     100
 MODELRGBPER     100
 INSTANCERGBPER  100
 DIFFICULTY		4
+CHALLENGE       0 33 100
