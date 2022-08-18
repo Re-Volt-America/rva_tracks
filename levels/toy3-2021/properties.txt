@@ -1,0 +1,46 @@
+SPARK {
+  ID              15
+  Name            "SMOKE TYPE 5 LONG"
+
+  CollideWorld    true
+  CollideObject   true
+  CollideCam      false
+  HasTrail        false
+  FieldAffect     false
+  Spins           true
+  Grows           true
+  Additive        true
+  Horizontal      false
+
+  Size            12.000000 12.000000
+  UV              0.000000 0.000000
+  UVSize          0.250000 0.250000
+  TexturePage     47
+  Color           64 64 64
+
+  Mass            0.030000
+  Resistance      0.002000
+  Friction        0.000000
+  Restitution     0.000000
+
+  LifeTime        5.500000
+  LifeTimeVar     5.100000
+
+  SpinRate        0.000000
+  SpinRateVar     6.000000
+
+  SizeVar         2.000000
+  GrowRate        0.000000
+  GrowRateVar     36.000000
+
+  TrailType       -1
+}
+
+SPARK {
+  ID              17
+  Name            "gator fire"
+
+  CollideWorld    true
+  LifeTime        0.900000
+  LifeTimeVar     0.800000
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<title>Toy World 3 | RVGL</title>
+
+<meta name="keywords" content="Toy World, RVGL, Revolt, Re-volt, track, racetrack, Blender, racing, track design, level design, javildesign">
+<meta property="og:title" content="Re-volt Track Toy World 3">
+<meta property="og:site_name" content="Re-volt Track Toy World 3">
+<meta property="og:url" content="https://javildesign.com/revolt/toy-world-3.html">
+<meta property="og:description" content="Toy World 3 a Re-volt Race Track">
+<meta property="og:image" content="https://javildesign.com/revolt/images/toy-world-3_1.jpg">
+<meta property="og:image:secure_url" content="https://javildesign.com/revolt/images/toy-world-3_1.jpg">
+<meta property="og:image:type" content="image/jpeg"> <!-- recommend type -->
+<meta property="og:image:alt" content="https://javildesign.com/revolt/images/toy-world-3_1.jpg">
+<meta property="og:image:width" content="1500"> <!-- recommend size -->
+<meta property="og:image:height" content="800"> <!-- recommend size -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="description" content="Re-volt Track Toy World 3">
+<meta name="author" content="javildesign">
+
+<link rel="stylesheet" href="https://javildesign.com/revolt/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+<link rel="icon" type="image/png" href="https://javildesign.com/revolt/images/power-up.png"/>
+
+<body class="w3-content w3-border-left w3-border-right">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+
+    <ul class="sidebarList">
+        <li class="w3-button w3-special w3-size"><span class="power"><img src="https://javildesign.com/revolt/images/power-up.png"></span><a href="https://www.gog.com/en/game/revolt">Re-volt: The Game</a></li>  
+    </ul>
+
+    <hr>
+    
+    <h3><strong>Track Details:</strong></h3>
+    <p class="tech">Name: Toy World 3</p>
+    <p class="tech">Released: August 2021</p>
+    <p class="tech">Author: javildesign</p>
+    <hr>
+    <h6 class="details">Technical Details:</h6>
+    
+      <p class="tech">Track Length: 638 Meter</p>
+      <p class="tech">Total Faces World: 55.648</p>
+      <p class="tech">Total Faces Collision: 28.742</p>
+      <p class="tech">Reverse Mode: Yes</p>
+      <p class="tech">Time Trial: Yes</p>
+      <p class="tech">RVGL only: Yes (21.0905a and up)</p>
+    
+
+        <hr>
+      <h6 class="details">Links:</h6>
+
+      <ul class="sidebarList">
+        <li class="w3-button w3-blue w3-size"><a href="https://javildesign.com/revolt/work-in-progress.html">Work in progress</a></li>  
+          <li class="w3-button w3-red w3-size"><a href="#target">Changelog Toy World 3</a></li>
+          <li class="w3-button w3-green w3-size"><a href="https://www.revoltworld.net/dl/toy-world-3/">Toy World 3 on RVW</a></li>
+          <li class="w3-button w3-grey w3-size"><a href="https://www.revoltworld.net">Revoltworld.net</a></li>  
+    </ul>
+
+        <hr>
+
+        <h6 class="details">Other tracks by me:</h6>
+        <ul class="sidebarList">
+          <li class="w3-button w3-green w3-extra current"><a href="https://javildesign.com/revolt/toy-world-3.html">2021 Toy World 3</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/lava-rock.html">2021 Lava Rock</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/urbanx.html">2020 urbanX</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/spaceship.html">2020 Spaceship</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/cliff-mountain-trail.html">2020 Cliff Mountain Trail</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/the-reactor.html">2020 The Reactor</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/wildland.html">2020 Wildland</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/route-77.html">2019 Route-77</a></li>
+          <li class="w3-button w3-green w3-extra"><a href="https://javildesign.com/revolt/the-bunker.html">2014 The Bunker</a></li>
+
+        </ul>
+  </div>
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <span class="w3-bar-item">Track Details</span>
+  <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="menu">≡</i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white" style="margin-left:260px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:80px"></div>
+
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <h2 class="w3-text-green" style="float: right;"><strong>Toy World 3</strong></h2>
+    <div class="w3-display-container mySlides">
+<a href="https://javildesign.com/revolt/images/toy-world-3_1.jpg" data-fancybox="gallery">
+    <img src="https://javildesign.com/revolt/images/toy-world-3_1.jpg" style="width:100%;margin-bottom:-6px"></a>
+      <div class="w3-display-bottomleft w3-container w3-black">
+        
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+<a href="https://javildesign.com/revolt/images/toy-world-3_2.jpg" data-fancybox="gallery">
+    <img src="https://javildesign.com/revolt/images/toy-world-3_2.jpg" style="width:100%;margin-bottom:-6px"></a>
+      <div class="w3-display-bottomleft w3-container w3-black">
+        
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+<a href="https://javildesign.com/revolt/images/toy-world-3_3.jpg" data-fancybox="gallery">
+    <img src="https://javildesign.com/revolt/images/toy-world-3_3.jpg" style="width:100%;margin-bottom:-6px"></a>
+      <div class="w3-display-bottomleft w3-container w3-black">
+       
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+<a href="https://javildesign.com/revolt/images/toy-world-3_4.jpg" data-fancybox="gallery">
+    <img src="https://javildesign.com/revolt/images/toy-world-3_4.jpg" style="width:100%;margin-bottom:-6px"></a>
+      <div class="w3-display-bottomleft w3-container w3-black">
+       
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="https://javildesign.com/revolt/images/toy-world-3_1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="https://javildesign.com/revolt/images/toy-world-3_2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="https://javildesign.com/revolt/images/toy-world-3_3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="https://javildesign.com/revolt/images/toy-world-3_4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <h4><strong>About Toy World 3</strong></h4>
+    <div class="w3-row w3-large">
+      <p class="about">This track is created for the summer contest 2021 of <a href="https://www.revoltworld.net/">revoltworld.net</a>.
+        <br>The track is based on Toy World 2 and I used all the elements from that track to create a whole new world.
+Lighting is done with vertex baking (sun and some point lights) and with a lot of manual adjustments.
+Most instance elements are dropped to the ground with help of Blenders rigid body system.
+I transformed a lot of static objects to custom animation, like the dozer, gator, bear, nelly and robot. 
+I also added several new animations like different toy planes and helicopter.
+Beware of the planes, they can be dangerous while driving.
+ <p class="about">The track is RVGL only. (21.0905a and up!)</p><p class="about">Have fun on this track!</p>
+    </div>
+    <hr>
+
+      <h4><strong>Software and extra:</strong></h4>
+    <div class="w3-row w3-large">
+      <ul>
+        <li>Blender 2.73/2.79/2.93</li>
+     <li>Adobe Photoshop</li>
+     <li>Elements from the original Re-volt track Toy World 2</li>
+     <li><a href="https://github.com/Dummiesman/ReVoltBlenderAddon">Blender 2.8+ Plug-in</a>, created by Dummiesman</li>
+     <li><a href="https://github.com/Re-Volt/re-volt-addon">Blender 2.79 Plug-in</a>, created by Marv</li>
+     <li>Blender 2.73 Plug-in, created by Jigebren</br> .fob (and custom animation), .taz, .vis placement</li>
+     <li>Audacity</li>
+    </ul>
+    </div>
+    <hr>
+    <h4><strong>Copyright and Credits</strong></h4>
+    <div class="w3-row w3-large">
+      <p class="ip">You are free to modify or adapt any of these files without my permission, but it would be appreciated if you give appropriate credit and a link back to my website. Please do not use the material for commercial purposes. Please contact me via <a href="https://javildesign.com/contact.php">this form</a> if you have any questions.</p>
+      <ul>
+        <li>Toy World theme design by Acclaim and their original creators</li>
+        <li>aircond1.wav adjusted with Audacity (duration)</li>
+     
+    </ul>
+    </div>
+    <hr>
+    
+    <h4><strong>Special Thanks To</strong></h4>
+    <div class="w3-row w3-large">
+      
+     <ul>
+     <li>Huki for testing and technical assistance</li>
+     <li>Tubers for testing and some artwork</li> 
+      <li>Dummiesman for the awesome new Blender Plugin</li>
+      </ul> 
+  </div>
+  <hr>
+
+<h4 id="target"><strong>Changelog</strong></h4>
+    <div class="w3-row w3-large">
+      <ul class="list list-icons">
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag fixed">fixed</span>
+          <span class="ownLine">
+            <span class="tag box">toy-world-3.vis</span>
+            <span class="text">visibox issue on reverse</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag fixed">fixed</span>
+          <span class="ownLine">
+            <span class="tag box">toy-world-3.fob</span>
+            <span class="text">Floated train (εzαι)</span>
+          </span>
+        </li>
+         <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag adjusted">adjusted</span>
+          <span class="ownLine">
+            <span class="tag box">toy3-2021f.bmp</span>
+            <span class="text">adaption for gator visuals</span>
+          </span>
+        </li>
+         <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag adjusted">adjusted</span>
+          <span class="ownLine">
+            <span class="tag box">gatorHead.m</span>
+            <span class="text">adjusted visuals (/custom)</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag added">added</span>
+          <span class="ownLine">
+            <span class="tag box">gatorJawPurple.m</span>
+            <span class="text">added to (/custom)</span>
+          </span>
+        </li>
+         <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag added">added</span>
+          <span class="ownLine">
+            <span class="tag box">gatorHeadPurple.m</span>
+            <span class="text">added to (/custom)</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag added">added</span>
+          <span class="ownLine">
+            <span class="tag box">gatorBodyPurple.ncp</span>
+            <span class="text">added to (/custom)</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag added">added</span>
+          <span class="ownLine">
+            <span class="tag box">gatorBodyPurple.m</span>
+            <span class="text">added to (/custom)</span>
+          </span>
+        </li>
+         <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag added">added</span>
+          <span class="ownLine">
+            <span class="tag box">aircond1.wav</span>
+            <span class="text">added soundfx for custom animation (/custom)</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag added">added</span>
+          <span class="ownLine">
+            <span class="tag box">empty.m</span>
+            <span class="text">custom animation object (/custom)</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag added">added</span>
+          <span class="ownLine">
+            <span class="tag box">properties.txt</span>
+            <span class="text">Smoke and fire properties</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag adjusted">adjusted</span>
+          <span class="ownLine">
+            <span class="tag box">toy-world-3.fob</span>
+            <span class="text">Re-positioned some objects (normal/reverse)</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 11, 2022</span>
+          <span class="tag adjusted">adjusted</span>
+          <span class="ownLine">
+            <span class="tag box">custom_animations.txt</span>
+            <span class="text">Added purple gator and fire/smoke fx</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 10, 2022</span>
+          <span class="tag adjusted">Adjusted</span>
+          <span class="ownLine">
+            <span class="tag box">toy-world-3.ncp</span>
+            <span class="text">Reduced poly count by 2098 faces</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 10, 2022</span>
+          <span class="tag adjusted">Adjusted</span>
+          <span class="ownLine">
+            <span class="tag box">toy-world-3.w</span>
+            <span class="text">Reduced poly count by 3501 faces / visuals adjustments</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 10, 2022</span>
+          <span class="tag fixed">FIXED</span>
+          <span class="ownLine">
+            <span class="tag box">toy-world-3.fob</span>
+            <span class="text">Position of planes (normal/reverse)</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 10, 2022</span>
+          <span class="tag fixed">FIXED</span>
+          <span class="ownLine">
+            <span class="tag box">custom_animations.txt</span>
+            <span class="text">Planes turned off for Time Trial</span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 3, 2022</span>
+          <span class="tag fixed"><s>FIXED</s></span>
+          <span class="ownLine">
+            <span class="tag box">custom_animations.txt</span>
+            <span class="text"><s>Bad planes landed!</s></span>
+          </span>
+        </li>
+        <li>
+          <span class="tag1 date">June 3, 2022</span>
+          <span class="tag adjusted"><s>ADJUSTED</s></span>
+          <span class="ownLine">
+            <span class="tag box">toy-world-3.FOB</span>
+            <span class="text"><s>Position of planes (normal/reverse)</s></span>
+          </span>
+        </li>
+
+    </ul>
+     
+   
+    
+    </div>
+    <hr>
+
+
+  
+  
+  <footer class="w3-container w3-padding-16" style="margin-top:32px; text-align: center;">Want your own track page like this? <a class="move" href="https://javildesign.com/contact.php" title="contact" target="_blank" class="w3-hover-text-green">Let me know!</a>
+    <p class="author"><code>Copyright © 2022 javildesign.com</code></p></footer>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+</body>
+</html>
