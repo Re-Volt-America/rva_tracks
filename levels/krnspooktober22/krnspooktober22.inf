@@ -1,0 +1,27 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME                    'Spooktober Super Special Stage'     ;The name of the level as seen in-game
+STARTPOS                180 0 -650                           ;Start position of the car (x, y, z)
+STARTPOSREV             1500 0 -350                          ;Start position of the car (x, y, z)
+STARTROT                0.75                                 ;Start rotation of the car (0 - 1)
+STARTROTREV             0.25                                 ;Start rotation of the car (0 - 1)
+DIFFICULTY              3                                    ;Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)
+OBTAIN                  0
+GAMETYPE                0
+CHALLENGE               0 55 000
+CHALLENGEREV            0 55 000
+FARCLIP                 60000                                ;Far clipping distance (draw distance)
+FOGSTART                50000                                ;Fog start (slightly less than FARCLIP)
+FOGCOLOR                192 192 192                          ;Fog and background color (RGB)
+VERTFOGSTART            0                                    ;Vertical fog start (as in rooftops)
+VERTFOGEND              0                                    ;Vertical fog end (as in rooftops)
+WORLDRGBPER             100                                  ;RGB percent of original world gouraud (0 is dark)
+MODELRGBPER             100                                  ;RGB percent of original model (cars, etc.) gouraud
+INSTANCERGBPER          80                                   ;RGB percent of original instance (decorations, etc.) gouraud
+MIRRORS                 0 0.75 0 256                         ;Type - mix - intensity start - distance
+MUSIC                   'levels\krnspooktober22\music'       ;supported formats are mp3, ogg and wav
+REDBOOK                 1 3                                  ;Redbook soundtrack if redbook folder is present. Two values, first and last track.
+SHADOWBOX               -96                                  ;Changes the contrast/brightness or the shadows on the track, default -96.
+ROCK                    0 0 0 0                              ;Rocking effect like on Toytanic.

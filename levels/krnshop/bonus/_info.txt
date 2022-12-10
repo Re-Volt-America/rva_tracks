@@ -1,0 +1,3 @@
+This directory contains alternate colors for the elevator interface.
+To replace the original one, rename the one you want to "krnshopq.bmp" and move it into the custom folder.
+There is also a backup for the default one, named "default.bmp".

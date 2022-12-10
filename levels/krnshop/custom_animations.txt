@@ -1,0 +1,586 @@
+MODEL   0   "liftbase"
+MODEL   1   "liftmain"
+MODEL   2   "outdoorl"
+MODEL   3   "outdoorr"
+MODEL   4   "indoorl"
+MODEL   5   "indoorr"
+MODEL   6   "bigdoor"
+
+;--------------------------------------------------------
+; Elevator
+;--------------------------------------------------------
+
+; Left door is the door on your left when you are in front of the elevator.
+
+ANIMATION {
+  Slot                      0                         ; Slot ID (0 to 255)
+  Name                      "Elevator"                ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+  NeedsTrigger              false                     ; whether it has to be triggered to start
+
+  ; Main part
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 0                         ; Model ID (0 to 63, or -1)
+  }
+
+  ; The lift itself (invisible here, the model has its own animation)
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+  }
+
+  ; Outer left door (level 0)
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 2                         ; Model ID (0 to 63, or -1)
+  }
+
+  ; Outer right door (level 0)
+  BONE {
+    BoneID                  3                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 3                         ; Model ID (0 to 63, or -1)
+  }
+
+  ; Outer left door (level 1)
+  BONE {
+    BoneID                  4                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 2                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 -1970.000 0.000     ; Initial offset
+  }
+
+  ; Outer right door (level 1)
+  BONE {
+    BoneID                  5                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 3                         ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 -1970.000 0.000     ; Initial offset
+  }
+
+  ; Inner left door
+  BONE {
+    BoneID                  6                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 4                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+  }
+
+  ; Outer right door
+  BONE {
+    BoneID                  7                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 5                         ; Model ID (0 to 63, or -1)
+    Parent                  1                         ; Body part parent ID; must be smaller than the bone ID; not present at the main body part
+  }
+
+  ;--------------------------------------------------------
+  ; Elevator moves from level 0 to level 1
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    4.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 -1970.000 0.000     ; Translation
+    }
+  }
+
+  ;--------------------------------------------------------
+  ; Open the doors at level 1
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                4                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+
+    BONE {
+      BoneID                5                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+
+    BONE {
+      BoneID                6                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+
+    BONE {
+      BoneID                7                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+  }
+
+  ;--------------------------------------------------------
+  ; Wait 3 seconds
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    3.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+  }
+
+  ;--------------------------------------------------------
+  ; Close the doors at level 1
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                4                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+
+    BONE {
+      BoneID                5                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+
+    BONE {
+      BoneID                6                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+
+    BONE {
+      BoneID                7                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+  }
+
+  ;--------------------------------------------------------
+  ; Elevator moves from level 1 to level 0
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 4                         ; Number of the keyframe (0 to 255)
+    Time                    4.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      Translation           0.000 1970.000 0.000      ; Translation
+    }
+  }
+
+  ;--------------------------------------------------------
+  ; Open the doors at level 0
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 5                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+
+    BONE {
+      BoneID                3                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+
+    BONE {
+      BoneID                6                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+
+    BONE {
+      BoneID                7                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+  }
+
+  ;--------------------------------------------------------
+  ; Wait 3 seconds
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 6                         ; Number of the keyframe (0 to 255)
+    Time                    3.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+  }
+
+  ;--------------------------------------------------------
+  ; Close the doors at level 0
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 7                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+
+    BONE {
+      BoneID                3                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+
+    BONE {
+      BoneID                6                         ; Body part ID
+      Translation           0.000 0.000 530.000       ; Translation
+    }
+
+    BONE {
+      BoneID                7                         ; Body part ID
+      Translation           0.000 0.000 -530.000      ; Translation
+    }
+  }
+}
+
+;--------------------------------------------------------
+; Doors
+;--------------------------------------------------------
+
+ANIMATION {
+  Slot                      1                         ; Slot ID (0 to 255)
+  Name                      "Door"             	      ; Display name (currently unused)
+  Mode                      1                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+  NeedsTrigger              true                      ; whether it has to be triggered to start
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 6                         ; Model ID (0 to 63, or -1)
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    3.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           0.000 -1500.000 0.000     ; Translation
+    }
+  }
+}
+
+;--------------------------------------------------------
+; Lights
+;--------------------------------------------------------
+
+ANIMATION {
+  Slot                      2                         ; Slot ID (0 to 255)
+  Name                      "Lights"                  ; Display name (currently unused)
+  Mode                      1                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+  NeedsTrigger              false                     ; whether it has to be triggered to start
+
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+  }
+
+  BONE {
+    BoneID                  1                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetTranslation       2355.000 0.000 0.000      ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  2                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetTranslation       5295.000 0.000 0.000      ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  3                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 -2760.000     ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  4                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetTranslation       2355.000 0.000 -2760.000  ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  5                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetTranslation       0.000 0.000 -2760.000     ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  6                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetTranslation       5175.000 0.000 -3260.000  ; Offset to parent location
+  }
+
+  BONE {
+    BoneID                  7                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 -1                        ; Model ID (0 to 63, or -1)
+    OffsetTranslation       5175.000 0.000 1500.000  ; Offset to parent location
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    3.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                1                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                2                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                3                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                4                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                5                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                6                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                7                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               -256 -256 -256            ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               7000                      ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+  }
+
+  KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    2.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                3                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+  }
+
+  KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    1.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                1                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                4                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+  }
+
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    0.600                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                2                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                5                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+  }
+
+  KEYFRAME {
+    FrameNr                 4                         ; Number of the keyframe (0 to 255)
+    Time                    0.300                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                6                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+
+    BONE {
+      BoneID                7                         ; Body part ID
+      LIGHT {
+        Type                0                         ; Light type (0 - omni, 1 - omni normal, 2 - spot, 3 - spot normal, or -1 to disable)
+        Color               0 0 0                     ; Light color (RGB values, -1024 to 1024 for each component)
+        Reach               0                         ; Light reach distance
+        ConeSize            0                         ; Cone size for spot lights (1 to 180)
+        FlickerSpeed        0                         ; Flicker speed (1 to 255, 0 to disable)
+      }
+    }
+  }
+}
+
+;--------------------------------------------------------
+; Elevator 2
+;--------------------------------------------------------
+
+ANIMATION {
+  Slot                      3                         ; Slot ID (0 to 255)
+  Name                      "Elevator 2"                ; Display name (currently unused)
+  Mode                      0                         ; 0: loop / 1: animate a single time, stopping after the last frame / 2: back and forth (reverse after last keyframe)
+  NeedsTrigger              false                     ; whether it has to be triggered to start
+
+  ; The lift itself (invisible here, the model has its own animation)
+  BONE {
+    BoneID                  0                         ; Body part ID (0 to 15); part 0 is the main body part
+    ModelID                 1                         ; Model ID (0 to 63, or -1)
+  }
+
+  ;--------------------------------------------------------
+  ; Elevator moves from level 0 to level 1
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    4.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           0.000 -1970.000 0.000     ; Translation
+    }
+  }
+
+  ;--------------------------------------------------------
+  ; Open the doors at level 1 (2 seconds) + Wait 3 seconds + Close the doors at level 1 (2 seconds)
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 1                         ; Number of the keyframe (0 to 255)
+    Time                    7.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+  }
+
+  ;--------------------------------------------------------
+  ; Elevator moves from level 1 to level 0
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 2                         ; Number of the keyframe (0 to 255)
+    Time                    4.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      Translation           0.000 1970.000 0.000      ; Translation
+    }
+  }
+
+  ;--------------------------------------------------------
+  ; Open the doors (2 seconds) + Wait 3 seconds + Close the doors (2 seconds)
+  ;--------------------------------------------------------
+
+  KEYFRAME {
+    FrameNr                 3                         ; Number of the keyframe (0 to 255)
+    Time                    7.000                     ; Time (in seconds) since previous keyframe
+    Type                    3                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+  }
+}

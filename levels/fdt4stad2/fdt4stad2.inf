@@ -1,0 +1,26 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME                   'RC Stadium 2'                       ;The name of the level as seen in-game
+CHALLENGE	00 28 500
+CHALLENGEREV	00 29 000
+STARTPOS               -350 0 -4500                             ;Start position of the car (x, y, z)
+STARTPOSREV            -350 -100 -5750                              ;Start position of the car in reverse mode
+STARTROT               0.5                                ;Start rotation of the car (0 - 1)
+STARTROTREV            0                                  ;Start rotation of the car in reverse mode (0 - 1)
+STARTGRID		3			;Starting grid type
+STARTGRIDREV		3			;Starting grid type
+FARCLIP                50000                              ;Far clipping distance (draw distance)
+FOGSTART               45000                              ;Fog start (slightly less than FARCLIP)
+FOGCOLOR               0 0 0                              ;Fog and background color (RGB)
+VERTFOGSTART           0                                  ;Vertical fog start (as in rooftops)
+VERTFOGEND             0                                  ;Vertical fog end (as in rooftops)
+WORLDRGBPER            50                                ;RGB percent of original world gouraud (0 is dark)
+MODELRGBPER            50                                ;RGB percent of original model (cars, etc.) gouraud
+INSTANCERGBPER         80                                 ;RGB percent of original instance (decorations, etc.) gouraud
+MIRRORS                0 0.75 0 256                       ;Type - mix - intensity start - distance
+SWEEPCAM	1
+REDBOOK		4 9
+ROCK                   0 0 0 0                            ;Rocking effect like on Toytanic.
+DIFFICULTY	2

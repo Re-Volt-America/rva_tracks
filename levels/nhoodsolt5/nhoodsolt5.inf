@@ -1,0 +1,24 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME		'Toys in the Night';The name of the level as seen in-game
+STARTPOS	-22000 600 -22000 ;Start position of the car
+STARTPOSREV	-24000 500 -23500 ;Start position of the car
+STARTROT	0.50		;Start rotation of the car (0 - 1)
+STARTROTREV	0.03		;Start rotation of the car (0 - 1)
+FARCLIP		33000		;Far clipping distance (draw distance)
+FOGSTART	25000		;Fog start (slightly less than FARCLIP)
+FOGCOLOR	0 44 92 	;Fog and background color
+VERTFOGSTART	0		;Vertical fog start (as in rooftops)
+VERTFOGEND	0		;Vertical fog end (as in rooftops)
+WORLDRGBPER     30             ;RGB percent of original world gouraud
+MODELRGBPER	60		;RGB percent of original model gouraud
+INSTANCERGBPER	30		;RGB percent of original instance gouraud
+MIRRORS		0 0.85 0 256	;Type - mix - intensity start - distance
+REDBOOK		8 9
+SWEEPCAM	1
+CHALLENGE	00 37 00
+CHALLENGEREV	00 36 00
+OBTAIN		1
+DIFFICULTY	1
