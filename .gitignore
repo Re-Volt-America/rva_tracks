@@ -13,3 +13,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+
+# Packaging
+*.zip
+packages.json
