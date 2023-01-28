@@ -50,6 +50,62 @@ City ambience, Cement mixer and bird take-off sounds taken from bigsoundbank.com
 ;	      CHANGELOG
 ;====================================
 
+UPDATED ON 06/17/2022
+---------------------
+
+• World and Collision Files
+
++ Mistextured or detached tree trunk parts fixed
++ Textures with Dutch text translated back to English
++ Small out of bounds holes in the mesh fixed
+
+• In-Game Editor
+
++ Pos nodes issue when hugging the metal fence in the junkyard section fixed
++ Missing polygon and collision on top of the ecobin instance added
++ Floating scenery instances are now back on the ground
+
+• Track Information File
+
++ MUSIC line removed altogether
+
+• Other
+
++ Broken Tatooine skybox fixed
+
+
+UPDATED ON 12/15/2021
+---------------------
+
+• World and Collision Files
+
++ Many weird/over simplified/non planar collisions fixed
++ Crates and barrels in the junkyard area rearranged to reduce invisible walls confusion
++ Junkyard's bridge legs moved away from the raceline, improving the flow and fixing the blind turn in reversed mode
++ Derelict house entrance widened to make oil slick dodging easier
+
+• In-Game Editor
+
++ Reversed mode star moved to the normal mode star location
++ Added shadowboxes around the digger
++ Fixed shadowboxes near the crashed car
++ Pick-ups placement changed to reward a bit more the players driving through the derelict house
+
+
+UPDATED ON 01/08/2021
+---------------------
+
+• World and Collision Files
+
++ Minor UV mapping tweaks
+
+• In-Game Editor
+
++ Missing shadow box behind the bus stop added
++ Small track zone hole filled in normal and reversed mode
++ Reposition issue under the wooden bridge fixed
+
+
 UPDATED ON 12/24/2020
 ---------------------
 
@@ -85,35 +141,3 @@ UPDATED ON 12/24/2020
 • Other
 
 + Pickups spawn count increased
-
-
-UPDATED ON 01/08/2021
----------------------
-
-• World and Collision Files
-
-+ Minor UV mapping tweaks
-
-• In-Game Editor
-
-+ Missing shadow box behind the bus stop added
-+ Small track zone hole filled in normal and reversed mode
-+ Reposition issue under the wooden bridge fixed
-
-
-UPDATED ON 12/15/2021
----------------------
-
-• World and Collision Files
-
-+ Many weird/over simplified/non planar collisions fixed
-+ Crates and barrels in the junkyard area rearranged to reduce invisible walls confusion
-+ Junkyard's bridge legs moved away from the raceline, improving the flow and fixing the blind turn in reversed mode
-+ Derelict house entrance widened to make oil slick dodging easier
-
-• In-Game Editor
-
-+ Reversed mode star moved to the normal mode star location
-+ Added shadowboxes around the digger
-+ Fixed shadowboxes near the crashed car
-+ Pick-ups placement changed to reward a bit more the players driving through the derelict house
