@@ -16,3 +16,22 @@ And thank you and the whole RV community for keeping the game alive.
 
 So long,
 Capitaine SZM
+
+
+==========================
+Update v1.1 - by EstebanMz
+==========================
+- .w file has passed through WorldCut by jigebren, which reduces drastically 
+the loading times for users with low-spec hardware (download and more info here 
+https://web.archive.org/web/20220801082102/http://jigebren.free.fr/games/pc/re-volt/#worldcut)
+- AI Nodes has been redone from scratch for both normal and reverse version. 
+Now any reposition issues should've been dissapeared and AI for single-player now is quite competitive.
+- Pick-ups has new spawn placements. You can find them more often without leaving the raceline 
+and thus without missing time.
+- Triggers has been tweaked. Some track direction and reposition boxes were modified, so it's harder 
+to both players and AI to take a wrong way.
+- Time trials and a Practice star has been added. 01:04:000 and 01:14:000 are the times to beat 
+(Toyeca is the suggested car).
+- Typo in one of the textures fixed. No more "FAIRGOUND" in giant letters, furthermore, all textures 
+are now saved as PNG format.
+- Special thanks to yun for testing and feedback related to the changes to the AI.
