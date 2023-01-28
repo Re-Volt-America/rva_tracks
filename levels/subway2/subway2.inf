@@ -2,18 +2,20 @@
 ;Revolt .INF file structure 
 ;--------------------------
 
-NAME		            'Subway 2'       
-DIFFICULTY      2 ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)  
-SWEEPCAM        1  ; Sweep camera (0:Disabled, 1:Enabled)
-STARTPOS	        500 0 2000
-STARTPOSREV		500 0 2000
-STARTROT	        0.5
-STARTROTREV	        0  	               	
-FARCLIP		        1300000000		           
-FOGSTART	        700000000		           
-FOGCOLOR	        158 230 255  	   
+NAME		'Subway 2'       
+DIFFICULTY  2 ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)  
+SWEEPCAM    1  ; Sweep camera (0:Disabled, 1:Enabled)
+CHALLENGE	1 04 000
+CHALLENGEREV	1 14 000
+STARTPOS	500 0 2000
+STARTPOSREV	500 0 2000
+STARTROT	0.5
+STARTROTREV	0  	               	
+FARCLIP		40000 ; --low -> 30333 --original -> 130000
+FOGSTART	35000 ; --low -> 16333 --original -> 70000
+FOGCOLOR	56 56 56 ;158 230 255  	   
 WORLDRGBPER 75            
 MODELRGBPER 75
-MIRRORS  0 0.85 0 1000 ;Type - mix - intensity start - distance
+MIRRORS     0 0.85 0 1000 ;Type - mix - intensity start - distance
 REDBOOK		1 3
-MP3		'levels/subway2/custom/Wire&FlashingLights.mp3'
+MP3		    'levels/subway2/custom/Wire&FlashingLights.mp3'
