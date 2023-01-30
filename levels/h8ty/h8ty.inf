@@ -1,0 +1,24 @@
+;--------------------------------------------
+;
+;                  H(8)TY 1.0
+;            (Pronounced "Heighty")
+;
+; - A track by Yun, for the RVA Community
+;
+;--------------------------------------------
+
+NAME            'H(8)TY'
+DIFFICULTY		2
+STARTPOS        10000 -1250 8000
+STARTROT        0.75
+STARTGRID       3
+FARCLIP         10000
+FOGSTART        8000
+FOGCOLOR        0 0 0
+VERTFOGSTART    0
+VERTFOGEND      0
+WORLDRGBPER     100
+MODELRGBPER     100
+INSTANCERGBPER  100
+MUSIC			'levels\h8ty\custom\hiredguns_nfmmix.mp3'
+CHALLENGE       0 26 000
