@@ -1,0 +1,18 @@
+;--------------------------
+;Revolt .INF file structure 
+;--------------------------
+
+NAME		            'Subway'       
+DIFFICULTY      2 ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)  
+SWEEPCAM        1  ; Sweep camera (0:Disabled, 1:Enabled)
+STARTPOS	        0 0 -2000 
+STARTPOSREV		150 0 2500
+STARTROT	        0
+STARTROTREV	        0.5   	               	
+FARCLIP		        1300000000		           
+FOGSTART	        700000000		           
+FOGCOLOR	        158 230 255  	   
+WORLDRGBPER 60            
+MODELRGBPER 70
+REDBOOK		1 3
+MP3		'levels/subway/custom/Wire&FlashingLights.mp3'
