@@ -1,0 +1,147 @@
+Thank you for taking the time to open this (whether intentionaly or not). Please keep reading.
+____________________________________________________
+**IMPORTANT**
+THIS LEVEL REQUIRES RVGL 20.0430a (or higher) TO RUN. 
+
+This level may be locked depending on championship progress.
+Unlock reversed mode by beating time trial challenge time.
+____________________________________________________
+
+FAIRGROUND 2
+
+Length: 766m
+Length(R):  800m
+Difficulty: Extreme
+
+Time Trial: 0:55:00
+Time Trial(R): 0:59:00
+
+Practice Star: Yes
+
+Created: 10/14/2020
+
+____________________________________________________
+
+PATCH 4/10/22
+
+-Added .bmr mipmaps
+-Added visiboxes
+-Removed ferris.ncp and added reduced collision to fair2.ncp in its place
+-Reduced polygon count in fair2.ncp ( -1303 faces)
+-Reduced polygon count in fair2.w ( -1750 faces)
+-Removed ufo.ncp (unused)
+-Removed roll.ncp and added reduced collision to fair2.ncp in its place
+-Added carraige.m (empty model) and carraige.ncp, for new custom animation for carraiges that only renders 5 collision bones at a time
+-Reduced vertices and cleaned up vertex shading on bumper car models
+-Reduced vertices on carraige models, scifi_ride.m, horses.m, pirate.m, ferris.m, and ufo.m
+-World Lighting moved into the vertex color channel of the world file instead of makeitgood
+-World file cut into better optimized cubes
+-Vertex lighting corrections
+-Adjusted model RBG of instances that were lit incorrectly
+-Repaired carousel lighting (now the lights glow)
+-Attached hit sound to the bumper car models (bump.wav)
+-Removed freezer1.wav (old bumper car sfx)
+-Added sparks to the bumper car poles
+-Fixed position node error when getting the race star by driving behind the electric boxes
+-Added missing cameras to reversed mode
+-Added fog and far clip for lower render settings
+
+-JavilDesign helped reduce polycount on the following ncp files
+   spin.ncp
+   carraige.ncp
+   bumper1.ncp
+   bumper2.ncp
+   bumper3.ncp
+   horses.ncp
+
+____________________________________________________
+
+PATCH 4/22/22
+
+-Fixed visibox errors
+-Fixed vertex lighting errors
+-Added directional sign in front of high striker turn
+-Added Start sign and Ticket sign instances
+-Fixed car shadow in spinning barrel
+-Added car shadow to carousel
+-Fixed position node error in reversed after bumper car arena
+
+____________________________________________________
+
+Description:
+
+The sun skims the horizon as your day at the fair draws to an end.
+
+Cut through the midway:
+Where noisy game booths line the path, and thrilling rides become tough challenges for the little cars.
+
+
+____________________________________________________
+
+Developers:
+
+GJ
+-Models
+-Textures
+-Objects
+-Animations
+-Lighting and Shading
+-Triggers and Cameras
+-Sound Effects
+
+
+I Spy
+-Visual Design Advisor
+-Triggers and Cameras
+-Animation Advisor
+-Concept Art
+-AI Nodes
+-POS Nodes
+-Sound Editor
+
+Acclaim/Probe
+-Probe Logo/Geometry
+
+Made with Blender Plugin
+____________________________________________________
+
+Stats:
+
+Faces: 20,272
+NCP Faces: 3,724
+Development Time: 8 Months 
+
+____________________________________________________
+
+Trivia:
+
+-Before animated objects were added to RVGL, early ride prototypes were built using forcefeilds and objects. They consistently fell apart. One of them would launch into the stratosphere.
+-The monkey prize is named after I SPY's favorite ice cream flavor
+-GJ's favorite ride at the fair is the bumper car arena.
+-The midway sign start line, test of strength u turn, and some of the ride obstacles were planned as far back as 2013.
+
+
+____________________________________________________
+IMPORTANT
+-All items in this directory are built, recorded, and designed by GJ and I SPY. (Exception of the probe logo in the .w file)
+-Please consult GJ before altering or reusing assets outside of personal use.
+-Feel free to distribute as is without taking credit from the developers.
+-Do not alter this Readme file, and include it in this directory if distributing to friend, family, or whomever. 
+-This track directory is free to download and use, it is not for sale and not to be sold. Period.
+
+Re-Volt Hideout
+https://forum.re-volt.io/memberlist.php?mode=viewprofile&u=2090
+
+Email (I don't check this too often)
+grnthn2@gmail.com
+
+Discord
+.?#8017  (replace ? with coffee mug emoji)
+
+I SPY is reclusive, but if all else fails you can try to contact him instead. He also isn't a spy that's just his name.
+
+
+
+
+We hope you thoroughly enjoy this track,
+Thank you  :)

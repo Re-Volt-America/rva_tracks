@@ -1,7 +1,0 @@
-1) The password is composed of 16 characters all in caps. 
-2) There is a total of 8 hints that you need to find to get the password.
-3) Each hint will reveal 2 characters of the password.
-4) The first 4 hints can be found in "RC Stadium 1" and the last 4 in "RC Stadium 2".
-5) The reward is nothing spectacular, so please lower your expectations xD.
-
-Good luck!

@@ -1,0 +1,25 @@
+;Look at _Read Me_ for credits and more track information
+
+
+NAME		'Fairground 2'	        
+DIFFICULTY	4
+OBTAIN    1  
+CHALLENGE	0 55 000
+CHALLENGEREV	0 59 000
+STARTPOS	-15290 -2 -3820                   
+STARTPOSREV	-15333 -2 -3945  		         
+STARTROT	-0.436215556                 
+STARTROTREV	-0.936215556 		        
+STARTGRID	0		        
+STARTGRIDREV	0		        
+FARCLIP		40000		         
+FOGSTART	16000	        
+FOGCOLOR	34 18 32	       
+SWEEPCAM	1		         
+WORLDRGBPER     100                      
+MODELRGBPER	50		         
+INSTANCERGBPER	100		         
+ENVSTILL	'levels\fair2\envfair.bmp'
+ENVROLL 'levels\fair2\envroll.bmp'
+MP3             'levels\fair2\music.mp3'
+REDBOOK		4 9

@@ -4,16 +4,16 @@
 
 NAME		'Subway 2'       
 DIFFICULTY  2 ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)  
-SWEEPCAM    1  ; Sweep camera (0:Disabled, 1:Enabled)
+SWEEPCAM    1 ; Sweep camera (0:Disabled, 1:Enabled)
 CHALLENGE	1 04 000
 CHALLENGEREV	1 14 000
 STARTPOS	500 0 2000
 STARTPOSREV	500 0 2000
 STARTROT	0.5
-STARTROTREV	0  	               	
-FARCLIP		40000 ; --low -> 30333 --original -> 130000
-FOGSTART	35000 ; --low -> 16333 --original -> 70000
-FOGCOLOR	56 56 56 ;158 230 255  	   
+STARTROTREV	0
+FARCLIP		37500 ; --low -> 30333 --original -> 37500
+FOGSTART	32500 ; --low -> 16333 --original -> 32500
+FOGCOLOR	240 239 189
 WORLDRGBPER 75            
 MODELRGBPER 75
 MIRRORS     0 0.85 0 1000 ;Type - mix - intensity start - distance

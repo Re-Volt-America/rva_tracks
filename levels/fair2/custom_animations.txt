@@ -1,0 +1,1996 @@
+{
+;--------
+; Models
+;--------
+
+MODEL   0   "scifi_ride"
+MODEL   1   "spin"
+MODEL   3   "ferris"
+MODEL   4   "carraige1" ;red
+MODEL   5   "carraige2" ;blue
+MODEL   6   "carraige3" ;yellow
+MODEL   7   "carraige4" ;green
+MODEL   8   "railcar"
+MODEL   9   "horses"
+MODEL   10  "pirate"
+MODEL   11  "ufo"
+MODEL   12  "ufo1"
+MODEL   13  "ufo2"
+MODEL   14  "door_l"
+MODEL   15  "door_r"
+MODEL   16 "drop"
+MODEL   17 "barrel"
+MODEL   18 "spinner1"
+MODEL   19 "spin_base"
+MODEL   20 "bridge_r"
+MODEL   21 "bridge_l" 
+MODEL   22 "roll"
+MODEL   23 "bumper1"
+MODEL   24 "bumper2"
+MODEL   25 "bumper3"
+MODEL   26 "spin_floor"
+MODEL   27 "spin_metal"
+MODEL   28 "spin_wall"
+MODEL   29 "spin_roof"
+MODEL   30 "spin_crown"
+MODEL   31 "spin_floor2"
+MODEL   32 "spin_floor3"
+MODEL   33 "spin_floor4"
+MODEL   34 "spin_top"
+MODEL   35 "target"
+MODEL   36 "mole"
+MODEL   37 "swingchairs"
+MODEL   38 "carraige"
+
+SFX     0   "bump"
+
+;----------------------------
+; Silver Streak
+;----------------------------
+
+ANIMATION {
+  Slot                      0                        
+  Name                      "Silver Streak"        
+  Mode                      0                        
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 0                       
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    10                    
+  }
+
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    4                    
+    Type                    0                         
+    BONE {
+      BoneID                0                        
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        360.000                   
+    }
+   }
+  }
+
+
+
+;______________________________________
+;______________________________________
+;_______START OF CAROUSEL___________
+;______________________________________
+;______________________________________
+
+ANIMATION {
+  Slot                      1                         
+  Name                      "Carousel"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 1                        
+  }
+  BONE { ;Horse Down
+    BoneID                  1                         
+    ModelID                 9                        
+    Parent 		 0
+    OffsetRotationAxis      0.000 1.000 0.000         
+    OffsetRotationAmount    0                    
+    OffsetTranslation       0.00 75.000 0.000      
+  }
+  BONE { ;Horse Up
+    BoneID                  2                         
+    ModelID                 9                        
+    Parent 		 0
+    OffsetRotationAxis      0.000 1.000 0.000         
+    OffsetRotationAmount    45                    
+    OffsetTranslation       0.00 -75.000 0.000      
+  }
+  BONE {
+    BoneID                  3                        
+    ModelID                 26                        
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  4                         
+    ModelID                 27                        
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  5                         
+    ModelID                 28                       
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  6                        
+    ModelID                 29                       
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  7                        
+    ModelID                 30                      
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  8                         
+    ModelID                 31                       
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  9                       
+    ModelID                 32                      
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  10                        
+    ModelID                 33                      
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  11                       
+    ModelID                 34                      
+    Parent 		 0
+  }
+  BONE {
+    BoneID                  12                       
+    ModelID                 19                      
+    Parent 		 0
+  }
+
+
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                      
+    Time                    4                     
+    Type                    0                         
+    BONE {
+      BoneID                0                        
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -45.000                
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 -150.000 0.000    
+    }
+    BONE {
+      BoneID                2                      
+      Translation           0.000 150.000 0.000    
+    }
+    }
+
+
+ KEYFRAME {
+    FrameNr                 1                     
+    Time                    4                   
+    Type                    0                        
+    BONE {
+      BoneID                0                       
+      RotationAxis          0.000 1.000 0.000     
+      RotationAmount        -45.000               
+    }
+    BONE {
+      BoneID                1                     
+      Translation           0.000 150.000 0.000     
+    }
+    BONE {
+      BoneID                2                     
+      Translation           0.000 -150.000 0.000   
+    }
+    }
+
+ KEYFRAME {
+    FrameNr                 2                   
+    Time                    4                  
+    Type                    0                       
+    BONE {
+      BoneID                0                      
+      RotationAxis          0.000 1.000 0.000       
+      RotationAmount        -45.000              
+    }
+    BONE {
+      BoneID                1                      
+      Translation           0.000 -150.000 0.000  
+    }
+    BONE {
+      BoneID                2                     
+      Translation           0.000 150.000 0.000   
+    }
+    }
+
+ KEYFRAME {
+    FrameNr                 3                       
+    Time                    4                   
+    Type                    0                     
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000        
+      RotationAmount        -45.000                  
+    }
+    BONE {
+      BoneID                1                     
+      Translation           0.000 150.000 0.000     
+    }
+    BONE {
+      BoneID                2                        
+      Translation           0.000 -150.000 0.000   
+    }
+    }
+
+  KEYFRAME {
+    FrameNr                 4                      
+    Time                    4                  
+    Type                    0                     
+    BONE {
+      BoneID                0                      
+      RotationAxis          0.000 1.000 0.000     
+      RotationAmount        -45.000                
+    }
+    BONE {
+      BoneID                1                      
+      Translation           0.000 -150.000 0.000    
+    }
+    BONE {
+      BoneID                2                     
+      Translation           0.000 150.000 0.000   
+    }
+    }
+
+
+ KEYFRAME {
+    FrameNr                 5               
+    Time                    4                  
+    Type                    0                      
+    BONE {
+      BoneID                0                       
+      RotationAxis          0.000 1.000 0.000     
+      RotationAmount        -45.000              
+    }
+    BONE {
+      BoneID                1                      
+      Translation           0.000 150.000 0.000  
+    }
+    BONE {
+      BoneID                2                       
+      Translation           0.000 -150.000 0.000   
+    }
+    }
+
+ KEYFRAME {
+    FrameNr                 6                    
+    Time                    4                   
+    Type                    0                     
+    BONE {
+      BoneID                0                
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -45.000                
+    }
+    BONE {
+      BoneID                1                    
+      Translation           0.000 -150.000 0.000   
+    }
+    BONE {
+      BoneID                2                      
+      Translation           0.000 150.000 0.000   
+    }
+    }
+
+ KEYFRAME {
+    FrameNr                 7                    
+    Time                    4                    
+    Type                    0                        
+    BONE {
+      BoneID                0                      
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -45.000               
+    }
+    BONE {
+      BoneID                1                   
+      Translation           0.000 150.000 0.000   
+    }
+    BONE {
+      BoneID                2                       
+      Translation           0.000 -150.000 0.000    
+    }
+    }
+
+
+
+
+  }
+;______________________________________
+;______________________________________
+;_________END OF CAROUSEL___________
+;______________________________________
+;______________________________________
+
+
+
+
+
+
+;----------------------------
+; David the Pirate
+;----------------------------
+
+
+ANIMATION {
+  Slot                      2                        
+  Name                      "Pirate Ship"        
+  Mode                      2                      
+
+
+  BONE {
+    BoneID                  0                       
+    ModelID                 10                       
+    OffsetRotationAxis      1.000 0.000 0.000     
+    OffsetRotationAmount    55                    
+  }
+
+
+  KEYFRAME {
+    FrameNr                 0                       
+    Time                    3                  
+    Type                    3                       
+
+    BONE {
+      BoneID                0                      
+      RotationAxis          1.000 0.000 0.000       
+      RotationAmount        -110.000                  
+    }
+    }
+  }
+;---------------------------
+;---------------------------
+;---------------------------
+
+;----------------------------
+; UFO
+;----------------------------
+
+
+
+
+ANIMATION {
+  Slot                      3                      
+  Name                      "UFO"       
+  Mode                      0                    
+
+  BONE {
+    BoneID                  0                       
+    ModelID                 11                    
+  }
+  BONE {
+    BoneID                  1                     
+    ModelID                 12                   
+    Parent                  0                	    
+  }
+  BONE {
+    BoneID                  2                        
+    ModelID                 13                    
+    Parent                  0                	       
+  }
+ 
+
+
+  KEYFRAME {
+    FrameNr                 0                     
+    Time                    1                   
+    Type                    0                      
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000       
+      RotationAmount        90.000                  
+    }
+    BONE {
+      BoneID                1                        
+      Visible               true                     
+    }
+    BONE {
+      BoneID                2                         
+      Visible               false                      
+    }
+    }
+
+  KEYFRAME {
+    FrameNr                 1                         
+    Time                    1                    
+    Type                    0                       
+    BONE {
+      BoneID                0                        
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        90.000                  
+    }
+    BONE {
+      BoneID                1                         
+      Visible               false                     
+    }
+    BONE {
+      BoneID                2                        
+      Visible               true                     
+    }
+    }
+ 
+  KEYFRAME {
+    FrameNr                 2                       
+    Time                    1                     
+    Type                    0                        
+    BONE {
+      BoneID                0                       
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        90.000                 
+    }
+    BONE {
+      BoneID                1                      
+      Visible               true                     
+    }
+    BONE {
+      BoneID                2                       
+      Visible               false                     
+    }
+    }
+
+  KEYFRAME {
+    FrameNr                 3                         
+    Time                    1                     
+    Type                    0                        
+    BONE {
+      BoneID                0                        
+      RotationAxis          0.000 1.000 0.000     
+      RotationAmount        90.000                
+    }
+    BONE {
+      BoneID                1                         
+      Visible               false                     
+    }
+    BONE {
+      BoneID                2                        
+      Visible               true                      
+    }
+    }
+  }
+
+;----------------------------
+; END OF UFO
+;----------------------------
+;---------------------------
+
+
+
+
+
+
+
+ANIMATION {
+  Slot                      4                        
+  Name                      "Bump Doors"         
+  Mode                      0                        
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                       
+  }
+  BONE {
+    BoneID                  1                         
+    ModelID                 14                       
+    OffsetTranslation       -335.378 0.000 0.000      
+  }
+  BONE {
+    BoneID                  2              		           
+    ModelID                15              		         
+    OffsetTranslation       335.378 0.000 0.000     
+}
+
+
+  KEYFRAME {
+    FrameNr                 0                       
+    Time                    1                         
+    Type                    0                        
+    BONE {
+      BoneID                1                         
+      RotationAxis          0.000 1.000 0.000       
+      RotationAmount        0.000                  
+    }
+    BONE {
+      BoneID                2                        
+      RotationAxis          0.000 1.000 0.000       
+      RotationAmount        0.000                  
+}
+
+    }
+  KEYFRAME {
+    FrameNr                 1                     
+    Time                    0.5                    
+    Type                    2                       
+    BONE {
+      BoneID                1                      
+      RotationAxis          0.000 1.000 0.000        
+      RotationAmount        -90.000                  
+    }
+    BONE {
+      BoneID                2                      
+      RotationAxis          0.000 1.000 0.000        
+      RotationAmount        80.000                  
+}
+
+    }
+
+  KEYFRAME {
+    FrameNr                 2                      
+    Time                    0.5                  
+    Type                    1                        
+    BONE {
+      BoneID                1                      
+      RotationAxis          0.000 1.000 0.000       
+      RotationAmount        0.000                  
+    }
+    BONE {
+      BoneID                2                        
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        0.000                
+}
+    }
+
+  KEYFRAME {
+    FrameNr                 3                         
+    Time                    1.5                    
+    Type                    3                         
+    BONE {
+      BoneID                1                      
+      RotationAxis          0.000 1.000 0.000       
+      RotationAmount        110.000               
+    }
+    BONE {
+      BoneID                2                      
+      RotationAxis          0.000 1.000 0.000        
+      RotationAmount        -100.000             
+}
+    }
+
+  KEYFRAME {
+    FrameNr                 4                       
+    Time                    0.5                   
+    Type                    0                       
+    BONE {
+      BoneID                1                       
+      RotationAxis          0.000 1.000 0.000        
+      RotationAmount        -20.000                 
+    }
+    BONE {
+      BoneID                2                      
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        20.000               
+}
+    }
+
+
+  KEYFRAME {
+    FrameNr                 5                       
+    Time                    6                        
+    Type                    0                       
+    BONE {
+      BoneID                1                       
+      RotationAxis          0.000 1.000 0.000     
+      RotationAmount        0.000                
+    }
+    BONE {
+      BoneID                2                        
+      RotationAxis          0.000 1.000 0.000       
+      RotationAmount        0.000                  
+}
+}
+
+
+  }
+
+
+
+
+
+;----------------------------
+;Dark Ride
+;----------------------------               
+
+ANIMATION {
+  Slot                      5                              
+  Name                      "Dark Ride"      
+  Mode                      0                       
+
+  BONE {
+    BoneID                  0                      
+    ModelID                 8                      
+  }
+
+  KEYFRAME {
+    FrameNr                 0                       
+    Time                    2.000                
+    Type                    0                       
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -1500    
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 1                    
+    Time                    1.000                 
+    Type                    0                         
+
+    BONE {
+      BoneID                0                       
+      RotationAmount        90.000                 
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 2                      
+    Time                    4.000                 
+    Type                    0                         
+
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -3269.65   
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 3                        
+    Time                    1.000                    
+    Type                    0                         
+
+    BONE {
+      BoneID                0                        
+      RotationAmount        90.000                   
+    }
+  }
+
+
+
+  KEYFRAME {
+    FrameNr                 4                         
+    Time                    2.000                    
+    Type                    0                         
+
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -1500     
+    }
+  }
+
+;______________________________________
+;______________________________________
+;___START OF DROP TOWER_____________
+;______________________________________
+;______________________________________
+
+
+ANIMATION {
+  Slot                      6                         
+  Name                      "Drop Tower"       
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 16                        
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    6                     
+    Type                    3                         
+ 
+   BONE {
+      BoneID                0                         
+      Translation           0.000 -4600.000 0.000     
+    }
+  }
+  KEYFRAME {
+    FrameNr                 1                         
+    Time                    0.25                     
+    Type                    0                         
+ 
+   BONE {
+      BoneID                0                         
+      Translation           0.000 000.000 0.000     
+    }
+  }
+  KEYFRAME {
+    FrameNr                 2                         
+    Time                    1                     
+    Type                    3                         
+ 
+   BONE {
+      BoneID                0                         
+      Translation           0.000 4600.000 0.000     
+    }
+  }
+  KEYFRAME {
+    FrameNr                 3                         
+    Time                    0.75                     
+    Type                    0                         
+ 
+   BONE {
+      BoneID                0                         
+      Translation           0.000 000.000 0.000     
+    }
+  }
+}
+
+;______________________________________
+;______________________________________
+;___END OF ROCKET RIDE_______________
+;______________________________________
+;______________________________________
+
+
+
+
+
+
+
+
+;______________________________________
+;______________________________________
+;___START OF FERRIS WHEEL___________
+;______________________________________
+;______________________________________
+
+ANIMATION {
+  Slot                      7                         
+  Name                      "Ferris Wheel Carts"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 3                        
+  }
+
+
+;____________________________________________________
+;________________Carriages (Exclude Green)_______________
+;____________________________________________________
+
+  BONE {   
+    BoneID                  1               	          
+    ModelID                 4              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 0.000 -3512.78      
+  }
+  BONE {   
+    BoneID                  2               	          
+    ModelID                 5              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 -1344.28 -3245.39      
+  }
+  BONE {   
+    BoneID                  3               	          
+    ModelID                 6              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 -3245.39 -1344.28      
+  }
+  BONE {   
+    BoneID                  4               	          
+    ModelID                 4              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 -3512.78 0.000      
+  }
+  BONE {   
+    BoneID                  5               	          
+    ModelID                 5              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 -3245.39 1344.28      
+  }
+  BONE {   
+    BoneID                  6               	          
+    ModelID                 6              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 -1344.28 3245.39      
+  }
+
+  BONE {   
+    BoneID                  7               	          
+    ModelID                 4              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 0.000 3512.78      
+  }
+  BONE {   
+    BoneID                  8               	          
+    ModelID                 5              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 1344.28 3245.39      
+  }
+  BONE {   
+    BoneID                  9               	          
+    ModelID                 6              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 3245.39 1344.28      
+  }
+  BONE {   
+    BoneID                  10               	          
+    ModelID                 4              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 3512.78 0.000      
+  }
+  BONE {   
+    BoneID                  11               	          
+    ModelID                 5              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 3245.39 -1344.28      
+  }
+  BONE {   
+    BoneID                  12               	          
+    ModelID                 6              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 1344.28 -3245.39      
+  }
+
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    48                     
+    Type                    0                         
+ 
+   BONE {
+      BoneID                0                         
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+
+;---Move carraiges (exclude green)
+
+ BONE {
+      BoneID                1                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                2                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                3                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                4                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                5                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                6                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                7                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                8                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                9                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                10                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                11                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                12                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+  }
+}
+
+ANIMATION {
+  Slot                      8                         
+  Name                      "Ferris Wheel Carts 2"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                        
+  }
+
+ ;------Set Green carraige bones----
+
+  BONE {   
+    BoneID                  1               	          
+    ModelID                 7              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 -2483.91 -2483.91      
+  }
+  BONE {   
+    BoneID                  2               	          
+    ModelID                 7              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 -2483.91 2483.91      
+  }
+  BONE {   
+    BoneID                  3               	          
+    ModelID                 7              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 2483.91 2483.91      
+  }
+  BONE {   
+    BoneID                  4               	          
+    ModelID                 7              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 2483.91 -2483.91      
+  }
+
+
+
+ KEYFRAME {
+    FrameNr                 0                         
+    Time                    48                     
+    Type                    0                         
+ 
+   BONE {
+      BoneID                0                         
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+
+;----Move green carraiges
+ BONE {
+      BoneID                1                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                2                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                3                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+ BONE {
+      BoneID                4                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        360.000                   
+    }
+  }
+}
+;______________________________________
+;______________________________________
+;___END OF FERRIS WHEEL_____________
+;______________________________________
+;______________________________________
+
+
+;_________BARREL_____________
+ANIMATION {
+  Slot                      9                         
+  Name                      "Barrel"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 17                        
+  }
+
+
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    8                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      RotationAxis          0.000 0.000 1.000         
+      RotationAmount        -360.000                   
+    }
+  }
+}
+
+;______________________________________
+;_________SPINNING FLOORS_____________
+;______________________________________
+ANIMATION {
+  Slot                      10                         
+  Name                      "Fun Floor 1"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 18                        
+  }
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    12                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -360.000                   
+    }
+  }
+}
+
+
+ANIMATION {
+  Slot                      11                         
+  Name                      "Fun Floor 2"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 19                        
+  }
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    9                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        360.000                   
+    }
+  }
+}
+
+
+ANIMATION {
+  Slot                      12                         
+  Name                      "Fun Floor 3"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 18                        
+  }
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    6                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -360.000                   
+    }
+  }
+}
+
+;______________________________________
+;_________SHIFTING FLOORS_____________
+;______________________________________
+
+ANIMATION {
+  Slot                      13                         
+  Name                      "Shift Floor 1"         
+  Mode                      2                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 20                        
+  }
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    1                     
+    Type                    3                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 750.000  
+    }
+   }
+}
+
+
+ANIMATION {
+  Slot                      14                         
+  Name                      "Shift Floor 2"         
+  Mode                      2                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 21                        
+  }
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    1                     
+    Type                    3                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -750.000  
+    }
+   }
+}
+
+ANIMATION {
+  Slot                      15                         
+  Name                      "Rolling Door"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                        
+  }
+  BONE {
+    BoneID                  1                         
+    ModelID                 22                        
+  }
+  BONE {
+    BoneID                  2                         
+    ModelID                 22                        
+    Parent 		 0
+    OffsetTranslation       0.00 0.000 -323.847      
+  }
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    2                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        360.000                   
+    }
+    BONE {
+      BoneID                2                         
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -360.000                   
+    }
+  }
+}
+
+
+
+
+;______________________________________
+;_______START OF BUMPER CARS________
+;______________________________________
+
+
+;----------------------------
+; Bumper Car 1
+;----------------------------
+
+ANIMATION {
+  Slot                      16                         
+  Name                      "Car_1"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 23                        
+  }
+  BONE {
+    BoneID                   1
+    Visible                  false
+    ModelID                 11
+    Parent                     0
+    OffsetTranslation      0.000 -882.631 -97.3794                        
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    0.25                     
+    Type                    2                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -45     
+      SFX {
+        SfxID                 0 
+        Range               20  
+        Looping             false 
+      }
+    }
+  BONE {
+    BoneID                   1
+    Visible                  false
+     SPARK {
+        Type                7
+        AverageSpeed        5
+        VariableSpeed       15
+        Frequency           20
+      }
+     }
+   }
+  KEYFRAME {
+    FrameNr                 1                         
+    Time                    0.3                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 0.00     
+    }
+   }
+  KEYFRAME {
+    FrameNr                 2                         
+    Time                    2                     
+    Type                    1                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -963.85  
+    }
+  BONE {
+    BoneID                   1
+    Visible                  true
+     }
+   }
+  KEYFRAME {
+    FrameNr                 3                         
+    Time                    0.25                     
+    Type                    2                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 45     
+      SFX {
+        SfxID                 0 
+        Range               20  
+        Looping             false 
+      }
+    }
+  BONE {
+    BoneID                   1
+    Visible                  false
+     }
+   }
+  KEYFRAME {
+    FrameNr                 4                         
+    Time                    0.3                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 0.00     
+    }
+   }
+  KEYFRAME {
+    FrameNr                 5                         
+    Time                    2                     
+    Type                    1                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 963.85     
+    }
+  BONE {
+    BoneID                   1
+    Visible                  true
+     }
+   }
+  }
+ANIMATION {
+  Slot                      17                         
+  Name                      "Car_2"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 24                        
+  }
+  BONE {
+    BoneID                   1
+    Visible                  false
+    ModelID                 11
+    Parent                     0
+    OffsetTranslation      0.000 -882.631 -97.3794                        
+  }
+
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    0.25                     
+    Type                    2                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -45     
+      SFX {
+        SfxID                 0 
+        Range               20  
+        Looping             false 
+      }
+    }
+  BONE {
+    BoneID                   1
+    Visible                  false
+     SPARK {
+        Type                7
+        AverageSpeed        5
+        VariableSpeed       15
+        Frequency           20
+      }
+     }
+   }
+  KEYFRAME {
+    FrameNr                 1                         
+    Time                    0.3                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 0.00     
+    }
+   }
+  KEYFRAME {
+    FrameNr                 2                         
+    Time                    2                     
+    Type                    1                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -1688.99  
+    }
+  BONE {
+    BoneID                   1
+    Visible                  true
+    }
+   }
+  KEYFRAME {
+    FrameNr                 3                         
+    Time                    0.25                     
+    Type                    2                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 45     
+      SFX {
+        SfxID                 0 
+        Range               20  
+        Looping             false 
+      }
+    }
+  BONE {
+    BoneID                   1
+    Visible                  false
+    }
+   }
+  KEYFRAME {
+    FrameNr                 4                         
+    Time                    0.3                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 0.00     
+    }
+   }
+  KEYFRAME {
+    FrameNr                 5                         
+    Time                    2                     
+    Type                    1                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 1688.99    
+    }
+  BONE {
+    BoneID                   1
+    Visible                  true
+    }
+   }
+  }
+ANIMATION {
+  Slot                      18                         
+  Name                      "Car_3"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 25                        
+  }
+  BONE {
+    BoneID                   1
+    Visible                  false
+    ModelID                 11
+    Parent                     0
+    OffsetTranslation      0.000 -882.631 -97.3794                        
+  }
+
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    0.25                     
+    Type                    2                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -45     
+      SFX {
+        SfxID                 0 
+        Range               20  
+        Looping             false 
+      }
+    }
+  BONE {
+    BoneID                   1
+    Visible                  false
+     SPARK {
+        Type                7
+        AverageSpeed        5
+        VariableSpeed       15
+        Frequency           20
+      }
+    }
+   }
+  KEYFRAME {
+    FrameNr                 1                         
+    Time                    0.3                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 0.00     
+    }
+   }
+  KEYFRAME {
+    FrameNr                 2                         
+    Time                    2                     
+    Type                    1                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 -974.22  
+    }
+  BONE {
+    BoneID                   1
+    Visible                  true
+    }
+   }
+  KEYFRAME {
+    FrameNr                 3                         
+    Time                    0.25                     
+    Type                    2                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 45     
+      SFX {
+        SfxID                 0 
+        Range               20  
+        Looping             false 
+      }
+    }
+  BONE {
+    BoneID                   1
+    Visible                  false
+    }
+   }
+  KEYFRAME {
+    FrameNr                 4                         
+    Time                    0.3                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 0.00     
+    }
+   }
+  KEYFRAME {
+    FrameNr                 5                         
+    Time                    2                     
+    Type                    1                         
+    BONE {
+      BoneID                0                         
+      Translation           0.000 0.000 974.22    
+    }
+  BONE {
+    BoneID                   1
+    Visible                  true
+    }
+   }
+  }
+
+;______________________________________
+;_______START OF TARGETS_____________
+;______________________________________
+
+
+ANIMATION {
+  Slot                      19                               
+  Name                      "Gallery"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                        
+  }
+
+  BONE {
+    BoneID                  1                         
+    ModelID                 35                         
+    Parent 		 0
+  }
+
+  BONE {
+    BoneID                  2                         
+    ModelID                 35                         
+    OffsetTranslation       -650.0 0.000 0.000      
+    Parent 		 0
+  }
+
+  BONE {
+    BoneID                  3                         
+    ModelID                 35                         
+    OffsetTranslation       -1300.0 0.000 0.000      
+    Parent 		 0
+  }
+
+  BONE {
+    BoneID                  4                         
+    ModelID                 35                         
+    OffsetRotationAxis      0.000 0.000 1.000         
+    OffsetRotationAmount    -90                    
+    Parent 		 0
+  }
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    2.000                    
+    Type                    0                         
+
+    BONE {
+      BoneID                1                         
+      Translation           -650.0 0.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           -650.0 0.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      RotationAxis          0.000 0.000 1.000         
+      RotationAmount        90.000                   
+    }
+    BONE {
+      BoneID                4                         
+      RotationAxis          0.000 0.000 1.000         
+      RotationAmount        90.000                   
+    }
+  }
+  }
+
+;______________________________________
+;_______STRIKE A MOLE_____________
+;______________________________________
+
+ANIMATION {
+  Slot                      20                         
+  Name                      "Beamer and Screamer go to the fair"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                        
+  }
+  BONE { ;Screamer
+    BoneID                  1                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    0                    
+    OffsetTranslation       0.00 0.000 0.000      
+  }
+  BONE { ;Beamer
+    BoneID                  2                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    180                    
+    OffsetTranslation       0.00 0.000 -125.000      
+  }
+  BONE { ;Screamer
+    BoneID                  3                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    0                    
+    OffsetTranslation       120.00 -20.000 -185.000      
+  }
+  BONE { ;Beamer
+    BoneID                  4                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    180                    
+    OffsetTranslation       120.00 -20.000 -60.000      
+  }
+  BONE { ;Screamer
+    BoneID                  5                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    0                    
+    OffsetTranslation       120.00 -20.000 60.000      
+  }
+
+
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    0.25                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      Translation           0.000 -40.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           0.000 00.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                4                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                5                         
+      Translation           0.000 0.000 0.000     
+    }
+    }
+  KEYFRAME {
+    FrameNr                 1                         
+    Time                    0.25                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      Translation           0.000 40.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                4                         
+      Translation           0.000 40.000 0.000     
+    }
+    BONE {
+      BoneID                5                         
+      Translation           0.000 0.000 0.000     
+    }
+    }
+  KEYFRAME {
+    FrameNr                 2                         
+    Time                    0.25                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      Translation           0.000 -40.000 0.000     
+    }
+    BONE {
+      BoneID                4                         
+      Translation           0.000 -40.000 0.000     
+    }
+    BONE {
+      BoneID                5                         
+      Translation           0.000 0.000 0.000     
+    }
+    }
+  KEYFRAME {
+    FrameNr                 3                         
+    Time                    0.25                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           0.000 40.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      Translation           0.000 40.000 0.000     
+    }
+    BONE {
+      BoneID                4                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                5                         
+      Translation           0.000 0.000 0.000     
+    }
+    }
+  KEYFRAME {
+    FrameNr                 4                         
+    Time                    0.25                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           0.000 -40.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                4                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                5                         
+      Translation           0.000 -40.000 0.000     
+    }
+    }
+  KEYFRAME {
+    FrameNr                 5                         
+    Time                    0.25                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                4                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                5                         
+      Translation           0.000 40.000 0.000     
+    }
+    }
+}
+
+
+ANIMATION {
+  Slot                      21                         
+  Name                      "Beamer and Screamer go to sleep"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                        
+  }
+  BONE { ;Screamer
+    BoneID                  1                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    0                    
+    OffsetTranslation       0.00 0.000 0.000      
+  }
+  BONE { ;Beamer
+    BoneID                  2                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    180                    
+    OffsetTranslation       0.00 0.000 -125.000      
+  }
+  BONE { ;Screamer
+    BoneID                  3                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    0                    
+    OffsetTranslation       120.00 -20.000 -185.000      
+  }
+  BONE { ;Beamer
+    BoneID                  4                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    180                    
+    OffsetTranslation       120.00 -20.000 -60.000      
+  }
+  BONE { ;Screamer
+    BoneID                  5                         
+    ModelID                 36                        
+    Parent 		 0
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    0                    
+    OffsetTranslation       120.00 -20.000 60.000      
+  }
+
+
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    0.25                     
+    Type                    0                         
+    BONE {
+      BoneID                1                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                2                         
+      Translation           0.000 00.000 0.000     
+    }
+    BONE {
+      BoneID                3                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                4                         
+      Translation           0.000 0.000 0.000     
+    }
+    BONE {
+      BoneID                5                         
+      Translation           0.000 0.000 0.000     
+    }
+    }
+}
+
+
+ANIMATION {
+  Slot                      22                         
+  Name                      "Swing Ride"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                        
+  }
+  BONE {
+    BoneID                  1                         
+    ModelID                 37                        
+    OffsetRotationAxis      1.000 0.000 0.000         
+    OffsetRotationAmount    6                    
+  }
+ ;________KEYFRAMES____________________
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    6                     
+    Type                    0                         
+    BONE {
+      BoneID                0                         
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -360.000                   
+    }
+    BONE {
+      BoneID                1                         
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -360.000                   
+    }
+  }
+}
+
+ANIMATION {
+  Slot                      23                         
+  Name                      "Moving Carraige Collision"         
+  Mode                      0                         
+
+  BONE {
+    BoneID                  0                         
+    ModelID                 -1                        
+  }
+
+  BONE {   
+    BoneID                  1               	          
+    ModelID                 38              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 2483.91 -2483.91 
+  }
+  BONE {   
+    BoneID                  2               	          
+    ModelID                 38              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 3245.39 -1344.28      
+  }
+  BONE {   
+    BoneID                  3               	          
+    ModelID                 38              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 3512.78 0.000      
+  }
+  BONE {   
+    BoneID                  4               	          
+    ModelID                 38              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 3245.39 1344.28      
+  }
+   BONE {   
+    BoneID                  5               	          
+    ModelID                 38              	          
+    Parent                  0                	         
+    OffsetTranslation       0.000 2483.91 2483.91 
+  }
+
+
+  KEYFRAME {
+    FrameNr                 0                         
+    Time                    3                     
+    Type                    0                         
+ 
+   BONE {
+      BoneID                0                         
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        22.500                   
+    }
+
+ BONE {
+      BoneID                1                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        22.500
+    }
+ BONE {
+      BoneID                2                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        22.500
+    }
+ BONE {
+      BoneID                3                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        22.500
+    }
+ BONE {
+      BoneID                4                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        22.500
+    }
+ BONE {
+      BoneID                5                         
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        22.500
+    }
+  }
+}
+
+
+
+
+}
