@@ -1,0 +1,121 @@
+{
+	MATERIAL {
+		ID              0                           ; Material ID [0 - 63]
+		Name            "RAMP MATERIAL"					; Display name
+		Color           153 153 153                 ; Display color
+
+		Skid            true                        ; Skidmarks appear on material
+		Spark           true                       	; Material emits particles
+		OutOfBounds     false                       ; Not implemented
+		Corrugated      false                       ; Material is bumpy
+		Moves           false                       ; Moves like museum conveyors
+		Dusty           false						; Material emits dust
+
+		Roughness       0.90						; Roughness of the material
+		Grip            0.80						; Grip of the material
+		Hardness        1.00						; Hardness of the material
+
+		DefaultSound    -1                          ; Sound when driving
+		SkidSound       6                           ; Sound when skidding
+		ScrapeSound     5                           ; Car body scrape [5:Normal]
+
+		SkidColor       200 200 200                 ; Color of the skidmarks
+		DustType        1                           ; Type of dust
+	}
+
+	MATERIAL {
+		ID              19                          ; Material ID [0 - 63]
+		Name            "LIGHT DIRT"				; Display name
+		Color           91 66 48                    ; Display color
+
+		Skid            true                        ; Skidmarks appear on material
+		Spark           true                        ; Material emits particles
+		OutOfBounds     false                       ; Not implemented
+		Corrugated      true                        ; Material is bumpy
+		Moves           false                       ; Moves like museum conveyors
+		Dusty           true                        ; Material emits dust
+
+		Roughness       0.70						; Roughness of the material
+		Grip            0.75						; Grip of the material
+		Hardness        0.00						; Hardness of the material
+
+		DefaultSound    -1                          ; Sound when driving
+		SkidSound       7                           ; Sound when skidding
+		ScrapeSound     5                           ; Car body scrape [5:Normal]
+
+		SkidColor       210 180 120                 ; Color of the skidmarks
+		CorrugationType 6                           ; Type of bumpiness
+		DustType        4                           ; Type of dust
+	}
+
+	MATERIAL {
+		ID              20                          ; Material ID [0 - 63]
+		Name            "DARK DIRT"					; Display name
+		Color           66 40 25                    ; Display color
+
+		Skid            true                        ; Skidmarks appear on material
+		Spark           true                        ; Material emits particles
+		OutOfBounds     false                       ; Not implemented
+		Corrugated      true                        ; Material is bumpy
+		Moves           false                       ; Moves like museum conveyors
+		Dusty           true                        ; Material emits dust
+
+		Roughness       0.75						; Roughness of the material
+		Grip            0.75						; Grip of the material
+		Hardness        0.00						; Hardness of the material
+
+		DefaultSound    -1                          ; Sound when driving
+		SkidSound       7                           ; Sound when skidding
+		ScrapeSound     5                           ; Car body scrape [5:Normal]
+
+		SkidColor       180 140 80                  ; Color of the skidmarks
+		CorrugationType 6                           ; Type of bumpiness
+		DustType        4                           ; Type of dust
+	}
+
+
+
+
+	CORRUGATION {
+		ID              6							; Corrugation ID [0 - 31]
+		Name            "LIGHT DIRT"				; Display name
+
+		Amplitude       1.40						; Amplitude of bumps (strength)
+		Wavelength      80.00	80.00				; Frequency of bumps
+	}
+
+	CORRUGATION {
+		ID              7							; Corrugation ID [0 - 31]
+		Name            "DARK DIRT"					; Display name
+
+		Amplitude       1.40						; Amplitude of bumps (strength)
+		Wavelength      80.00	80.00				; Frequency of bumps
+	}
+
+
+
+
+	DUST {
+		ID              1
+		Name            "RAMP MATERIAL"					; Replace Dust GRAVEL
+		SparkType       30
+		ParticleChance  5
+		ParticleRandom  0
+		SmokeType       30
+		SmokeChance     0.10
+		SmokeRandom     0.10
+	}
+	
+	DUST {
+		ID              4							; Dust ID [0 - 31]
+		Name            "DIRT"						; Display name
+
+		SparkType       28							; Particle to emit
+		ParticleChance  1.00						; Probability of a particle
+		ParticleRandom  0.90						; Probability variance
+
+		SmokeType       30							; Smoke particle to emit
+		SmokeChance     1.00						; Probability of a smoke part.
+		SmokeRandom     0.00						; Probability variance
+	}
+}
