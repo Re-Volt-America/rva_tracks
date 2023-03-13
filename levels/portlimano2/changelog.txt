@@ -1,3 +1,10 @@
 17/8/2022
 - fixed star path red x
 - credit to kiwi for using the bmx
+
+14/2/2023
+- fixed start u turn red x
+
+26/2/2023
+- fixed direction triggers in reverse version
+- added a repo box
