@@ -4,7 +4,7 @@
 
 NAME		'Skating Toys Redux';The name of the level as seen in-game
 DIFFICULTY	4
-STARTPOS	4200 -1407 7400  ;Start position of the car
+STARTPOS	4200 -1000 7400  ;Start position of the car
 STARTROT	0.87		;Start rotation of the car (0 - 1)
 CHALLENGE	1 14 000
 FARCLIP		44000		;Far clipping distance (draw distance)

@@ -2,7 +2,7 @@ Thanks for downloading Subway 2!
 
 There's still room for improvement (especially AI and cameras) but I hope you like the track!
 It was lot of work, and keeping interest on a track for so long was quite hard, so this might be my
-last re-volt track.
+last Re-Volt track.
 Thanks everyone for the feedback on the first subway themed track.
 
 Once again, if you're willing to improve the track in any way you are more than welcome to contact
@@ -19,22 +19,28 @@ Capitaine SZM
 
 
 ==========================
+Update v1.3 - by EstebanMz
+==========================
+- Tweaks at the texture shadows at the start grid and the section after the two parallel subways.
+- AI Nodes improved, CPU cars will do less mistakes, specifically on reverse mode, and repositions 
+at the jump that goes from the metallic platform into the convenience store has been improved.
+- NCP Materials added to the collision file.
+
+==========================
 Update v1.2 - by EstebanMz
 ==========================
 - One of the ramps at the smaller subway line next to the bench has been moved closer to the 
 wide ramp after the big U-turn. For normal version it means you have more space after the jump 
 with much lower risk of crashing with the ramp itself, and for reverse version you'll get the 
-option to take that ramp and jump beyond the wide ramp that blocks the right path before U-turn.
-- Fixes to the collision file. A bug where the camera got closer to your car at some sectors 
-and made the fireworks self-explode if you shoot them at such points, fixed the small gaps at 
-the glasses from the couple of ramps-stairs before the big station that gave you a red X if you 
-went through them and a bug where an AI car could get permanently stuck at a turnstile were solvented 
-plus a 20% reduction of faces by removing unused objects.
+option to take that ramp and jump beyond the wide ramp that blocks that way.
 - An arrow has been painted on the floor before the jump that goes after you cross the 
 store/cafeteria.
-- Textures changed for the ramps at the big station and some gaps at the ceiling were fixed.
+- Fixes to the collision file (.ncp). A bug where the camera got closer to your car at 
+some sectors and made the fireworks self-explode if you shoot them at such points, fixed 
+the small gaps at the glasses from the couple of ramps-stairs before the big station that 
+gave you a red X if you went through them and a bug where an AI car could get permanently 
+stuck at a turnstile were solvented.
 - Improvements to the AI nodes, POS nodes, Objects and Triggers.
-- Few shading and UV fixes on the main hall area (Capitaine SZM)
 
 ==========================
 Update v1.1 - by EstebanMz

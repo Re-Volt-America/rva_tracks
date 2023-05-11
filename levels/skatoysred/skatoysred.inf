@@ -5,7 +5,7 @@
 NAME		'Skating Toys Redux';The name of the level as seen in-game
 DIFFICULTY	4
 STARTPOS	3000 -1407 8793  ;Start position of the car
-STARTPOSREV	1900 -1407 9400  ;Start position of the car
+STARTPOSREV	1900 -1000 9400  ;Start position of the car
 STARTROT	0.37		;Start rotation of the car (0 - 1)
 STARTROTREV	0.87		;Start rotation of the car (0 - 1)
 CHALLENGE	1 13 000
