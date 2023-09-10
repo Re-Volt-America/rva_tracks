@@ -1,0 +1,69 @@
+;/\/\/\/\/\/\/\/\/\CORRUGATION
+
+CORRUGATION {
+  ID              1
+  Name            "Cobbles"
+
+  Amplitude       1.000000
+  Wavelength      200.00000 200.00000
+}
+
+CORRUGATION {
+  ID              5
+  Name            "Grate"
+
+  Amplitude       0.890000
+  Wavelength      100.00000 100.00000
+}
+
+
+;[][][][][][][][][]MATERIALS
+
+MATERIAL {
+  ID              15
+  Name            "Cobbles"
+
+  Skid            true
+  Spark           true
+  OutOfBounds     false
+  Corrugated      true 
+  Moves           false
+  Dusty           false
+
+  Roughness       1.000000
+  Grip            1.000000
+  Hardness        1.000000
+
+  SkidSound       6
+  ScrapeSound     5
+
+  SkidColor       112 112 112
+  CorrugationType 1
+  DustType        0
+  Velocity        0.000000 0.000000 0.000000
+}
+
+MATERIAL {
+  ID              22
+  Name            "VENT"
+
+  Skid            false
+  Spark           true
+  OutOfBounds     false
+  Corrugated      false
+  Moves           false
+  Dusty           false
+
+  Roughness       1.000000
+  Grip            1.000000
+  Hardness        1.000000
+
+  DefaultSound    56   
+  SkidSound       51
+  ScrapeSound     52
+
+  SkidColor       0 0 0
+  CorrugationType 5 
+  DustType        0
+  Velocity        0.000000 0.000000 0.000000
+}

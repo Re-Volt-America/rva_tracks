@@ -1,0 +1,108 @@
+MATERIAL {
+	  ID              0
+	  Name            "DEFAULT"
+	  Spark           false
+	  Dusty           true
+	  SkidSound       6
+	  ScrapeSound     5
+	  DustType        2
+	}
+	
+	DUST {
+	  ID              2
+	  Name            "PUDDLES"
+	  SparkType       29
+	  ParticleChance  0
+	  ParticleRandom  0
+	  SmokeType       30
+	  SmokeChance     9
+	  SmokeRandom     0.1
+	}
+	
+	SPARK {
+	  ID              30
+	  Name            "DUST"
+	  CollideWorld    true
+	  CollideObject   true
+	  CollideCam      false
+	  HasTrail        false
+	  FieldAffect     false
+	  Spins           true
+	  Grows           true
+	  Additive        true
+	  Horizontal      false
+	  Size            20 75
+	  UV              0 0
+	  UVSize          0.25 0.25
+	  TexturePage     47
+	  Color           10 10 10
+	  Mass            0.03
+	  Resistance      0.002
+	  Friction        0
+	  Restitution     0
+	  LifeTime        0.7
+	  LifeTimeVar     0.3
+	  SpinRate        0
+	  SpinRateVar     6
+	  SizeVar         2
+	  GrowRate        0
+	  GrowRateVar     36
+	}
+
+MATERIAL {
+	  ID              2
+	  Name            "STONE"
+	  Spark           false
+	  Dusty           true
+	  SkidSound       6
+	  ScrapeSound     5
+	  DustType        2
+	}
+
+MATERIAL {
+	  ID              3
+	  Name            "WOOD"
+	  Spark           false
+	  Dusty           true
+	  SkidSound       6
+	  ScrapeSound     5
+	  DustType        2
+	}
+
+MATERIAL {
+	  ID              12
+	  Name            "GRASS"
+	  Spark           false
+	  Dusty           true
+	  SkidSound       6
+	  ScrapeSound     5
+	  DustType        8
+	}
+
+MATERIAL {
+	  ID              14
+	  Name            "BUMPMETAL"
+	  Spark           false
+	  Dusty           true
+	  SkidSound       6
+	  ScrapeSound     5
+	  DustType        2
+	}
+
+MATERIAL {
+	  ID              26
+	  Name            "PAVING"
+	  Spark           false
+	  Dusty           true
+	  SkidSound       6
+	  ScrapeSound     5
+	  DustType        2
+	}
+
+	DUST {
+	  ID              8
+	  Name            "PUDDLES GRASS"
+	  SmokeType       30
+	  SmokeChance     9
+	  SmokeRandom     0.1
+	}

@@ -20,5 +20,6 @@ WORLDRGBPER		100			;RGB percent of original world gouraud
 MODELRGBPER     	100              	;RGB percent of original model gouraud
 MIRRORS			0 0.75 0 256		;Type - mix - intensity start - distance
 REDBOOK 		4 9
+MUSIC           'music\io\groovy'
 DIFFICULTY		3
 SWEEPCAM		1
