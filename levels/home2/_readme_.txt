@@ -39,6 +39,17 @@ Patch - 6/21/2021
 -Fixed year of release in _README_.txt
 -Removed unused instances from directory.
 -Window animation fixed in the vanity mirror of the master bedroom.
+
+____________________________________________________
+
+Patch - 9/13/2022
+
+-Fixed sink collision.
+-Fixed edgeflow and vertex shading of the cabinet above the minibar.
+-Fixed flickering shadow on reflective floors.
+-Fixed instance reflection errors
+-Repaired texture on toolbox handle
+-Fixed vertex shading on billiard table. 
 ____________________________________________________
 
 Developers:
@@ -71,8 +82,8 @@ ____________________________________________________
 
 Stats:
 
-World Faces: 9,537
-NCP Faces: 2,693
+World Faces: 9,535
+NCP Faces: 2,694
 Development Time: 5 Months 
 
 

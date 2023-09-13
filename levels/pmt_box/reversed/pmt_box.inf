@@ -1,0 +1,19 @@
+;--------------------------
+;Revolt .INF file structure 
+;--------------------------
+
+NAME		            'Cardboard Castle' 
+DIFFICULTY      1 ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)  
+SWEEPCAM        1  ; Sweep camera (0:Disabled, 1:Enabled)  
+STARTGRID       4  ; Grid type (0 - 5, type 2 reserved for frontend)      
+STARTPOS	        3100 750 10500 
+STARTROT	        0.75	    	                	
+FARCLIP		        25000		           
+FOGSTART	        18000		           
+FOGCOLOR	        252 152 56
+VERTFOGSTART	0			;Vertical fog start (as in rooftops)
+VERTFOGEND	0			;Vertical fog end (as in rooftops)
+WORLDRGBPER 85           
+MODELRGBPER 85
+REDBOOK		1 3
+MP3		'levels/pmt_box/Grand Festival.mp3'

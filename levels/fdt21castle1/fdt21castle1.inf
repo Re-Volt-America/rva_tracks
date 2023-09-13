@@ -20,4 +20,5 @@ MODELRGBPER	75		;RGB percent of original model gouraud
 INSTANCERGBPER	75		;RGB percent of original instance gouraud
 SWEEPCAM	1
 MIRRORS		0 0.75 0 256	;Type - mix - intensity start - distance
+MUSIC           'music\io\catnip'
 REDBOOK          13 13

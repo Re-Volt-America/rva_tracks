@@ -16,8 +16,8 @@ STARTROTREV	0.0		         ;Start rotation of the car (0 - 1)
 STARTGRID	0		         ;Starting grid type
 STARTGRIDREV	0		         ;Starting grid type
 SWEEPCAM	1		         ;Sweep camera
-FARCLIP		200000		         ;Far clipping distance (draw distance)
-FOGSTART	120000		         ;Fog start (slightly less than FARCLIP)
+FARCLIP	        80000		         ;Far clipping distance (draw distance)
+FOGSTART	40000		         ;Fog start (slightly less than FARCLIP)
 FOGCOLOR	206 206 206	         ;Fog and background color
 VERTFOGSTART	2000		         ;Vertical fog start (as in rooftops)
 VERTFOGEND	5000		         ;Vertical fog end (as in rooftops)

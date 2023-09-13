@@ -1,0 +1,4665 @@
+{
+MODEL   0   "pole"
+MODEL   1   "open1"
+MODEL   2   "open2"
+MODEL   3   "wheel1"
+MODEL   4   "wheel2"
+MODEL   5   "wheel3" ;unused
+MODEL   6   "sedan"
+MODEL   7   "sportcar"
+MODEL   8   "taxi"
+MODEL   9   "police"
+MODEL   10 "steer"
+MODEL   11 "traffic1"
+MODEL   12 "traffic2"
+MODEL   13 "traffic3"
+MODEL   14  "sedan2"
+MODEL   15  "sportcar2"
+SFX         0   "car"
+SFX         1   "wheels"
+
+ANIMATION {
+  Slot                      0
+  Name                      "Barber Pole"
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                 0
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    1.5
+    Type                    0
+    BONE {
+      BoneID                0
+      RotationAxis          0.000 1.000 0.000
+      RotationAmount        360.000
+    }
+   }
+}
+
+ANIMATION {
+  Slot                      1
+  Name                      "Open Sign"
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                 1
+    Visible			    TRUE
+  }
+
+  BONE {
+    BoneID                  1
+    ModelID                 2
+    Visible			    FALSE
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    0.5
+    Type                    0
+    BONE {
+      BoneID                0
+      Visible		    TRUE
+    }
+    BONE {
+      BoneID                1
+      Visible		    FALSE
+    }
+   }
+  KEYFRAME {
+    FrameNr                 1
+    Time                    0.5
+    Type                    0
+    BONE {
+      BoneID                0
+      Visible		    FALSE
+    }
+    BONE {
+      BoneID                1
+      Visible		    TRUE
+    }
+   }
+  }
+
+
+ANIMATION {
+  Slot                      2                        
+  Name                      "Car 1"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      750.000 0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      -750.000 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                8       
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 4
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 4
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 9
+    Parent		2
+  }
+
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                    
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 0                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             true
+      }  
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+   }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                1                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+
+  KEYFRAME { ;DRIVE B
+    FrameNr                 2                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+   }
+  KEYFRAME { ;SWITCH 2
+    FrameNr                3                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+
+  KEYFRAME { ;DRIVE C
+    FrameNr                 4                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+   }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                5                       
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+  KEYFRAME { ;DRIVE D
+    FrameNr                 6                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+   }
+  KEYFRAME { ;SWITCH 4
+    FrameNr                7                       
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+
+}
+   }
+
+
+; _____________________________
+; END OF CAR 1 – FIRST STREET 
+; _____________________________
+
+
+ANIMATION {
+  Slot                     3                        
+  Name                      "Car 2"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      750.000 0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      -750.000 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                7       
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 3
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 3
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 14
+    Parent		2
+  }
+
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                     
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                   
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 0                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+      SFX {
+        SfxID                 0
+        Range               8
+        Looping             true
+      }  
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+   }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                1                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+
+  KEYFRAME { ;DRIVE B
+    FrameNr                 2                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+    }
+   }
+  KEYFRAME { ;SWITCH 2
+    FrameNr                3                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+
+  KEYFRAME { ;DRIVE C
+    FrameNr                 4                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	false
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	true
+    }
+   }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                5                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+
+  KEYFRAME { ;WAIT
+    FrameNr                 6                        
+    Time                    35.8517387184 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 0.000  ;0units
+    }
+   }
+   }
+
+; _____________________________
+; END OF CAR 2 – FIRST STREET 
+; _____________________________
+
+
+ANIMATION {
+  Slot                    4                        
+  Name                      "Car 3"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      750.000 0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      -750.000 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                6       
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 3
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 3
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 15
+    Parent		2
+  }
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                    
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+  KEYFRAME { ;WAIT
+    FrameNr                 0                        
+    Time                    35.8517387184 
+    Type                    1                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 0.000  ;0units
+    }
+   }
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 1                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             true
+      }  
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+   }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                2                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+
+  KEYFRAME { ;DRIVE B
+    FrameNr                 3                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+    }
+   }
+  KEYFRAME { ;SWITCH 2
+    FrameNr                4                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+
+  KEYFRAME { ;DRIVE C
+    FrameNr                 5                        
+    Time                    10.906      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -20500.000  ;41units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	false
+    }
+    BONE {	;Wheel FL
+      BoneID                5
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        2581.03162378 
+    }
+    BONE {	;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	true
+    }
+   }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                6                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+
+   }
+
+; _____________________________
+; END OF CAR 3 – FIRST STREET 
+; _____________________________
+
+
+
+
+ANIMATION {
+  Slot                      5                        
+  Name                      "Car 4"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      3144.080 0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      -3144.080 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                 9       
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 4
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 4
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 8       
+    Parent		2
+  }
+
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                    
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 0                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             true
+      }  
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    BONE {	 ;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+
+   }
+  KEYFRAME { ;TURN A1 (Outside)
+    FrameNr                 1                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+
+  KEYFRAME { ;TURN A2 (Outside)
+    FrameNr                 2                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+  KEYFRAME { ;DRIVE B (Enter Tunnel)
+    FrameNr                 3                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                4                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+  KEYFRAME { ;DRIVE C
+    FrameNr                 5                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;TURN B1
+    FrameNr                 6                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+
+  KEYFRAME { ;TURN B2
+    FrameNr                 7                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+  KEYFRAME { ;DRIVE D (Enter Tunnel)
+    FrameNr                 8                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 2
+    FrameNr                9                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+  KEYFRAME { ;DRIVE E
+    FrameNr                 10                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    BONE {	 ;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+    }
+
+   }
+  KEYFRAME { ;TURN E1 (Outside)
+    FrameNr                 11                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+
+  KEYFRAME { ;TURN E2 (Outside)
+    FrameNr                 12                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+  KEYFRAME { ;DRIVE F (Enter Tunnel)
+    FrameNr                 13                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                14                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+
+}
+  KEYFRAME { ;DRIVE G
+    FrameNr                 15                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;TURN G1
+    FrameNr                 16                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+
+  KEYFRAME { ;TURN G2
+    FrameNr                 17                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+  KEYFRAME { ;DRIVE H (Enter Tunnel)
+    FrameNr                 18                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 4
+    FrameNr                19                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+
+; _____________________________
+; END OF CAR 4 – FLATIRON STREET 
+; _____________________________
+
+ANIMATION {
+  Slot                      6                        
+  Name                      "Car 5"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      -1644.14  0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      1644.14 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                 14       
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 3
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 3
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 15       
+    Parent		2
+  }
+
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                    
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 0                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation          0.000 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    BONE {	 ;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+
+    }
+  KEYFRAME { ;TURN A1
+    FrameNr                 1                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+
+  KEYFRAME { ;TURN A2
+    FrameNr                 2                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+  KEYFRAME { ;DRIVE B (Enter Tunnel)
+    FrameNr                 3                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                4                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+  KEYFRAME { ;DRIVE C
+    FrameNr                 5                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+
+   }
+  KEYFRAME { ;TURN C1 (Outside)
+    FrameNr                 6                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+
+  KEYFRAME { ;TURN C2 (Outside)
+    FrameNr                 7                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+  KEYFRAME { ;DRIVE D (Enter Tunnel)
+    FrameNr                 8                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                9                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+
+}
+  KEYFRAME { ;DRIVE E
+    FrameNr                 10                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;TURN E1
+    FrameNr                 11                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+
+  KEYFRAME { ;TURN E2
+    FrameNr                 12                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+  KEYFRAME { ;DRIVE F (Enter Tunnel)
+    FrameNr                 13                       
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                14                       
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+  KEYFRAME { ;WAIT
+    FrameNr                 15                        
+    Time                 62.5528408229 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 0.000  ;0units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+}
+
+}
+
+; _____________________________
+; END OF CAR 5 – FLATIRON STREET 
+; _____________________________
+
+
+ANIMATION {
+  Slot                      7                        
+  Name                      "Car 6"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      3144.080 0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      -3144.080 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                 8       
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 4
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 4
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 9       
+    Parent		2
+  }
+
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                    
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+  KEYFRAME { ;WAIT
+    FrameNr                 0                        
+    Time                  60.6726728333 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 0.000  ;0units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             true
+      }  
+    }
+    BONE {	 ;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+
+}
+
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 1                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+}
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+
+   }
+  KEYFRAME { ;TURN A1 (Outside)
+    FrameNr                 2                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+
+  KEYFRAME { ;TURN A2 (Outside)
+    FrameNr                 3                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+  KEYFRAME { ;DRIVE B (Enter Tunnel)
+    FrameNr                 4                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                5                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+}
+  KEYFRAME { ;DRIVE C
+    FrameNr                 6                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;TURN B1
+    FrameNr                 7                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+
+  KEYFRAME { ;TURN B2
+    FrameNr                 8                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+  KEYFRAME { ;DRIVE D (Enter Tunnel)
+    FrameNr                 9                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 2
+    FrameNr                10                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+  KEYFRAME { ;DRIVE E
+    FrameNr                 11                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    BONE {	 ;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+    }
+
+   }
+  KEYFRAME { ;TURN E1 (Outside)
+    FrameNr                 12                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+
+  KEYFRAME { ;TURN E2 (Outside)
+    FrameNr                 13                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+  KEYFRAME { ;DRIVE F (Enter Tunnel)
+    FrameNr                 14                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                15                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+}
+; _____________________________
+; END OF CAR 6 – FLATIRON STREET 
+; _____________________________
+
+ANIMATION {
+  Slot                      8                        
+  Name                      "Car 7"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      3144.080 0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      -3144.080 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                 7
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 3
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 3
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 3
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 6      
+    Parent		2
+  }
+
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                    
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 0                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             true
+      }  
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    BONE {	 ;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+
+   }
+  KEYFRAME { ;TURN A1 (Outside)
+    FrameNr                 1                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+
+  KEYFRAME { ;TURN A2 (Outside)
+    FrameNr                 2                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+  KEYFRAME { ;DRIVE B (Enter Tunnel)
+    FrameNr                 3                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                4                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+}
+  KEYFRAME { ;DRIVE C
+    FrameNr                 5                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;TURN C1
+    FrameNr                 6                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+
+  KEYFRAME { ;TURN C2
+    FrameNr                 7                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+  KEYFRAME { ;DRIVE D (Enter Tunnel)
+    FrameNr                 8                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 2
+    FrameNr                9                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000    
+      Visible	true
+}
+    BONE { ;Car Body 2
+      BoneID                9                       
+      Translation           0.000 0.000 0.000    
+      Visible	false
+}
+}
+}
+
+; _____________________________
+; END OF CAR 7 – FLATIRON STREET 
+; _____________________________
+
+ANIMATION {
+  Slot                      9                        
+  Name                      "Car 8"         
+  Mode                      0                         
+
+  BONE {		;CentralTurnPivot
+    BoneID                  0                     
+    ModelID                 -1         
+    OffsetTranslation      -1644.14  0.000 0.000      
+      
+  }
+  BONE {		;CarInternalPivot
+    BoneID                  1                     
+    ModelID                 -1        
+    OffsetTranslation      1644.14 0.000 -537.903
+   Parent                     0
+      
+  }
+  BONE {		;Car Body 1
+    BoneID                  2                      
+    ModelID                 8       
+    Parent		 1         
+    OffsetTranslation       0.000 0.000 537.903 
+  }
+  BONE {		;Steer FL
+    BoneID                  3               
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 -537.903 
+  }
+  BONE {		;Steer FR
+    BoneID                  4                     
+    ModelID                 10       
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 -537.903 
+    OffsetRotationAxis     0.000 1.000 0.000
+    OffsetRotationAmount    180.000
+  }
+  BONE {		;Wheel FL
+    BoneID                  5                      
+    ModelID                 4
+    Parent		 3         
+  }
+  BONE {		;Wheel FR
+    BoneID                  6                      
+    ModelID                 4
+    Parent		 4         
+  }
+  BONE {		;Wheel BL
+    BoneID                  7                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       267.822 -121.05 537.903 
+  }
+  BONE {		;Wheel BR
+    BoneID                  8                      
+    ModelID                 4
+    Parent		 2         
+    OffsetTranslation       -267.822 -121.05 537.903
+    OffsetRotationAxis   0.000 1.000 0.000
+    OffsetRotationAmount   180.000
+  }
+  BONE {		;Car Body 2
+    BoneID                  9                      
+    ModelID                 8      
+    Parent		2
+  }
+
+  BONE {		;ShadowBone1
+    BoneID                  10                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000  88.800 400.000
+  }
+  BONE {		;ShadowBone2
+    BoneID                  11                      
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 -400.000
+  }
+  BONE {		;ShadowBone3
+    BoneID                  12                    
+    ModelID                 -1
+    Parent		2
+    OffsetTranslation    0.000 88.800 0.000
+  }
+
+  KEYFRAME { ;DRIVE A
+    FrameNr                 0                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           0.000 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000
+    }
+    BONE {	 ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 0.000
+      Visible	true
+      SFX {
+        SfxID                 0
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    BONE {	 ;Car Body 2
+      BoneID                9
+      Translation           0.000 0.000 0.000
+      Visible	false
+      SFX {
+        SfxID                 1
+        Range               10
+        Looping             true
+      }  
+    }
+
+    BONE {
+      BoneID               10
+	LIGHT {
+        Type                0
+        Color               -162 -162 -162
+        Reach              500
+      }                 
+    }
+    BONE {
+      BoneID               11
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+    BONE {
+      BoneID               12
+	LIGHT {
+        Type                0 
+        Color               -162 -162 -162
+        Reach               500
+
+      }                 
+    }
+
+    }
+  KEYFRAME { ;TURN A1
+    FrameNr                 1                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+
+  KEYFRAME { ;TURN A2
+    FrameNr                 2                        
+    Time                    1.03046102093 
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       -67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        274.439312982 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        194.987883926 
+    }
+}
+  KEYFRAME { ;DRIVE B (Enter Tunnel)
+    FrameNr                 3                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 1
+    FrameNr                4                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+}
+  KEYFRAME { ;DRIVE C
+    FrameNr                 5                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           -2394.080 0.000 0.000
+    }
+
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+
+   }
+  KEYFRAME { ;TURN C1 (Outside)
+    FrameNr                 6                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        -33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+
+  KEYFRAME { ;TURN C2 (Outside)
+    FrameNr                 7                        
+    Time                    1.97054501569      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount       67.500
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 537.903
+    }
+    BONE { ;Car Body 1
+      BoneID                2                       
+      Translation           0.000 0.000 -537.903
+}
+    BONE {	;Steer FL
+      BoneID                3                       
+      RotationAxis          0.000 -1.000 0.000         
+      RotationAmount        33.75                     
+    }
+    BONE {	;Steer FR
+      BoneID                4                      
+      RotationAxis          0.000 1.000 0.000         
+      RotationAmount        -33.75        
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel FR
+      BoneID                6                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        417.469684723 
+    }
+    BONE {	;Wheel BR
+      BoneID                8                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        496.921113781
+    }
+}
+  KEYFRAME { ;DRIVE D (Enter Tunnel)
+    FrameNr                 8                        
+    Time                   8.246
+    Type                    0                        
+
+    BONE {
+      BoneID                0                       
+      Translation           -2394.080 0.000 -15500.000  ;31units
+    }
+    BONE {
+      BoneID                1                       
+      Translation           2394.080 0.000 0.000
+    }
+    BONE {	;Wheel FL
+      BoneID                5                       
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel FR
+      BoneID                6                       
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount        1951.51171554 
+    }
+    BONE {	;Wheel BL
+      BoneID                7                      
+      RotationAxis          -1.000 0.000 0.000         
+      RotationAmount        1951.51171554  
+    }
+    BONE {	;Wheel BR
+      BoneID                8                      
+      RotationAxis          1.000 0.000 0.000         
+      RotationAmount         1951.51171554
+    }
+    }
+  KEYFRAME { ;SWITCH 3
+    FrameNr                9                        
+    Time                    1.04457957275      
+    Type                    0                        
+
+    BONE {
+      BoneID                0                     
+      RotationAxis          0.000 1.000 0.000      
+      RotationAmount        180.000
+    }
+    BONE {
+      BoneID                1                       
+      Translation           0.000 0.000 0.000    
+    }
+}
+}
+
+; _____________________________
+; END OF CAR 8 – FLATIRON STREET 
+; _____________________________
+
+ANIMATION {
+  Slot                      10
+  Name                      "Traffic 1"
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                 11
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    3
+    Type                    0
+    BONE {
+      BoneID                0
+      Translation          -8830.710 0.000 0.000
+    }
+   }
+}
+
+ANIMATION {
+  Slot                      11
+  Name                      "Traffic 2"
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                 12
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    3
+    Type                    0
+    BONE {
+      BoneID                0
+      Translation          -8830.710 0.000 0.000
+    }
+   }
+}
+
+ANIMATION {
+  Slot                      12
+  Name                      "Traffic 3"
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                 13
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    3
+    Type                    0
+    BONE {
+      BoneID                0
+      Translation          8830.710 0.000 0.000
+    }
+   }
+}
+
+}

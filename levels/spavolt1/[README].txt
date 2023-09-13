@@ -3,7 +3,7 @@
                \__ \ )___//(__)\(___)\  /  )(_)(  )(__  )(
                (___/(__) (__)(__)     \/  (_____)(____)(__)
                                 R E A D M E
-                   Version 1.22, from November 24th 2019
+                   Version 1.3, from September 11th 2022
 
   S U M M A R Y
 ════════════════════════════════════════════════════════════════════════════
@@ -251,6 +251,11 @@ Version 1.22 from November 24th, 2019
  + Bugfix release for Version 1.21, updated on revoltzone.net
  + Changelog:
        - Corrected repo-bug inside the outdoor pool
+	   
+Version 1.3 from September 11th, 2022
+ + Bugfix release, updated on revoltworld.net
+ + Changelog:
+       - Slightly adjusted the positions of some repo-triggers
 
 
   D I S C L A I M E R

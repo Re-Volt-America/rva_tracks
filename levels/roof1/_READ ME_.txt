@@ -16,6 +16,7 @@ Practice Star: Yes
 Created: 9/15/2019
 Patch: 9/20/2019 - Fixed Junior RC AI problems on satellite jump, and a bug which caused you to fall forever.
 Patch: 5/2/2020 - See changelog below
+Patch: 8/16/2023 - See changelog below
 
 ____________________________________________________
 
@@ -58,46 +59,37 @@ ALSO IMPORTANT
 -New birds! 
 
 -Geometry and edgeflow has been improved to fix lighting errors, and now the world shouldn't peel apart when firing a shockwave anymore.
-
 -Fixed model colors on instances to match the lighting
-
 -A handful of gouraud shading errors have been fixed
-
 -Additional lights and shadow boxes have been added 
-
 -The high winds bridge has been removed. There is actually nothing there anymore, if you try to take the now defunct shortcut you'll just run into a wall.
-
 -The steam valves on the factory roof have been repaired.
-
 -The steam blasts on the factory roof are more visible, and the forcefeilds are more realistic in magnitude and turbulance. 
-
 -The AC ground vents near the construction site will no longer lift you in a cartoonish way. The magnitude is more realistic and you will tumble in a more convincing manner.
-
 -The AC air currents are more visible.
-
 -The open skylights on the green-roofed warehouse have been closed, the skylights have moved closer together to fix pacing issues and improve visibility of AC obstacles.
-
 -The building with AC vents before the construction site has been extended. The blind jump is gone and there's more room to avoid the AC obstacles.
-
 -The reversed path from the factory roof has been redone. The thin pipe path was replaced by a more approachable catwalk and lane change drop.
-
 -The water stream and pool have been recolored. The water stream is smoother and shaded properly. 
-
 -The texture based shadows have been color corrected to remove gouraud shading errors.
-
 -New texture for the metal beams beneath the satilite jump
-
 -Camera triggers repaired
-
 -Additional cameras added to capture the moment you fall over the edge and plummet to your doom.
-
 -AI pathing improved
-
 -Time trial times have changed after the removal of the bridge.
-
 -Start sweep camera added
-
 -Level is locked until championship is complete
+
+8/16/2023 - UPDATE CHANGELOG
+
+-Added visiboxes
+-Added light atmospheric depth
+-Fixed repo bugs in crossing vents and warehouse rooftop edges
+-Fixed repo bug on factory roof shortcut
+-Fixed respawn issues on some ramps and satellite dishes 
+-Fixed that one vertex that was in the wrong spot creating a hole in the world.
+-Removed some subtle peripheral details that conflicted with LOD
+
 
 
 ____________________________________________________
@@ -140,17 +132,13 @@ ____________________________________________________
 
 Stats:
 
-Faces: ~35,000 (thanks to gouraud shading)
-NCP Faces: ~8,000
+Faces: 34,521
+NCP Faces: 9,399 
 Initial Development Time: 1 Month (Brutal)
 
 This is our (GJ and I Spy) fourth custom track, and the first one to be released into the wild. 
 (The other three didn't make the grade)
 
-____________________________________________________
-
-
-Framerate drops can happen in a couple of specific places depending on settings. Most of the time it should be fine.
 
 ____________________________________________________
 
@@ -206,8 +194,10 @@ Additional Trivia (5/2/2020)
 There are new birds that spook away as you get near them. This is something we had planned on putting in this track originally, but before custom animated objects this just wasn't possible.
 We had considered using ball launchers and making them look like birds, but the prospect was laughable at best.
 
+Additional Trivia (8/16/2023)
 
-
+The latest patch isn't the overhaul I feel this track deserves, but if I had it my way it wouldn't really be Rooftops 1 anymore. This version is already a lot better and much more playable.
+I might still redo the lighting, remove a bunch of objects, and overhaul the raceline, visuals and track scaling someday for a limited release. Maybe not.
 
 ____________________________________________________
 Feel free to distribute the track and use any assets in the directory.

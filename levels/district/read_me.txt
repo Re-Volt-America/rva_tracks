@@ -3,7 +3,7 @@ Full Custom Track : DESOLATE DISTRICT 1
 3d modelling		: RV_Pure
 Track texturing		: RV_Pure, Chris Johannsen
 Modelling Instances	: RV_Pure, Chris Johannsen
-MAKEITGOOD Stuff	: Chris Johannsen, RV_Pure
+MAKEITGOOD Stuff	: Chris Johannsen, RV_Pure, EstebanMz
 Skybox			: RV_Pure
 RVW Image		: RV_Pure
 

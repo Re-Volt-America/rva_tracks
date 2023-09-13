@@ -3,7 +3,7 @@
                \__ \ )___//(__)\(___)\  /  )(_)(  )(__  )(
                (___/(__) (__)(__)     \/  (_____)(____)(__)
                                 R E A D M E
-                    Version 1.22, from January 28th 2022
+                    Version 1.3, from September 11th 2022
 
   S U M M A R Y
 ════════════════════════════════════════════════════════════════════════════
@@ -244,6 +244,11 @@ Version 1.22 from January 28th, 2022
 	   - Adjusted some pickup placements
 	   - Added some more lights
 	   - Implemented "Pickup Spawncount" feature
+	   
+Version 1.3 from September 11th, 2022
+ + Bugfix release, updated on revoltworld.net 
+ + Changelog:
+	   - Fixed some repo bugs
 
  
   D I S C L A I M E R
