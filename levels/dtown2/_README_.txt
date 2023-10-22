@@ -40,6 +40,21 @@ Patch - 7/9/2023
 
 ____________________________________________________
 
+Patch - 10/14/2023
+
+-The possibility of getting a red X on hairpin after Palace Theater has been fixed (Thanks Kipy!)
+-Awning collision before subway entrance
+-Padded the collision beneath moving truck ramp. No longer shall you warp through it.
+-Fixed the .lit file: Square shadow was missing outside the bay door in first alley.
+-Repaired interior shading and geometry in left corner building at start of the shopping district.
+-Fixed vertex shading on curb after the electronics shop.
+-Missing environment maps on subway station posters and turnstiles... have been added. 
+-Hidepoly added near subway exit so you can't see a part of the track through the ceiling.
+-Movie posters in the subway that were strangely blueish have been color corrected.
+-Removed Packet.m and Gardenwater.m (leftovers from Downtown 1)
+-Removed lawnmower.wav (leftover jackhammer sound from Downtown 1)
+
+____________________________________________________
 
 Developers:
 
@@ -74,9 +89,9 @@ ____________________________________________________
 
 Stats:
 
-World Faces: 10,234
-With Instances: 15,617
-NCP Faces: 2,054
+World Faces: 10,267
+With Instances: 15,654
+NCP Faces: 2,068
 Development Time: 10 Months
 
 
