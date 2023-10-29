@@ -41,6 +41,13 @@ Patch - 7/9/2023
 
 ____________________________________________________
 
+Patch - 10/14/2023
+
+-There was a visibox error behind the startline... now there isn't!
+-Danger.prm and Forlease.prm removed from directory (repeat instances that just took up space).
+
+____________________________________________________
+
 Developers:
 
 GJ
