@@ -18,6 +18,6 @@ WORLDRGBPER	50			;RGB percent of original world gouraud
 MODELRGBPER	50              	;RGB percent of original model gouraud
 INSTANCERGBPER	50		;RGB percent of original instance gouraud
 MIRRORS		1 1 0.3 300			;Type - mix - intensity start - distance
-MP3		'levels\fdt8mtvf\music.mp3'
+MUSIC		'music\io\snazzy'
 REDBOOK		4 9
 DIFFICULTY	2
