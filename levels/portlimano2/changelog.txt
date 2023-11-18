@@ -8,3 +8,6 @@
 26/2/2023
 - fixed direction triggers in reverse version
 - added a repo box
+
+18/11/2023
+- moved repo triggers appropriately to ensure clean racing
