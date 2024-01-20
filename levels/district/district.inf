@@ -7,8 +7,8 @@ STARTPOS	-500 -100 1200	;Start position of the car
 STARTPOSREV	-128 60 6200 	;-1300 -100 3500 Start position of the car
 STARTROT	0.09		;Start rotation of the car (0 - 1)
 STARTROTREV	0.50		;Start rotation of the car (0 - 1)
-FARCLIP		30000		;24000 Far clipping distance (draw distance)
-FOGSTART	23000		;23000 start (slightly less than FARCLIP)
+FARCLIP		35000		;24000 Far clipping distance (draw distance)
+FOGSTART	27000		;23000 start (slightly less than FARCLIP)
 FOGCOLOR	31 36 31 	;0 0 0 Fog and background color
 VERTFOGSTART	0		;Vertical fog start (as in rooftops)
 VERTFOGEND	0		;Vertical fog end (as in rooftops)
