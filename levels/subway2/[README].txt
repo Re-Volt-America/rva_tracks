@@ -16,6 +16,14 @@ And thank you and the whole RV community for keeping the game alive.
 So long,
 Capitaine SZM
 
+==========================
+Update v1.3.1 - by EstebanMz
+==========================
+- Visiboxes added to help to improve the performance on slower machines.
+- Fixed collision with a couple of doors (Reported by rodik).
+- Fixed a collision gap between the roof and the walls on the last exit of the roundabout.
+- Fixed Red X by taking the stairs instead of the ramp that leads before the last subway station (normal mode).
+- Adjustments to Track direction Triggers 0 & 1.
 
 ==========================
 Update v1.3 - by EstebanMz
