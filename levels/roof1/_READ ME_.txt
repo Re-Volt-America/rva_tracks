@@ -90,6 +90,10 @@ ALSO IMPORTANT
 -Fixed that one vertex that was in the wrong spot creating a hole in the world.
 -Removed some subtle peripheral details that conflicted with LOD
 
+1/26/2024 - UPDATE CHANGELOG
+
+-Fixed visibox error and trackzones at satilite area.
+
 
 
 ____________________________________________________
