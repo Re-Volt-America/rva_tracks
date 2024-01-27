@@ -36,6 +36,16 @@ PATCH 4/10/22
 -Reduced polygon count of fair1.ncp
 -Revised collision of yellow tent
 -Adjusted farclip for lower graphic settings
+-Lowered the hay speed bumps
+
+____________________________________________________
+
+PATCH 1/26/24
+
+-Fixed reposition issue at end of picnic area
+-Fixed trackzone cheat at the donut stand
+-Moved the practice star a little bit so more car types can grab it
+-Start sign collision repaired (no more glitchy clipping)
 
 ____________________________________________________
 
