@@ -1,0 +1,14 @@
+Models:
+watermill: barrel.m
+windmill: uranus.m
+lantern (empty model): lantern.m
+shiplight (improved by Allan): shiplight.m
+tumbleweed: tumbleweed, improved
+
+Sounds:
+watermill: rattler.wav
+watermill water: wash.wav
+crickets: animal1.wav
+creek: stream.wav
+skid wood: siren_loop.wav
+cicades: animal1.wav

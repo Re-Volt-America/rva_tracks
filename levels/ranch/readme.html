@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+<style>
+@charset "utf-8";
+
+/**
+ * markdown.css
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see http://gnu.org/licenses/lgpl.txt.
+ *
+ * @project      Weblog and Open Source Projects of Florian Wolters
+ * @version      GIT: $Id$
+ * @package      xhtml-css
+ * @author       Florian Wolters <florian.wolters.85@googlemail.com>
+ * @copyright    2012 Florian Wolters
+ * @cssdoc       version 1.0-pre
+ * @license      http://gnu.org/licenses/lgpl.txt GNU Lesser General Public License
+ * @link         http://github.com/FlorianWolters/jekyll-bootstrap-theme
+ * @media        all
+ * @valid        true
+ */
+
+img {
+	max-width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table, th, td {
+	border: 1px solid #EAEAEA;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+tr:nth-child(even) {
+	background-color: #F8F8F8;
+}
+
+body {
+    font-family: Helvetica, Arial, Freesans, clean, sans-serif;
+    padding:1em;
+    margin:auto;
+    max-width:42em;
+    background:#fefefe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    color: #000000;
+    font-size: 28px;
+}
+
+h2 {
+    border-bottom: 1px solid #CCCCCC;
+    color: #000000;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    color: #777777;
+    background-color: inherit;
+    font-size: 14px;
+}
+
+hr {
+    height: 0.2em;
+    border: 0;
+    color: #CCCCCC;
+    background-color: #CCCCCC;
+}
+
+p, blockquote, ul, ol, dl, li, table, pre {
+    margin: 15px 0;
+}
+
+code, pre {
+    border-radius: 3px;
+    background-color: #F8F8F8;
+    color: inherit;
+}
+
+code {
+    border: 1px solid #EAEAEA;
+    margin: 0 2px;
+    padding: 0 5px;
+}
+
+pre {
+    border: 1px solid #CCCCCC;
+    line-height: 1.25em;
+    overflow: auto;
+    padding: 6px 10px;
+}
+
+pre > code {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited {
+    color: #4183C4;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+
+figure figcaption {
+    text-align: center;
+    font-size: 12px;
+}
+table.eq_table {
+	border-collapse: collapse;
+ 	border: 0;
+	width: 100%;
+}
+table.eq_table td, table.eq_table th {
+	border: 0;
+}
+table.eq_table tfoot td {
+ 	border: 0;
+}
+table.eq_table tfoot .links {
+ 	text-align: right;
+ 	border: 0;
+}
+
+td.counter {
+	text-align: right;
+	border: 0;
+}
+
+td.eq_code {
+	width: 100%;
+	border: 0;
+	text-align: center;
+}
+
+.eq_table > tr, td, th, {
+	border: 0;
+}
+
+figure {
+	width: 100%;
+	text-align: center;
+}
+
+figure figcaption {
+	text-align: center;
+	font-size: 11pt;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+code {
+    font-family: monospace;
+}
+
+img {
+	max-width: 100%;
+}
+
+.authors
+{
+	text-align: center;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.authors:empty
+{
+	display: none;
+}
+
+
+.affiliation
+{
+	text-align: center;
+}
+
+.affiliation:empty
+{
+	display: none;
+}
+
+.title
+{
+	text-align: center;
+	margin-bottom: 5pt;
+}
+
+.title:empty
+{
+	display: none;
+}
+
+.header{
+  margin-bottom: 20pt;
+}
+
+.header:empty {
+   display: none;
+}
+
+.slide {
+  display: flex;
+  width: 221mm;
+  height: 166mm;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.slide_169 {
+  width: 294mm;
+  height: 166mm;
+}
+
+
+.slide_body {
+  display: block;
+  width: 191mm;
+  height: 136mm;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.slide_169 > .slide_body {
+  width: 264mm;
+}
+
+.slide figure {
+  width: auto;
+}
+
+.slide figcaption {
+  font-size: 14pt;
+}
+
+
+.slide_body .charter {
+ font-size: 12pt;
+ max-width: 180mm;
+}
+
+.header > .slide_body {
+    height: auto;
+}
+
+.figure > .charter {
+  margin: auto;
+}
+
+.slide_body:empty {
+  display: none;
+}
+
+.slide:empty{
+  display: none;
+}
+
+
+@media print {
+  body  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide {
+    page-break-after: always;
+    margin: 0;
+    padding: 0;
+    width: 221mm;
+    min-height: 165.5mm;
+    height: 165.5mm;
+    max-height: 165.5mm;
+    border: none;
+    overflow: hidden;
+    border: 0;
+  }
+
+  .slide_169 {
+    width: 294mm;
+  }
+}
+
+*:not(span){
+  unicode-bidi: plaintext;
+}
+t behind the sÅ
+</style>
+</head>
+<body>
+<div class="document">
+<div class="header"></div><div class="inner">
+<h2 id="toc_1">The Ranch</h2>
+
+<h3 id="toc_1.1">History</h3>
+
+<p>We started working on this track when R6 and URV visited me (Marv) in May 2016.
+Our plan was to create a track while the guys were over at my house so we started drawing a plan on a large sheet of paper.
+We started modeling immediately and shortly after, the base mesh was more or less done. Some additions like the canyon made it into the track a year later.</p>
+
+<p>We started adding more and more details to the track and came up with more ideas as time went on. In late 2017 we found ourselves in a situation where we had a track with a great concept and track flow. Still, there were so many things that had to be worked on. We took it too far. An open track like this is 
+not an easy project. Despite all the difficulties and lack of motivation, we pushed through it and here we are now.</p>
+
+<p>I developed a Blender add-on along the way which helped me to work out all the details and the lighting. Managing all the instance files, applying properties
+to all objects and making them look right would not have been possible otherwise. You can find the source code on my GitHub (maybe GitLab at 
+some point) profile: yethiel.</p>
+
+<p>Thomas and I started a sprint in August 2018 to finally get the track done, mainly because another All&#39;s Fair competition was coming up and we showcased the track in the previous one already. So we thought it&#39;d be nice to get it done by then. The version we played in AF 5 wasn&#39;t perfect but it had the reverse version set at night which Huki and I added extended features to RVGL for.</p>
+
+<p>Thomas did a ton of MakeItGood work on his Thinkpad. The track ran at like 15 fps and I&#39;m super thankful he&#39;s been putting up with such a big project. He did all the annoying stuff I never bothered to learn (and yet have to implement in my Blender add-on).</p>
+
+<p>At some point the AI nodes wouldn&#39;t save anymore. Rather than doing them again from scratch, I just moved the church to the left side of the train station. It used to be right behind the saloon.</p>
+
+<p>Even though I&#39;m getting a bit anxious when I open the track file in Blender, I&#39;m extremely proud of what we achieved.<br>
+I&#39;ve always collaborated with Thomas when I made tracks (he always did the MIG stuff for me). This is our first <em>true</em> collaboration. You wouldn&#39;t believe how much working on this together connected us. Thanks Thomas for bearing with me when I was in a bad mood or hard to work with. It means a lot to me!</p>
+
+<p>-<cite>Marv</cite></p>
+
+<p>Ranch.... A beautiful plan and a beautiful execution, hopefully you think the same. Back in 2011 I met Marv through Re-Volt Live or something - and we always had worked on smaller and bigger projects before - yet there was never one that we could consider finished! Ranch is our first work where we put blood, sweat and tears and we are absolutely satisfied with the result. </p>
+
+<p>There were of course moments where we needed to support each other and I will never forget those moments, I think that is what made this project special. I must point out that Ranch was an open track, it was always designed to be. This track type does not suit Re-volt specifically - it is more suited for Red Dead Redemption or GTA. But we liked the challenge. This means everything had to be modeled and be taken care of - which took a lot of time, whereas the only downside is the amount of polygons has to be rendered in a view, which lowers your FPS. If there&#39;s something that Ranch has taught me - is that teamwork can totally push you through and real friendships can come into existence ;-)</p>
+
+<p>Thank you for playing this track and reading this readme, I hope you will enjoy the <q>experience</q> we created for you! </p>
+
+<p>-<cite>Thomas</cite></p>
+
+<h3 id="toc_1.2">Requirements</h3>
+
+<p>This track requires at least RVGL version <code>18.0731a</code>.<br>
+You can get it from <a href="https://rvgl.re-volt.io">rvgl.re-volt.io</a>.</p>
+
+<p><strong>Shaders</strong> needs to be enabled, otherwise the track will not look right.<br>
+Do so in <em>rvgl.ini</em> which can be found in the profiles folder: <code>Shaders = 1</code></p>
+
+<h3 id="toc_1.3">Features</h3>
+
+<ul dir="auto">
+<li>Reversed version set at night
+
+<ul dir="auto">
+<li>Separate skybox, instances and .w</li>
+</ul></li>
+<li>Texture animation (river)</li>
+<li>Custom materials</li>
+<li>Custom water splash particles</li>
+<li>Custom moving objects (watermill, windmill)</li>
+<li>Custom sounds
+
+<ul dir="auto">
+<li>Ambient</li>
+<li>Skid sound on wood</li>
+</ul></li>
+<li>Custom loading screen</li>
+<li>Custom music</li>
+<li>1023/1024 instances (the limit in RVGL was raised just for this track)</li>
+</ul>
+
+<h3 id="toc_1.4">Collaborators</h3>
+
+<p>The amazing soundtrack is Odie&#39;s work.  </p>
+
+<p>The challenge times were contributed by Saffron.</p>
+
+<p>Some models were contributed by the community:<br>
+<strong>Cacti</strong>: Tubers<br>
+<strong>Church</strong>: Mighty Cucumber<br>
+<strong>Shiplight</strong>: From RVGL by Allan</p>
+
+<p>Thanks to all the people who tested the track and provided feedback!</p>
+
+<h3 id="toc_1.5">Material Notes</h3>
+
+<p>I&#39;m using the custom track properties feature on this track. I tweaked the dirt dust to be more realistic.<br>
+Another special thing are the two wood materials which are corrugated along two different axes, according to the direction of the wooden planks. </p>
+
+<p>Dirt 1:<br>
+    Most common surface type of the track.</p>
+
+<p>Dirt 2:<br>
+    Used in the riverbed</p>
+
+<p>Dirt 3:<br>
+    Wheat field</p>
+
+<p>Wood:<br>
+    Horizontal pattern (X axis)</p>
+
+<p>Wood 2:<br>
+    Vertical pattern (Y axis)</p>
+
+<p>Stone:<br>
+    Cliffs/Rockface</p>
+
+<p>Gravel:<br>
+    Carriage tracks</p>
+
+<p>Sand:<br>
+    Quicksand, out of bounds</p>
+
+<h3 id="toc_1.6">PRM/Instance Notes</h3>
+
+<p>The track has too many collision polygons to be exported in a single NCP file. That&#39;s why we split it up into three files.<br>
+The main ncp file contains collision for the base.</p>
+
+<p><em>ranch2.ncp</em> belongs to an invisible instance called <em>ranch2.prm</em> and provides collision for buildings.</p>
+
+<p><em>ranch3.ncp</em> provides collision for instances of the <em>forward</em> version of the track. The instances don&#39;t have separate collision files because we&#39;re exploiting their matrix (which is actually for storing the orientation) for instance scale (not supported by MIG).</p>
+
+<p><em>ranch4.ncp</em> is similar to ranch3.ncp. It contains collision data for the <em>reverse</em> version of the track. Since instances don&#39;t have collision themselves, this needed to be a separate empty instance for the reverse version. Took me a few hours to realize it&#39;s possible...</p>
+
+<h3 id="toc_1.7">Saving space and optimization</h3>
+
+<p>All textures except for E are saved in JPG format to save space. The loss in quality isn&#39;t too drastic. At one point the track was about 130mb. I&#39;m glad we managed to cut it down to ~65mb.<br>
+Instances are another trick to cut down on the size. Including all plants, rocks, barrels, ... in the .w file would have bloated it up quite a bit.<br>
+All other textures (loading screen, gfx image) are JPGs as well.</p>
+
+<p>As per huki&#39;s suggestion, we put the .w files through Jig&#39;s WorldCut with these settings:</p>
+
+<p><strong>Cubes size</strong>: <code>4000</code><br>
+<strong>BigCubes size</strong>: <code>12000</code></p>
+
+<h3 id="toc_1.8">Source Files</h3>
+
+<p>I&#39;m sure they are somewhere... At some point we stopped working from xcf/psd/kra/blend files and just worked on bare files. W/PRM/NCP is quite a robust format and well supported by my add-on so we often deleted our work files and started from an imported version of the track.<br>
+Don&#39;t do that, we did that to cut some corners.</p>
+</div>
+</div>
+<script>renderMathInElement(document.body);</script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME		'Kadish Sprint'			;The name of the level as seen in-game
+STARTPOS	1100 -10 -4470
+STARTPOSREV	1100 -10 -5400				;Start position of the car
+STARTROT	0.5				;Start rotation of the car (0 - 1)
+STARTROTREV	0			;Start rotation of the car (0 - 1)
+STARTGRID	3
+STARTGRIDREV	3
+FARCLIP		20000				;Far clipping distance (draw distance)
+FOGSTART	150				;Fog start (slightly less than FARCLIP)
+FOGCOLOR	51 26 90				;Fog and background color
+VERTFOGSTART	0				;Vertical fog start (as in rooftops)
+VERTFOGEND	0				;Vertical fog end (as in rooftops)
+WORLDRGBPER	100				;RGB percent of original world gouraud
+MODELRGBPER	90				;RGB percent of original model gouraud
+INSTANCERGBPER	100			;RGB percent of original instance gouraud
+DIFFICULTY    3			; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)
+MUSIC       'music\io\exotic'

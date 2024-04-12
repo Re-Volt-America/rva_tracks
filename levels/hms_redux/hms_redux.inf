@@ -1,0 +1,24 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME		'HMS Invincible: Redux';The name of the level as seen in-game
+DIFFICULTY	2
+STARTPOS	200 800 0 ;Start position of the car
+STARTPOSREV	-800 800 0  ;Start position of the car
+STARTROT	0.375		;Start rotation of the car (0 - 1)
+STARTROTREV	1.000		;Start rotation of the car (0 - 1)
+FARCLIP		32000		;Far clipping distance (draw distance)
+FOGSTART	30000		;Fog start (slightly less than FARCLIP)
+FOGCOLOR	50 50 50	;Fog and background color
+VERTFOGSTART	0		;Vertical fog start (as in rooftops)
+VERTFOGEND	0		;Vertical fog end (as in rooftops)
+WORLDRGBPER     100            ;RGB percent of original world gouraud
+MODELRGBPER	100		;RGB percent of original model gouraud
+INSTANCERGBPER	100		;RGB percent of original instance gouraud
+MIRRORS		0 0.75 0 256	;Type - mix - intensity start - distance
+MUSIC		'music\io\hood'
+REDBOOK		1 9
+ROCK		0.5 1 7 5
+ENVSTILL   	'levels\hms_redux\custom\envstill.bmp'
+ENVROLL   	'levels\hms_redux\custom\envroll.bmp'
