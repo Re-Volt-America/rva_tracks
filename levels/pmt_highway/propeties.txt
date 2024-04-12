@@ -1,0 +1,38 @@
+
+SPARK {
+  ID              31                            ; Particle ID [0 - 63]
+  Name            "SMOKE2"                      ; Display name
+
+  CollideWorld    true                          ; Collision with the world
+  CollideObject   true                          ; Collision with objects
+  CollideCam      false                         ; Collision with camera
+  HasTrail        false                         ; Particle has a trail
+  FieldAffect     false                         ; Is affected by force fields
+  Spins           true                          ; Particle spins
+  Grows           true                          ; Particle grows
+  Additive        true                          ; Draw particle additively
+  Horizontal      false                         ; Draw particle flat
+
+  Size            64.000000 64.000000           ; Size of the particle
+  UV              0.000000 0.000000             ; Top left UV coordinates
+  UVSize          0.250000 0.250000             ; Width and height of UV
+  TexturePage     47                            ; Texture page
+  Color           96 96 96                      ; Color of the particle
+
+  Mass            0.030000                      ; Mass of the particle
+  Resistance      0.020000                      ; Air resistance
+  Friction        0.001000                      ; Sliding friction
+  Restitution     0.000000                      ; Bounciness
+
+  LifeTime        2.600000                      ; Maximum life time
+  LifeTimeVar     0.000000                      ; Life time variance
+
+  SpinRate        0.000000                      ; Avg. spin rate (radians/sec)
+  SpinRateVar     6.000000                      ; Variation of the spin rate
+
+  SizeVar         0.000000                      ; Size variation
+  GrowRate        40.000000                     ; How quickly it grows
+  GrowRateVar     20.000000                     ; Grow variation
+
+  TrailType       -1                            ; ID of the trail to use
+}
