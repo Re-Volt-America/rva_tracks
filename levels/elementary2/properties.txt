@@ -1,0 +1,93 @@
+SPARK {
+  ID              2
+  Name            "DUST"
+  CollideWorld    false
+  CollideObject   false
+  CollideCam      false
+  HasTrail        false
+  FieldAffect     false
+  Spins           true
+  Grows           false
+  Additive        true
+  Horizontal      false
+  Size            3 3
+  UV              0 0
+  UVSize          0.25 0.25
+  TexturePage     47
+  Color           30 30 30
+  Mass            0.03
+  Resistance      0.002
+  Friction        0
+  Restitution     0
+  LifeTime        5.0
+  LifeTimeVar     0.1
+  SpinRate        0
+  SpinRateVar     6
+  SizeVar         2
+  GrowRate        0
+  GrowRateVar     36
+	}
+
+SPARK {
+  ID              6
+  Name            "SCHOOL_GRASS"
+
+  CollideWorld    true
+  CollideObject   true
+  CollideCam      false
+  HasTrail        false
+  FieldAffect     true
+  Spins           true
+  Grows           false
+  Additive        false
+  Horizontal      false
+
+  Size            8.000000 8.000000
+  UV              0.812500 0.000000
+  UVSize          0.062500 0.062500
+  TexturePage     47
+  Color           255 251 233
+
+  Mass            0.100000
+  Resistance      0.020000
+  Friction        1.000000
+  Restitution     0.500000
+
+  LifeTime        1.000000
+  LifeTimeVar     0.300000
+
+  SpinRate        0.000000
+  SpinRateVar     15.000000
+
+  SizeVar         0.000000
+  GrowRate        0.000000
+  GrowRateVar     0.000000
+
+  TrailType       -1
+}
+
+MATERIAL {
+  ID              4
+  Name            "SAND2"
+
+  Skid            true
+  Spark           false
+  OutOfBounds     false
+  Corrugated      false
+  Moves           false
+  Dusty           true
+
+  Roughness       1.000000
+  Grip            1.000000
+  Hardness        1.000000
+
+  SkidSound       7
+  ScrapeSound     5
+
+  SkidColor       227 223 217
+  CorrugationType 0
+  DustType        2
+  Velocity        0.000000 0.000000 0.000000
+}
+
+}

@@ -1,0 +1,249 @@
+{
+MODEL   0   "clock"
+MODEL   1   "hour"
+MODEL   2   "minute"
+MODEL   3   "second"
+MODEL   4   "swing"
+MODEL   5   "leaf"
+MODEL   6   "wheel"
+MODEL   7   "hamster"
+MODEL   8   "legs"
+SFX     0   "swing"
+SFX     1   "cage"
+
+
+ANIMATION {
+  Slot                      0
+  Name                      "Clock"
+  Mode                      0
+  PreCountdown              true
+
+  BONE {
+    BoneID                  0
+    ModelID                 0
+  }
+  BONE {
+    BoneID                  1
+    ModelID                 1
+  }
+  BONE {
+    BoneID                  2
+    ModelID                 2
+  }
+  BONE {
+    BoneID                  3
+    ModelID                 3
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    86400
+    Type                    0
+
+    BONE {
+      BoneID                1
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -720.000
+    }
+    BONE {
+      BoneID                2
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -8640.000
+    }
+    BONE {
+      BoneID                3
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -518400.000
+    }
+   }
+}
+
+ANIMATION {
+  Slot                      1
+  Name                      "Swing"        
+  Mode                      2
+  PreCountdown              true
+
+  BONE {
+    BoneID                  0
+    ModelID                 -1
+  }
+
+  BONE {
+    BoneID                  1
+    ModelID                 4
+    OffsetRotationAxis      1.000 0.000 0.000
+    OffsetRotationAmount    -2
+  }
+
+  BONE {
+    BoneID                  2
+    ModelID                 4
+    OffsetTranslation      604.300 0.000 0.000
+    OffsetRotationAxis      1.000 0.000 0.000
+    OffsetRotationAmount    10
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    2.784
+    Type                    3
+
+
+    BONE {
+      BoneID                1
+      RotationAxis          1.000 0.000 0.000
+      RotationAmount        4.000              
+    }
+    BONE {
+      BoneID                2
+      RotationAxis          1.000 0.000 0.000
+      RotationAmount        -20.000
+      SFX {
+        SfxID               0
+        Range               5
+        Looping             true
+      }                 
+     }
+    }
+  }
+
+ANIMATION {
+  Slot                      2
+  Name                      "Leaf"
+  Mode                      0
+  PreCountdown              true
+
+  BONE {
+    BoneID                  0
+    ModelID                 -1
+  }
+
+  BONE {
+    BoneID                  1
+    ModelID                 5
+    Parent 		    0
+    OffsetTranslation      0.000 720.0 0.000
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    0.25
+    Type                    0
+
+    BONE {
+      BoneID                1  
+      Visible		    false                  
+    }
+}
+
+  KEYFRAME {
+    FrameNr                 1
+    Time                    8
+    Type                    0
+
+    BONE {
+      BoneID                0
+      Translation           0.000 7034.60 0.000    
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -90.000          
+    }
+    BONE {
+      BoneID                1  
+      RotationAxis          0.2500 0.500 1.000
+      RotationAmount        -1200.000
+      Visible		    true                  
+    }
+  }
+}
+
+ANIMATION {
+  Slot                      3
+  Name                      "Keisha, the Hamster"
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                -1
+  }
+  BONE {
+    BoneID                  1
+    ModelID                 6
+  }
+  BONE {
+    BoneID                  2
+    ModelID                 7
+  }
+  BONE {
+    BoneID                  3
+    ModelID                 8
+    Parent		    2
+    OffsetTranslation       0.000 56.2645 -31.0747
+    OffsetRotationAxis      0.000 0.000 1.000
+    OffsetRotationAmount    -35.000
+  }
+  BONE {
+    BoneID                  4
+    ModelID                 8
+    Parent		    2
+    OffsetTranslation       -30 50 -31.0747
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    0.2
+    Type                    0
+
+    BONE {
+      BoneID                1
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        36.000
+    }
+    BONE {
+      BoneID                2
+      Translation           -2.400 -3.900 0.000
+    }
+    BONE {
+      BoneID                3
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        50.000
+    }
+    BONE {
+      BoneID                4
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -60.000
+    }
+}
+  KEYFRAME {
+    FrameNr                 1
+    Time                    0.2
+    Type                    0
+
+    BONE {
+      BoneID                1
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        36.000
+      SFX {
+        SfxID               1
+        Range               2
+        Looping             true
+      }
+    }
+    BONE {
+      BoneID                2
+      Translation           2.400 3.900 0.000
+    }
+    BONE {
+      BoneID                3
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -50.000
+    }
+    BONE {
+      BoneID                4
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        60.000
+    }
+  }
+}
+
+}

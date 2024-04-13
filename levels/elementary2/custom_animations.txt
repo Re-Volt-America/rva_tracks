@@ -1,0 +1,808 @@
+{
+MODEL   0   "clock"
+MODEL   1   "hour"
+MODEL   2   "minute"
+MODEL   3   "second"
+MODEL   4   "swing"
+MODEL   5   "leaf"
+MODEL   6   "seesaw"
+MODEL   7   "fulcrum"
+MODEL   8   "flag160"
+MODEL   9   "flag161"
+MODEL   10   "flag162"
+MODEL   11   "flag163"
+MODEL   12   "flag164"
+MODEL   13   "flag165"
+MODEL   14   "flag166"
+MODEL   15   "flag167"
+MODEL   16   "flag168"
+MODEL   17   "flag169"
+MODEL   18   "flag170"
+MODEL   19   "flag171"
+MODEL   20   "flag172"
+MODEL   21   "flag173"
+MODEL   22   "flag174"
+MODEL   23   "flag175"
+MODEL   24   "flag176"
+MODEL   25   "flag177"
+MODEL   26   "flag178"
+MODEL   27   "flag179"
+MODEL   28   "flag180"
+MODEL   29   "flag181"
+SFX     0    "swing"
+
+
+ANIMATION {
+  Slot                      0
+  Name                      "Clock"
+  Mode                      0
+  PreCountdown              true
+
+  BONE {
+    BoneID                  0
+    ModelID                 0
+  }
+  BONE {
+    BoneID                  1
+    ModelID                 1
+  }
+  BONE {
+    BoneID                  2
+    ModelID                 2
+  }
+  BONE {
+    BoneID                  3
+    ModelID                 3
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    86400
+    Type                    0
+
+    BONE {
+      BoneID                1
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -720.000
+    }
+    BONE {
+      BoneID                2
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -8640.000
+    }
+    BONE {
+      BoneID                3
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -518400.000
+    }
+   }
+}
+
+ANIMATION {
+  Slot                      1
+  Name                      "Swing"        
+  Mode                      2
+  PreCountdown              true
+
+  BONE {
+    BoneID                  0
+    ModelID                 -1
+  }
+
+  BONE {
+    BoneID                  1
+    ModelID                 4
+    OffsetRotationAxis      1.000 0.000 0.000
+    OffsetRotationAmount    -2
+  }
+
+  BONE {
+    BoneID                  2
+    ModelID                 4
+    OffsetTranslation      604.300 0.000 0.000
+    OffsetRotationAxis      1.000 0.000 0.000
+    OffsetRotationAmount    10
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    2.784
+    Type                    3
+
+
+    BONE {
+      BoneID                1
+      RotationAxis          1.000 0.000 0.000
+      RotationAmount        4.000              
+    }
+    BONE {
+      BoneID                2
+      RotationAxis          1.000 0.000 0.000
+      RotationAmount        -20.000
+      SFX {
+        SfxID               0
+        Range               5
+        Looping             true
+      }                 
+     }
+    }
+  }
+
+ANIMATION {
+  Slot                      2
+  Name                      "Leaf"
+  Mode                      0
+  PreCountdown              true
+
+  BONE {
+    BoneID                  0
+    ModelID                 -1
+  }
+
+  BONE {
+    BoneID                  1
+    ModelID                 5
+    Parent 		    0
+    OffsetTranslation      0.000 720.0 0.000
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    0.25
+    Type                    0
+
+    BONE {
+      BoneID                1  
+      Visible		    false                  
+    }
+}
+
+  KEYFRAME {
+    FrameNr                 1
+    Time                    8
+    Type                    0
+
+    BONE {
+      BoneID                0
+      Translation           0.000 7034.60 0.000    
+      RotationAxis          0.000 0.000 1.000
+      RotationAmount        -90.000          
+    }
+    BONE {
+      BoneID                1  
+      RotationAxis          0.2500 0.500 1.000
+      RotationAmount        -1200.000
+      Visible		    true                  
+    }
+  }
+}
+
+
+ANIMATION {
+  Slot                      3
+  Name                      "Seesaw"
+  Mode                      1
+  NeedsTrigger              true
+  TriggerOnce               true
+
+  BONE {
+    BoneID                  0
+    ModelID                 7
+  }
+
+  BONE {
+    BoneID                  1
+    ModelID                 6
+    OffsetTranslation      0.000 -126.74 0.000
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    1
+    Type                    0
+
+    BONE {
+      BoneID                0 
+    }
+    BONE {
+      BoneID                1  
+      RotationAxis          1.000 0.000 0.000
+      RotationAmount        29.200    
+    }
+  }
+}
+ANIMATION {
+  Slot                      4
+  Name                      "Flag1"  
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                 8
+  }
+  BONE {
+    BoneID                  1
+    ModelID                 9
+  }
+  BONE {
+    BoneID                  2
+    ModelID                 10
+  }
+  BONE {
+    BoneID                  3
+    ModelID                 11
+  }
+  BONE {
+    BoneID                  4
+    ModelID                 12
+  }
+  BONE {
+    BoneID                  5
+    ModelID                 13
+  }
+  BONE {
+    BoneID                  6
+    ModelID                 14
+  }
+  BONE {
+    BoneID                  7
+    ModelID                 15
+  }
+  BONE {
+    BoneID                  8
+    ModelID                 16
+  }
+  BONE {
+    BoneID                  9
+    ModelID                 17
+  }
+  BONE {
+    BoneID                  10
+    ModelID                 18
+  }
+  BONE {
+    BoneID                  11
+    ModelID                 19
+  }
+  BONE {
+    BoneID                  12
+    ModelID                 20
+  }
+  BONE {
+    BoneID                  13
+    ModelID                 21
+  }
+  BONE {
+    BoneID                  14
+    ModelID                 22
+  }
+  BONE {
+    BoneID                  15
+    ModelID                 23
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                0
+      Visible		    true                  
+    }
+    BONE {
+      BoneID                1
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                2
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                3
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                4
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                5
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                6
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                7
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                8
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                9
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                10
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                11
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                12
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                13
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                14
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                15
+      Visible		    false                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 1
+    Time                    0.05
+    Type                    0
+
+
+    BONE {
+      BoneID                0
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                1
+      Visible		    true                  
+    }
+
+  }
+
+
+  KEYFRAME {
+    FrameNr                 2
+    Time                    0.05
+    Type                    0
+
+
+    BONE {
+      BoneID                1
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                2
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 3
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                2
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                3
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 4
+    Time                    0.05
+    Type                    0
+
+    BONE {
+    BONE {
+      BoneID                3
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                4
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 5
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                4
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                5
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 6
+    Time                    0.05
+    Type                    0
+    BONE {
+      BoneID                5
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                6
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 7
+    Time                    0.05
+    Type                    0
+    BONE {
+      BoneID                6
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                7
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 8
+    Time                    0.05
+    Type                    0
+    BONE {
+      BoneID                7
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                8
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 9
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                8
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                9
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 10
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                9
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                10
+      Visible		    true                  
+  }
+
+
+  KEYFRAME {
+    FrameNr                 11
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                10
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                11
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 12
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                11
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                12
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 13
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                12
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                13
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 14
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                13
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                14
+      Visible		    true                  
+    }
+  }
+
+  KEYFRAME {
+    FrameNr                 15
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                14
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                15
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 16
+    Time                    0.3
+    Type                    0
+
+    BONE {
+      BoneID                15
+      Visible		    false                  
+    }
+  }
+
+
+}
+
+ANIMATION {
+  Slot                      5
+  Name                      "Flag2"        
+  Mode                      0
+
+  BONE {
+    BoneID                  0
+    ModelID                24
+  }
+  BONE {
+    BoneID                  1
+    ModelID                 25
+  }
+  BONE {
+    BoneID                  2
+    ModelID                 26
+  }
+  BONE {
+    BoneID                  3
+    ModelID                 27
+  }
+  BONE {
+    BoneID                  4
+    ModelID                 28
+  }
+  BONE {
+    BoneID                  5
+    ModelID                 29
+  }
+
+  KEYFRAME {
+    FrameNr                 0
+    Time                    0.8
+    Type                    0
+
+    BONE {
+      BoneID                0
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                1
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                2
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                3
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                4
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                5
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                6
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                7
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                8
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                9
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                10
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                11
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                12
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                13
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                14
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                15
+      Visible		    false                  
+    }
+  }
+
+  KEYFRAME {
+    FrameNr                 1
+    Time                    0.05
+    Type                    0
+
+
+    BONE {
+      BoneID                0
+      Visible		    true                 
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 2
+    Time                    0.05
+    Type                    0
+
+
+    BONE {
+      BoneID                0
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                1
+      Visible		    true                  
+    }
+
+  }
+
+
+  KEYFRAME {
+    FrameNr                 3
+    Time                    0.05
+    Type                    0
+
+
+    BONE {
+      BoneID                1
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                2
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 4
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                2
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                3
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 5
+    Time                    0.05
+    Type                    0
+
+    BONE {
+    BONE {
+      BoneID                3
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                4
+      Visible		    true                  
+    }
+  }
+
+
+  KEYFRAME {
+    FrameNr                 6
+    Time                    0.05
+    Type                    0
+
+    BONE {
+      BoneID                4
+      Visible		    false                  
+    }
+    BONE {
+      BoneID                5
+      Visible		    true                  
+    }
+  }
+
+}
+
+}
