@@ -1,0 +1,24 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME		'Toys in the Hood 4 (RVA)';The name of the level as seen in-game
+STARTPOS	2000. 0. -8300  ;Start position of the car
+STARTPOSREV	1700. 0. -9000  ;Start position of the car
+STARTROT	0.50		;Start rotation of the car (0 - 1)
+STARTROTREV	0		;Start rotation of the car (0 - 1)
+FARCLIP		35000		;Far clipping distance (draw distance)
+FOGSTART	26000		;Fog start (slightly less than FARCLIP)
+FOGCOLOR	80 144 192 	;Fog and background color
+VERTFOGSTART	0		;Vertical fog start (as in rooftops)
+VERTFOGEND	0		;Vertical fog end (as in rooftops)
+WORLDRGBPER     100             ;RGB percent of original world gouraud
+MODELRGBPER	100		;RGB percent of original model gouraud
+INSTANCERGBPER	100		;RGB percent of original instance gouraud
+MIRRORS		0 0.75 0 256	;Type - mix - intensity start - distance
+REDBOOK		4 9
+OBTAIN		1
+DIFFICULTY	4
+SWEEPCAM	1
+CHALLENGE              0 55 000                           ;The challenge time in time-trail mode
+CHALLENGEREV           0 55 000                           ;The challenge time in time-trail mode in reverse
