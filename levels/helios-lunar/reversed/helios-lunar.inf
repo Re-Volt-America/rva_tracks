@@ -2,7 +2,7 @@
 ;Revolt .INF file structure
 ;--------------------------
 
-NAME		'Helios/Lunar'
+NAME		'Helios/Lunar (RVA)'
 STARTPOS	18800. 1006. 16072  ;Start position of the car
 STARTROT	0.75		;Start rotation of the car (0 - 1)
 FARCLIP		60000		;Far clipping distance (draw distance)

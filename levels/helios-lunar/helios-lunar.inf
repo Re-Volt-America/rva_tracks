@@ -2,7 +2,7 @@
 ;Revolt .INF file structure
 ;--------------------------
 
-NAME            'Helios/Lunar'
+NAME            'Helios/Lunar (RVA)'
 STARTPOS	17535. 1006. 16372  ;Start position of the car
 STARTPOSREV	18800. 1006. 16072  ;Start position of the car
 STARTROT	0.25		;Start rotation of the car (0 - 1)
