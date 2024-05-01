@@ -1,0 +1,17 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME 'White Rose Chapel' 
+STARTPOS 	-5910. -368. 4018. 
+STARTPOSREV -5710. -368. 3768.
+STARTROT 	0.25
+STARTROTREV	0.75
+FARCLIP 58000		           
+FOGSTART 55000	
+FOGCOLOR 0 0 0
+WORLDRGBPER 85 
+MODELRGBPER	80 
+MUSIC		'music\io\trance\trider'
+REDBOOK		1 3
+

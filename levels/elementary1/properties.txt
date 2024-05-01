@@ -1,0 +1,39 @@
+SPARK {
+  ID              6
+  Name            "SCHOOL_GRASS"
+
+  CollideWorld    true
+  CollideObject   true
+  CollideCam      false
+  HasTrail        false
+  FieldAffect     true
+  Spins           true
+  Grows           false
+  Additive        false
+  Horizontal      false
+
+  Size            8.000000 8.000000
+  UV              0.812500 0.000000
+  UVSize          0.062500 0.062500
+  TexturePage     47
+  Color           255 251 233
+
+  Mass            0.100000
+  Resistance      0.020000
+  Friction        1.000000
+  Restitution     0.500000
+
+  LifeTime        1.000000
+  LifeTimeVar     0.300000
+
+  SpinRate        0.000000
+  SpinRateVar     15.000000
+
+  SizeVar         0.000000
+  GrowRate        0.000000
+  GrowRateVar     0.000000
+
+  TrailType       -1
+}
+
+}

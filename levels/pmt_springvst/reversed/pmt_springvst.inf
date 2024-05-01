@@ -1,0 +1,19 @@
+
+NAME		'Spring Visit'	        
+DIFFICULTY	1 
+CHALLENGEREV	0 39 000
+STARTPOSREV	0 0 0	    	       		        
+STARTROTREV	0.5		      
+STARTGRIDREV	0	
+FARCLIP	        30000
+FOGSTART	25000	    
+FOGCOLOR	26 46 74
+SWEEPCAM	1		    
+VERTFOGSTART	0		   
+VERTFOGEND	0		  
+WORLDRGBPER     30
+MODELRGBPER	30
+INSTANCERGBPER	30
+MIRRORS		0 0.6 0 768	   
+MP3             'levels\pmt_springvst\Falling_Blossom.mp3'
+REDBOOK		4 9

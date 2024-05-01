@@ -1,0 +1,37 @@
+SPARK {
+  ID              11                             ; Particle ID [0 - 63]
+  Name            "ENGINE SMOKE"                       ; Display name
+
+  CollideWorld    true                          ; Collision with the world
+  CollideObject   true                          ; Collision with objects
+  CollideCam      true                          ; Collision with camera
+  HasTrail        false                         ; Particle has a trail
+  FieldAffect     true                          ; Is affected by force fields
+  Spins           false                         ; Particle spins
+  Grows           false                         ; Particle grows
+  Additive        true                          ; Draw particle additively
+  Horizontal      false                         ; Draw particle flat
+
+  Size            1.000000 1.000000             ; Size of the particle
+  UV              0.937500 0.000000             ; Top left UV coordinates
+  UVSize          0.062500 0.062500             ; Width and height of UV
+  TexturePage     47                            ; Texture page
+  Color           55 255 255                   ; Color of the particle
+
+  Mass            0.010000                      ; Mass of the particle
+  Resistance      0.000000                      ; Air resistance
+  Friction        0.100000                      ; Sliding friction
+  Restitution     0.000000                      ; Bounciness
+
+  LifeTime        0.500000                      ; Maximum life time
+  LifeTimeVar     0.050000                      ; Life time variance
+
+  SpinRate        0.000000                      ; Avg. spin rate (radians/sec)
+  SpinRateVar     0.000000                      ; Variation of the spin rate
+
+  SizeVar         0.000000                      ; Size variation
+  GrowRate        0.000000                      ; How quickly it grows
+  GrowRateVar     0.000000                      ; Grow variation
+
+  TrailType       1                             ; ID of the trail to use
+}
