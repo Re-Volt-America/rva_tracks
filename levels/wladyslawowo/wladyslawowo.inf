@@ -1,8 +1,8 @@
-;----------------------------
+﻿;----------------------------
 ; Revolt .INF file structure
 ;----------------------------
  
-NAME            	'Władysławowo'
+NAME            	'Wladyslawowo'
 STARTPOS        	-607 0 -1607
 STARTPOSREV     	-168 0 -1257
 STARTROT        	0
