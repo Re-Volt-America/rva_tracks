@@ -1,0 +1,21 @@
+;--------------------------------------------
+;Revolt .INF file structure
+;Author Zach
+;README Included
+;Website - http://revoltzone.net/
+;--------------------------------------------
+
+NAME		'MineZcraft'
+STARTPOS	-125 0 -200
+STARTPOSREV	525 0 -1400
+STARTROT	0
+STARTROTREV	0.5
+FARCLIP		900000
+FOGSTART	800000
+FOGCOLOR	81 192 255
+WORLDRGBPER     100
+MODELRGBPER	100
+INSTANCERGBPER	100
+MIRRORS		0 0.75 0 256
+MP3		'levels\minezcraft\minezcraft.mp3'
+REDBOOK 	1 3
