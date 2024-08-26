@@ -34,7 +34,13 @@ Patch - 4/3/2022
 
 -Added collision to doorframes
 
+____________________________________________________
 
+Patch - 8/25/2024
+
+-Fog distance reduced in lower performance modes
+-Instance priorities added for low performance mode
+-Added geometry to back faces of hedges in the park
 ____________________________________________________
 
 Developers:
@@ -70,7 +76,7 @@ ____________________________________________________
 
 Stats:
 
-World Faces: 10,178
+World Faces: 10,223
 NCP Faces: 2,393
 Development Time: 9 Months
 
