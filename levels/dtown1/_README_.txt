@@ -48,6 +48,18 @@ Patch - 10/14/2023
 
 ____________________________________________________
 
+Patch - 8/25/2024
+
+-Instance priorities corrected
+-Transparency on shoe repair shop... repaired
+-Fixed replay camera near city hall
+-Adjusted car wheel collision
+-Bike instance has now accurately has 1 gear crankset instead of 2
+-Patched hole near the dairy store
+
+____________________________________________________
+
+
 Developers:
 
 GJ
@@ -80,8 +92,8 @@ ____________________________________________________
 
 Stats:
 
-World Faces: 9,724
-With Instances: 15,933
+World Faces: 9,744
+With Instances: 15,953
 NCP Faces: 1,845
 Development Time: 13 Months
 
