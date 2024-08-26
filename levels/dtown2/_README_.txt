@@ -56,6 +56,20 @@ Patch - 10/14/2023
 
 ____________________________________________________
 
+Patch - 8/25/2024
+
+-Fixed replay camera clipping in second alley
+-Adjusted car wheel collision
+-Bike instance has now accurately has 1 gear crankset instead of 2
+-Fixed instance priorities for low performance mode
+-Patched a hole in the subway station wall after the platforms
+-Fixed window environment map on left corner building in the shopping area
+-Repaired shading on the interior of the electronics store and the diner
+-Repaired UVs inside the diner
+
+____________________________________________________
+
+
 Developers:
 
 GJ
