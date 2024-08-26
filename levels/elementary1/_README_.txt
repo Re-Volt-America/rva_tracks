@@ -32,6 +32,13 @@ Start your engines, class is about to begin!
 
 ____________________________________________________
 
+Patch - 8/25/2024
+
+-Fixed reflections in low performance mode
+-Repaired incorrect normal faces on book models
+
+____________________________________________________
+
 Developers:
 
 GJ
@@ -64,7 +71,7 @@ ____________________________________________________
 Stats:
 
 World Faces: 6,739
-With Instances: 14,345
+With Instances: 14,391
 NCP Faces: 922
 Development Time: 6 Months
 
