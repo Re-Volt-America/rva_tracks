@@ -47,6 +47,13 @@ Patch - 4/3/2023
 
 ____________________________________________________
 
+Patch - 8/25/2024
+
+-Fog distance reduced in lower performance modes
+-Instance priorities added for low performance mode
+-Patched hole in the wall of the laboratory
+____________________________________________________
+
 Developers:
 
 GJ
