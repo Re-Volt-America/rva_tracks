@@ -34,7 +34,7 @@ Umbrella mesh: Isola Verde by Crescviper
 
 Dropwater effect taken from Spa-Volt 2 by Kiwi
 
-You can reuse any of the 3D models for your own purposes but don't forget to mention the original author
+DISCLAIMER: You can reuse any of the 3D models for your own purposes but don't forget to mention the original author
 
 
 ;====================================
@@ -49,6 +49,21 @@ City ambience, Cement mixer and bird take-off sounds taken from bigsoundbank.com
 ;====================================
 ;	      CHANGELOG
 ;====================================
+
+UPDATED ON 08/11/2024
+---------------------
+
+• World and Collision Files
+
++ New tree and bush models
++ New brick texture and other texture adjustments
++ Shading improved where most needed
+
+• In-Game Editor
+
++ Red X at the car park in reversed mode fixed
++ Digger pool reposition trigger allows to fall on the left side of the plank
+
 
 UPDATED ON 06/17/2022
 ---------------------

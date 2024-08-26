@@ -14,7 +14,6 @@ WORLDRGBPER            100                                ;RGB percent of origin
 MODELRGBPER            60                                 ;RGB percent of original model (cars, etc.) gouraud
 INSTANCERGBPER         100                                ;RGB percent of original instance (decorations, etc.) gouraud
 MIRRORS                0 0.75 0 256                       ;Type - mix - intensity start - distance
-MUSIC                  `music\io\trance\zeta`             ;Custom music for I/O
 REDBOOK                4 9                                ;Redbook soundtrack if redbook folder is present. Two values, first and last track.
 ENVROLL                'gfx\envroll.bmp'     		  ;Reflection on cars
 ENVSTILL               'gfx\envstill.bmp'    		  ;Reflection on stationary objects and the ball bearing weapon
