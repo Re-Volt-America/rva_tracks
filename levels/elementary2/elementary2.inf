@@ -22,7 +22,7 @@ MODELRGBPER	100
 INSTANCERGBPER	100
 ENVSTILL	'levels\elementary2\envstill.bmp'
 ENVROLL         'levels\elementary2\envroll.bmp'
-MIRRORS	 	0 0.6 0 768	   
+MIRRORS	 	0 0.6 0 768
 MP3             'levels\elementary2\overdriver-2021.mp3'
 REDBOOK		4 9
 

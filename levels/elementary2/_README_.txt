@@ -19,7 +19,6 @@ Practice Star: Yes
 
 Created: 02/05/2024
 
-
 ____________________________________________________
 
 Description:
@@ -27,6 +26,16 @@ Description:
 Day turns into afternoon at Paul Simon Elementary.
 The ruckus continues as the toys race again, disregarding trouble.
 Push past opponents in the cafeteria and rush to recess at the sunlit playground!
+
+____________________________________________________
+
+Patch - 8/25/2024
+
+-Fixed incorrect wall collisions
+-Added extra box at first turn
+-Repaired slight visibox error in the peripheral neighborhood
+-Fixed reflections in low performance mode
+-Fixed vertex shading error on sedan instances
 
 ____________________________________________________
 
@@ -62,8 +71,8 @@ ____________________________________________________
 Stats:
 
 World Faces: 7,810
-With Instances: 15,994
-NCP Faces: 1,437
+With Instances: 16,035
+NCP Faces: 1,441
 Development Time: 6 Months
 
 
@@ -78,6 +87,7 @@ Trivia:
 -The cafeteria is actually a multi-purpose room. It includes a stage for assemblies and basketball hoops for when converted into a gym.
 -One of the cars parked near the school belongs to someone from a previous track theme of ours.
 -The bus pictured in a movie poster downtown foreshadowed the school theme.
+-The school name is accidentally the name of a famous musician. Perhaps the school board president is a fan :)
 
 
 ____________________________________________________
