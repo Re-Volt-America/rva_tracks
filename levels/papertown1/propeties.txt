@@ -1,5 +1,0 @@
-PICKUPS {
-  SpawnCount      15 10                           ; Initial and per-player count
-  EnvColor        255 255 128                   ; Color of shininess (RGB)
-  LightColor      128 96 0                      ; Color of light (RGB)
-}

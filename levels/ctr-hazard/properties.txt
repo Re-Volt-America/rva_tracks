@@ -1,0 +1,52 @@
+{
+	MATERIAL {
+  		ID              16                            ; Material ID [0 - 63]
+  		Name            "CONVEYOR1"                   ; Display name
+  		Color           56 0 128                      ; Display color
+
+  		Skid            false                         ; Skidmarks appear on material
+  		Spark           false                         ; Material emits particles
+  		OutOfBounds     false                         ; Not implemented
+  		Corrugated      true                          ; Material is bumpy
+  		Moves           true                          ; Moves like museum conveyors
+  		Dusty           false                         ; Material emits dust
+
+  		Roughness       1.000000                      ; Roughness of the material
+  		Grip            1.000000                      ; Grip of the material
+  		Hardness        0.000000                      ; Hardness of the material
+
+  		DefaultSound    -1                            ; Sound when driving
+  		SkidSound       6                             ; Sound when skidding
+  		ScrapeSound     5                             ; Car body scrape [5:Normal]
+
+  		SkidColor       0 0 0                         ; Color of the skidmarks
+  		CorrugationType 3                             ; Type of bumpiness
+  		DustType        0                             ; Type of dust
+  		Velocity        -155.000000 0.000000 200.000000 ; Move cars
+  		}
+  	MATERIAL {
+  		ID              17                            ; Material ID [0 - 63]
+  		Name            "CONVEYOR2"                   ; Display name
+  		Color           51 38 61                      ; Display color
+
+  		Skid            false                         ; Skidmarks appear on material
+  		Spark           false                         ; Material emits particles
+  		OutOfBounds     false                         ; Not implemented
+  		Corrugated      true                          ; Material is bumpy
+  		Moves           true                          ; Moves like museum conveyors
+  		Dusty           false                         ; Material emits dust
+
+  		Roughness       1.000000                      ; Roughness of the material
+  		Grip            1.000000                      ; Grip of the material
+  		Hardness        0.000000                      ; Hardness of the material
+
+  		DefaultSound    -1                            ; Sound when driving
+  		SkidSound       6                             ; Sound when skidding
+  		ScrapeSound     5                             ; Car body scrape [5:Normal]
+
+  		SkidColor       0 0 0                         ; Color of the skidmarks
+  		CorrugationType 3                             ; Type of bumpiness
+  		DustType        0                             ; Type of dust
+  		Velocity        155.000000 0.000000 -200.000000 ; Move cars
+  		}
+}

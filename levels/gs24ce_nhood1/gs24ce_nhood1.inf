@@ -1,0 +1,23 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME		'Toys in the Hood 1.5'
+STARTPOS	-14974. 88. 20489 
+STARTROT	0.25		
+STARTROTREV	0.75		
+STARTGRID       3
+FARCLIP		35000		
+FOGSTART	34000		
+FOGCOLOR	80 144 192 	
+VERTFOGSTART	0		
+VERTFOGEND	0		
+WORLDRGBPER     100     
+MODELRGBPER	100		
+INSTANCERGBPER	100		
+MIRRORS		0 0.85 0 256
+MP3		'nhood1.mp3'
+REDBOOK		4 9
+DIFFICULTY      3
+CHALLENGE       0 38 0 
+SWEEPCAM	1

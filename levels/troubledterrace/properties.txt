@@ -1,0 +1,3 @@
+PICKUPS {
+  SpawnCount      64 64                           
+  }

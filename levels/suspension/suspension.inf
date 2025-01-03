@@ -1,0 +1,21 @@
+;----------------------------
+; Revolt .INF file structure
+;----------------------------
+
+NAME            'Suspension permanente'
+GAMETYPE        0
+STARTPOS        4000.000000 -2875.000000 5000.000000
+STARTPOSREV     4000.000000 -2875.000000 5000.000000
+STARTROT        0.000000
+STARTROTREV     0.500000
+ENDPOS          0.000000 0.000000 0.000000
+STARTGRID       3
+STARTGRIDREV    3
+FARCLIP         10000
+FOGSTART        8000
+FOGCOLOR        0 0 0
+VERTFOGSTART    0
+VERTFOGEND      0
+WORLDRGBPER     100
+MODELRGBPER     100
+INSTANCERGBPER  100

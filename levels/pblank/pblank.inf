@@ -1,0 +1,24 @@
+;----------------------------
+; Revolt .INF file structure
+;----------------------------
+
+NAME            'Frostpeak'
+STARTPOS        2400 -100 -1760
+STARTPOSREV     1830 -100 -2020
+STARTROT        0.777
+STARTROTREV     0.25
+STARTGRID       1
+STARTGRIDREV    1
+FARCLIP         10000
+FOGSTART        3000
+FOGCOLOR        250 247 246
+VERTFOGSTART    0
+VERTFOGEND      1800
+WORLDRGBPER     100
+MODELRGBPER     100
+INSTANCERGBPER  100
+DIFFICULTY	4
+MUSIC		'levels\pblank\song.mp3'
+REDBOOK 	1 2	
+CHALLENGE       0 39 600
+CHALLENGEREV    0 40 600
