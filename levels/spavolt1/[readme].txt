@@ -3,7 +3,7 @@
                \__ \ )___//(__)\(___)\  /  )(_)(  )(__  )(
                (___/(__) (__)(__)     \/  (_____)(____)(__)
                                 R E A D M E
-                   Version 1.3, from September 11th 2022
+                   Version 1.4, from November 27th 2024
 
   S U M M A R Y
 ════════════════════════════════════════════════════════════════════════════
@@ -49,7 +49,6 @@ Major features of Spa-Volt:
 + Several eastereggs to find
 
 Have fun, and a "relaxing" time at Spa-Volt! :-)
-  Kiwi
 
 
   I N F O R M A T I O N S
@@ -161,18 +160,11 @@ Licensed under a Attribution-NonCommercial 3.0 International License
   T H A N K    Y O U
 ════════════════════════════════════════════════════════════════════════════
 Thank you to the original Probe developers for creating Re-Volt, and thank
-you to Huki and Marv for keeping the game alive nearly 20 years after its
-initial release by still improving and maintaining RVGL.
-
-Thank you to the great Re-Volt community, for inspiring and motivating
-me to start working on my first track. Also big thanks to the ladies and
-gentlemen at the Discord's #tracks channel, for your never-ending help for
-a track creator newbie like me.
+you to Huki and the rest of the RVGL team for keeping the game alive more
+then 20 years after its initial release by still improving and maintaining
+RVGL.
 
 Thank you to Gabor, Human and Hil, whose tracks inspired me a lot.
-
-Thank you to my wife Bianca, who had to spend hundreds of evenings without
-me, because I was working on Spa-Volt instead. ;-)
 
                      ----------------------------
                 V E R Y   S P E C I A L    T H A N K S
@@ -246,22 +238,41 @@ Version 1.21 from January 30th, 2019
  + Bugfix release for Version 1.2, updated on revoltzone.net
  + Changelog:
        - Corrected an issue at the STARTPOS value in spavolt1.ini 
-	   
+       
 Version 1.22 from November 24th, 2019
  + Bugfix release for Version 1.21, updated on revoltzone.net
  + Changelog:
        - Corrected repo-bug inside the outdoor pool
-	   
+       
 Version 1.3 from September 11th, 2022
  + Bugfix release, updated on revoltworld.net
  + Changelog:
        - Slightly adjusted the positions of some repo-triggers
+       
+Version 1.4 from November 27th, 2024
+ + Bugfix release, updated on revoltworld.net
+ + Update courtesy of EstebanMz
+ + Changelog:
+       - Added AI nodes and modified track zones at the fast path in a
+         way that you can repo without spawning on the slow path (AI remains
+         without attempting to take the fast path).
+       - Repo nodes modified on several zones outside the racing line to change
+         the approach you get back to the race line.
+       - Tweaks to reposition boxes: extended the repo to the outside pool, now
+         it covers both pools (normal mode) and the box below the chairs at the
+         exit to the outside pool has been shrunk (reversed mode).
 
 
   D I S C L A I M E R
 ════════════════════════════════════════════════════════════════════════════
-You are free to distribute this track, but please don't change any parts
-of it without my approval. Contact me on Discord or in the TRH forum.
-
-You are free to use parts of the tracks (models, textures, sounds, ...)
-for your own purposes, but don't forget to credit the original authors.
+(1) My creations can be redistributed in any possible way without asking for
+    permission, but please do not change any parts of it. Exception see (2).
+       
+(2) You are allowed to change any parts of my creations without asking for
+    permission, if you use a different unique foldername.
+       
+(3) You can reuse any parts of my creations for your own creations, as long
+    you mention the original authors accordingly in a readme-file.
+       
+(4) You are not allowed to use any parts of my creations for commercial
+    purposes. 
