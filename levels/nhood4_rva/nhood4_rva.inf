@@ -22,3 +22,4 @@ DIFFICULTY	4
 SWEEPCAM	1
 CHALLENGE              0 55 000                           ;The challenge time in time-trail mode
 CHALLENGEREV           0 55 000                           ;The challenge time in time-trail mode in reverse
+MP3         'music\io\hood'
