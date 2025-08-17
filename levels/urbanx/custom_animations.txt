@@ -1,0 +1,24 @@
+MODEL   0   "fan"
+
+
+
+ANIMATION {
+  Slot                      0                         ; 
+  Name                      "FAN"                    ; 
+  Mode                      0                         ; 
+
+  BONE {
+    BoneID                  0                         ; 
+    ModelID                 0                         ; 
+  }
+  KEYFRAME {
+    FrameNr                 0                         ; Number of the keyframe (0 to 255)
+    Time                    1.000                     ; Time (in seconds) since previous keyframe
+    Type                    0                         ; Interpolation type. 0 - linear, 1 - smooth start, 2 - smooth end, 3 - both smooth, 4 - overshoot
+    BONE {
+      BoneID                0                         ; Body part ID
+      RotationAxis          0.000 0.000 1.000         ; Rotation axis
+      RotationAmount        359.000                  ; Rotation (in degrees)
+    }
+}
+}

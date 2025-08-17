@@ -1,0 +1,88 @@
+CORRUGATION {
+  ID              1
+  Name            "Balls"
+
+  Amplitude       6.000000
+  Wavelength      100.00000 100.00000
+}
+CORRUGATION {
+  ID              2
+  Name            "Roller"
+
+  Amplitude       6.000000
+  Wavelength      100.00000 1200.00000
+}
+
+MATERIAL {
+  ID              23
+  Name            "BALLS"
+
+  Skid            false
+  Spark           false
+  OutOfBounds     false
+  Corrugated      true 
+  Moves           false
+  Dusty           false
+
+  Roughness       1.000000
+  Grip            1.000000
+  Hardness        1.000000
+
+  SkidSound       6
+  ScrapeSound     5
+
+  SkidColor       112 112 112
+  CorrugationType 1
+  DustType        0
+  Velocity        0.000000 0.000000 0.000000
+}
+
+MATERIAL {
+  ID              2
+  Name            "ROLLER"
+
+  Skid            false
+  Spark           true
+  OutOfBounds     false
+  Corrugated      false
+  Moves           false
+  Dusty           false
+
+  Roughness       1.000000
+  Grip            1.000000
+  Hardness        1.000000
+
+  DefaultSound    65 
+  SkidSound       65
+  ScrapeSound     65
+
+  SkidColor       0 0 0
+  CorrugationType 2
+  DustType        0
+  Velocity        0.000000 0.000000 0.000000
+}
+
+MATERIAL {
+  ID              7
+  Name            "NETTING"
+
+  Skid            false
+  Spark           false
+  OutOfBounds     false
+  Corrugated      true
+  Moves           false
+  Dusty           false
+
+  Roughness       1.000000
+  Grip            0.700000
+  Hardness        0.000000
+
+  DefaultSound    64 
+  SkidSound       64
+  ScrapeSound     64
+
+  SkidColor       32 32 32
+  CorrugationType 1
+  DustType        0
+  Velocity        0.000000 0.000000 0.000000
+}
