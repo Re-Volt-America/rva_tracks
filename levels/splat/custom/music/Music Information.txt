@@ -1,0 +1,2 @@
+If no music file is inside this folder, some standard Redbook
+music will be played while racing "Splat!".

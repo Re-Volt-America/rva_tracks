@@ -1,0 +1,36 @@
+{
+  MODEL   0   "se2000_1"
+  MODEL   1   "se2000_2"
+  
+	ANIMATION {
+	  Slot                      0
+	  Name                      "SE 2000"
+	  Mode                      1
+	  BONE {
+		BoneID                  0
+		ModelID                 0
+		OffsetTranslation       8000 3000 -40000
+	  }
+	  BONE {
+		BoneID                  1
+		ModelID                 1
+		Parent                  0
+		OffsetTranslation       0 -120 700
+	  }
+
+	  KEYFRAME {
+		FrameNr                 0
+		Time                    15
+		Type                    0
+		BONE {
+		  BoneID                0
+		  Translation           0 0 80000
+		}
+		BONE {
+		  BoneID                1
+		  RotationAxis          0 0 1
+		  RotationAmount        50000
+		}
+	  }
+	}
+  }
