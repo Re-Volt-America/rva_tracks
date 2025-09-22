@@ -2,7 +2,7 @@
 ;Revolt .INF file structure
 ;--------------------------
 
-NAME            	'Museum Unleashed (RVA)'       	;The name of the level as seen in-game
+NAME            	'Museum Unleashed'       	;The name of the level as seen in-game
 DIFFICULTY 3
 STARTPOS		-800 -1928 12580	;Start position of the car
 STARTPOSREV		-230 -1928 12400	;Start position of the car -1928
