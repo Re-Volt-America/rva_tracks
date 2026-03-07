@@ -1,2 +1,0 @@
-PICKUPS {
-    SpawnCount      20 10}
