@@ -1,0 +1,36 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME		'Crystal caves';The name of the level as seen in-game
+STARTPOS        744 -129 -1028
+STARTPOSREV	729 -129 -862  ;Start position of the car
+STARTROT	0.97	;Start rotation of the car (0 - 1)
+STARTROTREV	0.534	;Start rotation of the car (0 - 1)
+STARTGRID       4
+STARTGRIDREV    5
+FARCLIP		16000		;Far clipping distance (draw distance)
+FOGSTART	9000		;Fog start (slightly less than FARCLIP)
+FOGCOLOR	0 0 0	;Fog and background color
+VERTFOGSTART	0		;Vertical fog start (as in rooftops)
+VERTFOGEND	0		;Vertical fog end (as in rooftops)
+WORLDRGBPER     100             ;RGB percent of original world gouraud
+MODELRGBPER	40		;RGB percent of original model gouraud
+INSTANCERGBPER	100		;RGB percent of original instance gouraud
+MIRRORS		0 0.75 0 256	;Type - mix - intensity start - distance
+DIFFICULTY      3  ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)
+REDBOOK 	5 6
+CHALLENGE       0 33 500  ; Time in <min sec ms>
+CHALLENGEREV    0 45 0
+OBTAIN          4  ; Obtain level (-1:Never, 0:Default, 1...5)
+
+TEXTUREPROPS    0 1 1 1  ; a Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    1 1 1 1  ; b Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    2 1 1 1  ; c Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    3 1 1 1  ; d Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    4 1 1 1  ; e Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    5 1 1 1  ; f Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    6 1 0 1  ; g Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    7 1 0 1  ; h Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    8 1 0 0  ; i Index - mipmaps - wrap mode - colorkey
+TEXTUREPROPS    9 1 1 1  ; j Index - mipmaps - wrap mode - colorkey

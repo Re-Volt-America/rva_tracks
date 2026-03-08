@@ -1,0 +1,21 @@
+;----------------------------------------------------------------------
+; made by: motorhand 2025
+;----------------------------------------------------------------------
+
+NAME            'Radio Kootwijk'
+STARTPOS        0 -50 1950 ;xzy
+STARTPOSREV     0 0  42050  ;38500
+STARTROT        0.5
+STARTROTREV     0.5
+FARCLIP			180000
+FOGSTART		72500
+FOGCOLOR		200 150 0
+VERTFOGSTART	0
+VERTFOGEND		0
+WORLDRGBPER     96
+MODELRGBPER		96
+INSTANCERGBPER	96
+DIFFICULTY		2
+SWEEPCAM        1
+ENVSTILL		'levels\radiokootwijk\custom\envstill.bmp'
+MP3				'levels\radiokootwijk\music.mp3'

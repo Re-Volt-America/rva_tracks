@@ -1,0 +1,142 @@
+{
+MODEL   0   "crane"
+MODEL   1   "gate"
+MODEL   2   "forklift"
+MODEL   3   "lighton"
+MODEL   4   "lightoff"
+MODEL   5   "pick1"
+MODEL   6   "shad1"
+
+ANIMATION {
+  Slot                      0
+  Name                      "CRANE"
+  Mode                      2
+  BONE {
+    BoneID                  0
+    ModelID                 0  }
+  KEYFRAME {
+    FrameNr                 0
+    Time                    28
+    Type                    3
+    BONE {
+      BoneID                0
+      Translation	    0.000 0.000 4000.000 } } }
+
+ANIMATION {
+  Slot                      1
+  Name                      "GATE"
+  Mode                      2
+  BONE {
+    BoneID                  0
+    ModelID                 1
+    OffsetRotationAxis      1.000 0.000 0.000
+    OffsetRotationAmount    -1.500
+  }
+  KEYFRAME {
+    FrameNr                 0
+    Time                    8
+    Type                    4
+    BONE {
+      BoneID                0
+      RotationAxis          -1.000 0.000 0.000
+      RotationAmount        72.500  } } }
+
+ANIMATION {
+  Slot                      2
+  Name                      "FORKLIFT"
+  Mode                      2
+  BONE {
+    BoneID                  0
+    ModelID                 2  }
+  KEYFRAME {
+    FrameNr                 0
+    Time                    8
+    Type                    4
+    BONE {
+      BoneID                0
+      Translation	    0.000 0.000 800.000  } } }
+
+ANIMATION {
+  Slot                      3
+  Name                   "LIGHTO"
+  Mode                   0
+  BONE {
+    BoneID                   0
+    ModelID                  3  }
+  BONE {
+    BoneID                   1
+    ModelID                  4  }
+  KEYFRAME {
+    FrameNr             0
+    Time                   1.5
+    Type                   0
+    BONE {
+      BoneID                0
+      Visible               True }
+    BONE {
+      BoneID                1
+      Visible               False } }
+  KEYFRAME {
+    FrameNr             1
+    Time                   0.1
+    Type                   0
+    BONE {
+      BoneID                0
+      Visible               False }
+    BONE {
+      BoneID                1
+      Visible               True  } }
+  KEYFRAME {
+    FrameNr             2
+    Time                   0.1
+    Type                   0
+    BONE {
+      BoneID                0
+      Visible               True }
+    BONE {
+      BoneID                1
+      Visible               False } }
+  KEYFRAME {
+    FrameNr             3
+    Time                   0.1
+    Type                   0
+    BONE {
+      BoneID                0
+      Visible               False }
+    BONE {
+      BoneID                1
+      Visible               True  } } }
+	  
+ANIMATION {
+  Slot                      4
+  Name                      "PICK1"
+  Mode                      0
+  BONE {
+    BoneID                  0
+    ModelID                 5  }
+  KEYFRAME {
+    FrameNr                 0
+    Time                    12
+    Type                    0
+    BONE {
+      BoneID                0
+      Translation	    0.000 0.000 0.000 
+	  RotationAxis      0.000 1.000 0.000
+      RotationAmount    360.000 } } }
+	  
+ANIMATION {
+  Slot                      5
+  Name                      "SHAD1"
+  Mode                      2
+  BONE {
+    BoneID                  0
+    ModelID                 6  }
+  KEYFRAME {
+    FrameNr                 0
+    Time                    8
+    Type                    4
+    BONE {
+      BoneID                0
+      Translation	    -700.000 0.000 0.000  } } }
+
+}

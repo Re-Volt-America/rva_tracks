@@ -1,0 +1,20 @@
+;--------------------------
+;Revolt .INF file structure
+;--------------------------
+
+NAME			'Toyshop 99'
+STARTPOS		900 -20 -900
+STARTROT		0.00
+STARTGRID		3
+FARCLIP			18000
+FOGSTART		14000
+FOGCOLOR		0 0 0
+VERTFOGSTART	0
+VERTFOGEND		0
+WORLDRGBPER     100
+MODELRGBPER		100
+INSTANCERGBPER	100
+DIFFICULTY		2
+MIRRORS			1 0 0.5 256
+MP3				'levels\toyshop99\music.mp3'
+ENVSTILL		'levels\toyshop99\custom\envstill.bmp'

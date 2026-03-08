@@ -1,0 +1,27 @@
+NAME            'Ranch'
+DIFFICULTY      3 ; Display difficulty (0:Unknown, 1:Easy, 2:Normal, 3:Hard, 4:Extreme)
+
+STARTPOS        -11730 -35 -14646
+STARTROT        0.75
+STARTGRID       4
+FARCLIP         94000
+FOGSTART        8000
+FOGCOLOR        66 66 66
+WORLDRGBPER     100
+MODELRGBPER     50
+INSTANCERGBPER  50
+MUSIC           'levels\ranch\ranch.ogg'
+REDBOOK         10 10
+
+; Texture Properties: Index - mipmapping - wrap mode - colorkeying
+
+TEXTUREPROPS    0 1 0 0 ; A
+TEXTUREPROPS    1 1 0 0 ; B
+TEXTUREPROPS    2 1 0 0 ; C
+TEXTUREPROPS    3 1 0 0 ; D
+TEXTUREPROPS    4 1 0 1 ; E
+TEXTUREPROPS    5 1 0 0 ; F
+TEXTUREPROPS    6 1 0 0 ; G
+TEXTUREPROPS    7 1 0 0 ; H
+TEXTUREPROPS    8 1 0 0 ; I
+TEXTUREPROPS    9 1 0 0 ; J

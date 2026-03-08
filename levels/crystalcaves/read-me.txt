@@ -1,0 +1,86 @@
+
+* Crystal caves *
+
+
+*********
+*ENGLISH*
+*********
+
+Let the colorful lights of the crystal caves welcome you!
+
+********
+
+v1.1 2025/10/20
+Added sounds, music and time trial times!
+
+********
+
+Author : Killer Wheels
+Tools used : 3ds max, photoshop, makeitgood, RV Exporter for 3ds max
+Creation time : way too much...again
+
+
+********
+
+This track features a "Reverse" mode, cameras for the "Replay", time split for time trial and a practice star.
+Requires RVGL! (May work in rv1.2 but I didn't test)
+Start grid support for 16 players.
+
+********
+
+Thanks to all who played and who are still playing, for their creations and help within Re-volt community
+
+********
+
+Have fun ! :)
+
+
+**********
+*FRANCAIS*
+**********
+
+Laissez-vous accueillir par les lumières des caves de crystal !
+
+********
+
+v1.1 2025/10/20
+Ajout de sons, musique et des temps de time trial !
+
+********
+
+Auteur : Killer Wheels
+Outils : 3ds max, photoshop, makeitgood, RV Exporteur pour 3ds max
+Temps de réalisation : beaucoup trop de temps
+
+
+********
+
+Ce circuit inclus le mode "Reverse", les caméras pour le "Replay", du time split pour le time trial et une étoile pour l'entraînement.
+Nécessite RVGL! (Peut-être ok pour rv1.2 mais pas testé)
+Grille de départ pour 16 joueurs ok.
+
+********
+
+Merci à tous ceux qui ont et qui continuent de jouer, de créer et d'aider dans Re-Volt,
+
+********
+
+Bon jeu ! :)
+
+
+***********************
+Copyright / Permissions
+***********************
+
+This level is copyright 2025, by KW.
+
+You can use this level as a base to build additional levels, if you do so be cool
+by sending me back a link / screenshot / etc...
+Dont forget to check my website : http://www.nawakiwi.com/
+
+You are not allowed to commercially exploit this level, i.e. put it on a CD or any 
+other electronic medium that is sold for money without my explicit permission!
+
+You may distribute this level through any electronic network (internet (web/ftp), 
+FIDO, local BBS etc.), provided you include this file and leave the archive intact.
+If you do so, please add a link to the original file !
