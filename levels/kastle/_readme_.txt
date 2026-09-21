@@ -1,8 +1,8 @@
 
 GENGHIS KASTLE
-Version 1.0 from 08. December 2020
+Version 1.2 from March 26th, 2026
 
-Created by:		Jan Aínnír Mayen (kiwi)
+Created by:		kiwi
 Created:		20. November - 08. December 2020
 
 Length:			626m
@@ -40,11 +40,30 @@ RVGL 20.0930a or later required
 
 Thx for playing, have fun!
 
+
+____________________________________________________
+
+Versions:
+
+1.0		2020-12-08	Initial release
+
+1.0b	2023-09-30	Updated README (Permissions/Copyright)
+
+1.1		2025-04-02	Fix on NCP file by EstebanMz
+					Added a missing wall after the first turn
+					
+1.2		2026-03-26	Fix couple of repositions by EstebanMz
+					Both changes focus on moving the reposition ahead of the wood ramps
+					in the track and not above the edge of them, one ramp is right after
+					the start line and the other is after the U-turns section splitted
+					in two paths. (The bridge that leads to the castle is unaffected.)
+
+
 ____________________________________________________
 
 Developers:
 
-Jan Aínnír Mayen (kiwi):
+kiwi:
 - Modeling/Re-modeling
 - Shading
 - Lights
@@ -67,6 +86,9 @@ Nintendo:
 Ray Koopa:
 - Mesh/texture Rip
 
+EstebanMz:
+- ncp and fan corrections
+
 ____________________________________________________
 
 Used assets:
@@ -74,17 +96,11 @@ Used assets:
 Tree model and textures:
 - Centrixe (from the game: FeralHeart)
 
-Skybox base:
-- Jan Aínnír Mayen (kiwi) (from the track: School's Out! 2)
-
 Custom SFX (townbell.wav and tv.wav):
 - Sounddogs.com
 
 Instances stand.prm and rope.prm:
 - Re-Volt / Acclaim (from the track: Museum 1)
-
-Instance ramp.prm:
-- Jan Aínnír Mayen (kiwi) (From the track: Best-Milk Farm)
 
 Chandelier model:
 - Nintendo (from the game: Luigi's Mansion)
